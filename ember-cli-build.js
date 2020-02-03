@@ -7,6 +7,9 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  app.import('node_modules/jquery-mask-plugin/dist/jquery.mask.min.js')
+
+
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
