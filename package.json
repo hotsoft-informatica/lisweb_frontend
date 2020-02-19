@@ -59,6 +59,7 @@
     "edition": "octane"
   },
   "dependencies": {
-    "ember-ac-components": "file:../ember_ac_components"
+    "ember-ac-components": "file:../ember_ac_components",
+    "simple-line-icons": "^2.4.1"
   }
 }

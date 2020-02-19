@@ -10,7 +10,8 @@ module.exports = function(defaults) {
     }
   });
 
-  app.import('node_modules/jquery-mask-plugin/dist/jquery.mask.min.js')
+  app.import('node_modules/jquery-mask-plugin/dist/jquery.mask.min.js');
+  app.import('node_modules/simple-line-icons/css/simple-line-icons.css');
 
 
   // Use `app.import` to add additional libraries to the generated
