@@ -19,12 +19,13 @@
   },
   "devDependencies": {
     "@ember/jquery": "0.6.0",
-    "jquery-mask-plugin": "1.14.15",
     "@ember/optional-features": "^1.1.0",
     "@glimmer/component": "^1.0.0",
     "babel-eslint": "^10.0.3",
+    "bootstrap": "^4.4.1",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^1.5.3",
+    "ember-bootstrap": "^3.1.1",
     "ember-cli": "~3.15.1",
     "ember-cli-app-version": "^3.2.0",
     "ember-cli-babel": "^7.13.0",
@@ -46,6 +47,7 @@
     "ember-welcome-page": "^4.0.0",
     "eslint-plugin-ember": "^7.7.1",
     "eslint-plugin-node": "^10.0.0",
+    "jquery-mask-plugin": "1.14.15",
     "loader.js": "^4.7.0",
     "qunit-dom": "^0.9.2"
   },
