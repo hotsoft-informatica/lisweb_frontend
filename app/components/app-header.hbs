@@ -1,1 +1,13 @@
+<div class="text-center navbar-brand-wrapper">
+  {{#link-to "index" class="navbar-brand brand-logo"}}
+    <img src="images/logo.svg" alt="logo">
+  {{/link-to}}
+  {{#link-to "index" class="navbar-brand brand-logo-mini"}}
+    <img src="images/logo_mini.svg" alt="logo">
+  {{/link-to}}
+</div>
+<div class="navbar-menu-wrapper d-flex align-items-center">
+  <p class="page-name d-none d-lg-block">{{fa-icon "user"}} {{userName}}</p>
+</div>
+
 {{yield}}

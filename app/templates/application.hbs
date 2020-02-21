@@ -1,25 +1,31 @@
-<div class="container">
+{{! MAIN CONTAINER START }}
+<div class="container-scroller">
 
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        {{#link-to 'index' class="navbar-brand"}}LISWEB{{/link-to}}
-      </div>
+    {{! HEADER START }}
+    {{app-header tagName="nav" class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row"}}
+    {{! HEADER END }}
 
-      <div class="collapse navbar-collapse" id="main-navbar">
-        <ul class="nav navbar-nav">
-          {{#link-to 'labs' tagName="li"}}<a href="">Labs</a>{{/link-to}}
-          {{#link-to 'about' tagName="li"}}<a href="">About</a>{{/link-to}}
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
+    {{! INNER CONTAINER START }}
+    <div class="container-fluid page-body-wrapper">
+        <div class="row row-offcanvas row-offcanvas-right">
 
-  {{outlet}}
+            {{! MENU START }}
+            {{app-menu tagName="nav" class="sidebar sidebar-offcanvas" id="sidebar"}}
+            {{! MENU end }}
+
+            {{! CENTRAL SECTION WRAPPER START }}
+            <div class="content-wrapper">
+                {{outlet}}
+            </div>
+            {{! CENTRAL SECTION WRAPPER END }}
+
+            {{! FOOTER START }}
+            {{app-footer tagName="footer" class="footer"}}
+            {{! FOOTER END }}
+
+        </div>
+    </div>
+    {{! INNER CONTAINER END }}
+
 </div>
+{{! MAIN CONTAINER END }}
