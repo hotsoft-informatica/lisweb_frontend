@@ -1,0 +1,31 @@
+{{! MAIN CONTAINER START }}
+<div class="container-scroller">
+
+    {{! HEADER START }}
+    {{app-header tagName="nav" class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row"}}
+    {{! HEADER END }}
+
+    {{! INNER CONTAINER START }}
+    <div class="container-fluid page-body-wrapper">
+        <div class="row row-offcanvas row-offcanvas-right">
+
+            {{! MENU START }}
+            {{app-menu tagName="nav" class="sidebar sidebar-offcanvas" id="sidebar"}}
+            {{! MENU end }}
+
+            {{! CENTRAL SECTION WRAPPER START }}
+            <div class="content-wrapper">
+                {{outlet}}
+            </div>
+            {{! CENTRAL SECTION WRAPPER END }}
+
+            {{! FOOTER START }}
+            {{app-footer tagName="footer" class="footer"}}
+            {{! FOOTER END }}
+
+        </div>
+    </div>
+    {{! INNER CONTAINER END }}
+
+</div>
+{{! MAIN CONTAINER END }}
