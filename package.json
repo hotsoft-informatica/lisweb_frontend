@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@ember/jquery": "0.6.0",
-    "jquery-mask-plugin": "1.14.15",
+    "jquery-mask-plugin": "1.14.16",
     "@ember/optional-features": "^1.1.0",
     "@glimmer/component": "^1.0.0",
     "babel-eslint": "^10.0.3",
