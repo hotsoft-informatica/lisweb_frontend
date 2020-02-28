@@ -3,24 +3,27 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Component | app-menu', function(hooks) {
+module('Integration | Component | Navbar', function(hooks) {
   setupRenderingTest(hooks);
 
+  // TODO: Revisar este teste de render do menu
   test('it renders', async function(assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<AppMenu />`);
+    await render(hbs`<Navbar/>`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    // TODO: Testar se contem texto do menu
+    assert.ok(this.element.textContent.trim(), 'Renderizado');
 
     // Template block usage:
     await render(hbs`
-      <AppMenu>
+      <Navbar>
         template block text
-      </AppMenu>
+      </Navbar>
     `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    // TODO: Testar se contem texto do menu
+    assert.ok(this.element.textContent.trim(), 'Renderizado');
   });
 });
