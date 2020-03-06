@@ -7,7 +7,6 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
-  this.route('index');
   this.route('labs');
   this.route('grupos_centro_custo');
   this.route('centros_custo');
@@ -24,7 +23,7 @@ Router.map(function() {
   // Central de Lancamentos?
   this.route('lancamentos');
   this.route('notas');
-  // Requisicao de materiais
+  // Requisicao de materiais 
   this.route('atendimentos_requisicoes');
   // Lista compras?
   this.route('orcamentos');
