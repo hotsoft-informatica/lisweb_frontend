@@ -36,6 +36,4 @@ Router.map(function() {
   this.route('chaves_nfse');
   this.route('grupos_parametros_nfse');
   this.route('ac_filter_defs');
- // Relatorios Estoque?
- // Relatorios Financeiro?
 });
