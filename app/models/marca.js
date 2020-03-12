@@ -5,5 +5,6 @@ export default class MarcaModel extends Model {
   @attr('text') descricao;
   @attr('number') laboratorio_id;
   @attr('number') version_id;
-  @attr('number') deleted;
+  @attr('boolean', { defaultValue: false }) deleted;
+  @attr('date', { defaultValue() { return new Date(); } }) created_at;
 }
