@@ -1,8 +1,15 @@
 import Route from '@ember/routing/route';
+//import fetch from 'fetch';
 
 export default class MarcasRoute extends Route {
-  // model() {
-  //   console.log('o model acabou de execurar!');
-  //   return 'Hello Ember!';
+   // async model() {
+  //   const response = await fetch('/localhost:3010.json');
+  //   const marcas = await response.json();
+
+  //   return { marcas };
   // }
+
+  model() {
+    this.store.findAll('marca');
+  }
 }

@@ -1,2 +1,25 @@
-textex
-{{outlet}}
+<div>
+    Listagem das Marcas:
+    <ul>
+      {{#each @model as |post|}}
+        <li>{{post.title}}, id {{post.id}}</li>
+      {{/each}}
+    </ul>
+</div>
+
+<div>
+  <button {{action 'readMarca'}}>Marcas</button>
+</div>
+
+<div>
+  {{input value=newMarca placeholder="Criar Marca"}}
+  <button {{action 'createBoardGame'}}>Criar</button>
+</div>
+<div>
+  {{input value=updatedMarca placeholder="Atualizar Marca"}}
+  <button {{action 'updateMarca'}}>Atualizar</button>
+</div>
+<div>
+  {{input value=destroyMarca placeholder="Apagar Marca"}}
+  <button {{action 'destroyMarca'}}>Apagar</button>
+</div>
