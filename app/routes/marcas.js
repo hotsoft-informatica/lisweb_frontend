@@ -10,6 +10,6 @@ export default class MarcasRoute extends Route {
   // }
 
   model() {
-    this.store.findAll('marca');
+    return this.store.findAll('marca');
   }
 }
