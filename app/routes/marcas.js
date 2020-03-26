@@ -9,7 +9,32 @@ export default class MarcasRoute extends Route {
   //   return { marcas };
   // }
 
+  // model() {
+  //   return this.store.createRecord('marca', {
+  //     "nome": "TESTE001",
+  //     "descricao": "ESTE É O TESTE CRIACAO DE TESTE001",
+  //     "laboratorio_id": '02',
+  //     "version_id": '007',
+  //     "deleted": false
+  //   }).save().then(() => {
+  //       return this.store.findAll('marca');
+  //   });
+  // }
+
   model() {
+    var marca = this.store.createRecord('marca', {
+      "nome": "TESTE001",
+      "descricao": "ESTE É O TESTE CRIACAO DE TESTE001",
+      "laboratorio_id": '02',
+      "version_id": '007',
+      "deleted": false
+    });
+    marca.save();
+    this.store.push(marca);
     return this.store.findAll('marca');
   }
+
+  // model() {
+  //   return this.store.findAll('marca');
+  // }
 }
