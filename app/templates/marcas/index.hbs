@@ -1,13 +1,56 @@
-<h2>Marcas</h2>
-
-{{#each model as |library|}}
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h3 class="panel-title">{{library.name}}</h3>
-    </div>
-    <div class="panel-body">
-      <p>Address: {{library.address}}</p>
-      <p>Phone: {{library.phone}}</p>
-    </div>
+<h4>Nova marca</h4>
+<div class="form-group">
+  <div class="col-sm-offset-2 col-sm-10">
+    <button type="submit" class="btn btn-success" {{action 'saveLibrary' model}}>Add to library list</button>
   </div>
-{{/each}}
+</div>
+<h2>Marcas</h2>
+<table>
+  <ul>
+    <tr>
+      <th>
+          <label>#</label>
+      </th>
+      <th>
+          <label>Nome</label>
+      </th>
+      <th>
+          <label>Descrição</label>
+      </th>
+      <th>
+          <label>LaboratórioID</label>
+      </th>
+      <th>
+          <label>VersionID</label>
+      </th>
+      <th>
+          <label>Deleted</label>
+      </th>
+    </tr>
+    {{#each @model as |marca|}}
+      <tr>
+        <td>{{marca.id}}</td>
+        {{#if marca.isEditing}}
+          <td>{{input value=marca.name}}</td>
+          <td>{{input value=marca.sku}}</td>
+          <td>{{input value=marca.price}}</td>
+          <td>
+            <button type="submit" {{action 'updateMarca' marca}}>Save</button>
+            <button type="submit" {{action 'cancelMarca' marca}}>Cancel</button>
+          </td>
+
+        {{else}}
+          <td>{{marca.nome}}</td>
+          <td>{{marca.descricao}}</td>
+          <td>{{marca.laboratorio_id}}</td>
+          <td>{{marca.version_id}}</td>
+          <td>{{marca.deleted}}</td>
+          <td>
+            <button type="submit" {{action 'deleteMarca' marca}}>Deletar</button>
+            <button type="submit" {{action 'editMarca' marca}}>Alterar</button>
+          </td>
+        {{/if}}
+      </tr>
+    {{/each}}
+  </ul>
+</table>

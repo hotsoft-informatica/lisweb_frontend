@@ -12,10 +12,11 @@ Router.map(function() {
   this.route('centros_custo');
   this.route('categorias_produto');
   this.route('unidades_medida');
-  //this.route('marcas');
-  this.route('marcas', function() {
-    this.route('index', { path: '/' });
-  });
+  this.route('marcas');
+  // Rotas para marcas.
+  this.route('marcas/new');
+  this.route('marcas/show', {path: "/marcas/:marca_id"});
+  this.route('marcas/index', {path: "/marcas"});
   this.route('tipos_produto');
   this.route('unidades_atendimento');
   this.route('contas');
