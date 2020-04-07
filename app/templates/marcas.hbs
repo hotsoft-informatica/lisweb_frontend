@@ -1,92 +1,11 @@
 <h1>Marcas</h1>
 
-<form>
-  <tr>
-    <td>
-      <label>Nome:</label>
-      <input value="marcaNome" />
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <label>Descrição:</label>
-      <Textarea cols="30" rows="4" @value="marcaDescricao" placeholder="Descrição" />
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <label>Laboratório:</label>
-      <input value="marcaLaboratorioId" placeholder="Laboratório" />
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <label>Versão:</label>
-      <input value="marcaVersaoId" placeholder="Versão" />
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <label>Deletado:</label>
-      <select>
-        <option selected={{false}}>Não</option>
-        <option value="true">Sim</option>
-      </select>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <button type="submit" {{action 'addNewMarca' marcaNome marcaDescricao marcaLaboratorio}}>Salvar</button>
-    </td>
-  </tr>
-</form>
-
-<table>
-  <ul>
-    <tr>
-      <th>
-          <label>#</label>
-      </th>
-      <th>
-          <label>Nome</label>
-      </th>
-      <th>
-          <label>Descrição</label>
-      </th>
-      <th>
-          <label>LaboratórioID</label>
-      </th>
-      <th>
-          <label>VersionID</label>
-      </th>
-      <th>
-          <label>Deleted</label>
-      </th>
-    </tr>
-    {{#each @model as |marca|}}
-      <tr>
-        <td>{{marca.id}}</td>
-        {{#if marca.isEditing}}
-          <td>{{input value=marca.name}}</td>
-          <td>{{input value=marca.sku}}</td>
-          <td>{{input value=marca.price}}</td>
-          <td>
-            <button type="submit" {{action 'updateMarca' marca}}>Save</button>
-            <button type="submit" {{action 'cancelMarca' marca}}>Cancel</button>
-          </td>
-
-        {{else}}
-          <td>{{marca.nome}}</td>
-          <td>{{marca.descricao}}</td>
-          <td>{{marca.laboratorio_id}}</td>
-          <td>{{marca.version_id}}</td>
-          <td>{{marca.deleted}}</td>
-          <td>
-            <button type="submit" {{action 'deleteMarca' marca}}>Deletar</button>
-            <button type="submit" {{action 'editMarca' marca}}>Alterar</button>
-          </td>
-        {{/if}}
-      </tr>
-    {{/each}}
+<div class="well">
+  <ul class="nav nav-pills">
+    <LinkTo @route="about">About</LinkTo>
+    <linkTo @route='marcas.index' tagName="li" >Marcas</linkTo>
+    {{#link-to 'marcas.new' tagName="li"}}<a href="">Add new</a>{{/link-to}}
   </ul>
-</table>
+</div>
+
+{{outlet}}
