@@ -1,7 +1,7 @@
 <h4>Criar nova marca</h4>
 <div class="form-group">
   <div class="col-sm-offset-2 col-sm-10">
-    <button type="button" class="btn btn-success" ><a href="marcas/new">Nova marca</a></button>
+    <button type="button" class="btn btn-success" ><a href="/marcas/new">Nova marca</a></button>
   </div>
 </div>
 <h2>Marcas</h2>
@@ -27,7 +27,8 @@
           <label>Deleted</label>
       </th>
     </tr>
-    {{#each @model as |marca|}}
+    {{! Chutando ...}}
+    {{#each @model.marcas as |marca|}}
       <tr>
         <td>{{marca.id}}</td>
         {{#if marca.isEditing}}

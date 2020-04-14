@@ -2,29 +2,30 @@
 
 <div class="form-horizontal">
   <div class="form-group">
-    <label class="col-sm-2 control-label">Nome</label>
-    <div class="col-sm-10">
-      {{input type="text" value=model.nome class="form-control" placeholder="Marca"}}
+    <label class="col-sm-2 control-label">Nome:</label>
+    <div class="col-sm-6">
+      {{input type="text" value=model.marca.nome class="form-control" placeholder="Marca"}}
     </div>
   </div>
   <div class="form-group">
-    <label class="col-sm-2 control-label">Descrição</label>
-    <div class="col-sm-10">
-      {{input type="text" value=model.descricao class="form-control" placeholder="Descrição"}}
+    <label class="col-sm-2 control-label">Descrição:</label>
+    <div class="col-sm-6">
+      {{input type="text" value=model.marca.descricao class="form-control" placeholder="Descrição"}}
     </div>
   </div>
   <div class="form-group">
-    <label class="col-sm-2 control-label">Laboratorio</label>
-    <div class="col-sm-10">
-      {{input type="text" value=model.laboratorio class="form-control" placeholder="Selecione o laboratório"}}
-      {{#each model.laboratorio as |laboratorio|}}
-        {{laboratorio.nome}}
-      {{/each}} 
+    <label class="col-sm-2 control-label">Laboratório:</label>
+    <div class="col-sm-2">
+      <select id="laboratorioId" class="form-control" >
+        {{#each @model.laboratorios as |lab|}}
+          <option value="{{lab.id}}">{{lab.nome}}</option>
+        {{/each}}
+      </select>
     </div>
   </div>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-success" {{action 'saveMarca' model}}>Salvar</button>
+      <button type="submit" class="btn btn-success" {{action 'saveMarca' model.marca}}>Salvar</button>
     </div>
   </div>
 </div>

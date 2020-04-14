@@ -3,13 +3,16 @@ import Route from '@ember/routing/route';
 export default Route.extend({
 
   model() {
-    return this.store.createRecord('marca');
+    return Ember.RSVP.hash({
+      marca: this.store.createRecord('marca'),
+      laboratorios: this.store.findAll('laboratorio')
+    });
   },
 
   actions: {
 
     saveMarca(newMarca) {
-      newMarca.save().then(() => this.transitionTo('marcas'));
+     newMarca.save().then(() => this.transitionTo('marcas'));
     },
 
     willTransition() {
@@ -19,3 +22,7 @@ export default Route.extend({
     }
   }
 });
+
+//this.get('newUser').save().then((user) =>
+    //  this.transitionToRoute('users', user.get('id'))
+    //);
