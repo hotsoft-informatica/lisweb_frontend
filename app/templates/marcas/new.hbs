@@ -16,7 +16,7 @@
   <div class="form-group">
     <label class="col-sm-2 control-label">Laboratório:</label>
     <div class="col-sm-2">
-      <select id="laboratorioId" class="form-control" >
+      <select id="laboratorioId" class="form-control" {{on 'change' this.updateValue}} >
         {{#each @model.laboratorios as |lab|}}
           <option value="{{lab.id}}">{{lab.nome}}</option>
         {{/each}}
@@ -25,7 +25,7 @@
   </div>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-success" {{action 'saveMarca' model.marca}}>Salvar</button>
+      <button type="submit" class="btn btn-success" {{on 'saveMarca' model.marca}}>Salvar</button>
     </div>
   </div>
 </div>

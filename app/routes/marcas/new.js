@@ -4,25 +4,21 @@ export default Route.extend({
 
   model() {
     return Ember.RSVP.hash({
-      marca: this.store.createRecord('marca'),
       laboratorios: this.store.findAll('laboratorio')
     });
   },
-
+  
   actions: {
+    saveMarca(newMarca, laboratorioId) {
+      var marca = this.store.createRecord('marca', {
+        nome: newMarca.nome,
+        descricao: newMarca.descricao,
+        laboratorio_id: laboratorioId
+      });
 
-    saveMarca(newMarca) {
-     newMarca.save().then(() => this.transitionTo('marcas'));
+     marca.save().then(() => this.transitionToRoute('marcas'));
     },
-
-    willTransition() {
-      // rollbackAttributes() removes the record from the store
-      // if the model 'isNew'
-      this.controller.get('model').rollbackAttributes();
-    }
   }
 });
 
-//this.get('newUser').save().then((user) =>
-    //  this.transitionToRoute('users', user.get('id'))
-    //);
+
