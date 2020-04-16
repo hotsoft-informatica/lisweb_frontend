@@ -1,15 +1,17 @@
-<h4>Criar nova marca</h4>
-<div class="form-group">
-  <div class="col-sm-offset-2 col-sm-10">
-    <button type="button" class="btn btn-success" ><a href="/marcas/new">Nova marca</a></button>
+<h1>Marcas</h1>
+<td>
+  <h4>Criar nova marca</h4>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <a class="btn btn-primary float-right" href="/marcas/new" role="button">Nova marca</a>
+    </div>
   </div>
-</div>
-<h2>Marcas</h2>
+</td>
 <table>
   <ul>
     <tr>
       <th>
-          <label>#</label>
+          <label>Id</label>
       </th>
       <th>
           <label>Nome</label>
@@ -17,38 +19,16 @@
       <th>
           <label>Descrição</label>
       </th>
-      <th>
-          <label>LaboratórioID</label>
-      </th>
-      <th>
-          <label>VersionID</label>
-      </th>
-      <th>
-          <label>Deleted</label>
-      </th>
     </tr>
-    {{! Chutando ...}}
     {{#each @model.marcas as |marca|}}
       <tr>
         <td>{{marca.id}}</td>
-        {{#if marca.isEditing}}
-          <td>{{input value=marca.name}}</td>
-          <td>{{input value=marca.sku}}</td>
-          <td>{{input value=marca.price}}</td>
-          <td>
-            <button type="submit" {{action 'updateMarca' marca}}>Save</button>
-            <button type="submit" {{action 'cancelMarca' marca}}>Cancel</button>
-          </td>
-
-        {{else}}
+        {{#if marca.id}}
           <td>{{marca.nome}}</td>
           <td>{{marca.descricao}}</td>
-          <td>{{marca.laboratorio_id}}</td>
-          <td>{{marca.version_id}}</td>
-          <td>{{marca.deleted}}</td>
           <td>
-            <button type="submit" {{action 'deleteMarca' marca}}>Deletar</button>
-            <button type="submit" {{action 'editMarca' marca}}>Alterar</button>
+            <a class="btn btn-primary" href="/marcas/{{marca.id}}" role="button">Editar</a>
+            <a class="btn btn-primary" {{action 'deleteMarca' marca}} role="button">Excluir</a>
           </td>
         {{/if}}
       </tr>

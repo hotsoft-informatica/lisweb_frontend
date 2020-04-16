@@ -15,11 +15,11 @@ Router.map(function() {
   this.route('marcas');
   // Rotas para marcas.
   this.route('marcas/new');
-  this.route('marcas/show', {path: "/marcas/:marca_id"});
+  this.route('marcas/edit', {path: "/marcas/:marca_id"});
   this.route('marcas/index', {path: "/marcas"});
   // Rotas para laboratoios.
   this.route('laboratorios/new');
-  this.route('laboratorios/show', {path: "/laboratorios/:laboratorio_id"});
+  this.route('laboratorios/edit', {path: "/laboratorios/:laboratorio_id"});
   this.route('laboratorios/index', {path: "/laboratorios"});
   this.route('tipos_produto');
   this.route('unidades_atendimento');

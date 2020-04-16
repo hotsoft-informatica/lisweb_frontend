@@ -5,5 +5,12 @@ export default Route.extend({
     return Ember.RSVP.hash({
       marcas: this.store.findAll('marca')
     });
+  },
+
+  actions: {
+    deleteMarca(marca) {
+      marca.deleteRecord();
+      marca.save().then(() => this.transitionTo('/marcas'));
+    }
   }
 });
