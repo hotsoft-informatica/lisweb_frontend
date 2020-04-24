@@ -1,177 +1,20 @@
-<div class="row">
-  <div class="col-xs-12">
-    <div class="apiPanel__tit">
-      <h1>{{#if model.isNew}}Novo{{/if}} Cliente</h1>
+<div class="form-horizontal">
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Nome:</label>
+    <div class="col-sm-6">
+      {{input type="text" value=model.nome class="form-control" placeholder="Marca"}}
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Descrição:</label>
+    <div class="col-sm-6">
+      {{input type="text" value=model.descricao class="form-control" placeholder="Descrição"}}
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-success" {{action 'saveMarca' model}}>Salvar</button>
     </div>
   </div>
 </div>
 
-{{#base/base-form model=model onSubmit=(action onSubmit) onCancel=(action onCancel)
-                  searching=searching beforeValidate=(action beforeValidate)}}
-<div class="row">
-    {{inputs/input-title val=model.name label="Nome do Cliente" errors=model.errors.name cols="12"
-                         maxLength=60}}
-</div>
-
-<div class="row">
-  <div class="col-xs-12"> <br><br>
-    <div class="menuNavTabs">
-      <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#id_tab">Identificação</a></li>
-        <li><a data-toggle="tab" href="#contact_tab">Contato</a></li>
-        <li><a data-toggle="tab" href="#address_tab">Endereço</a></li>
-        {{#if model.showConfig}}
-          <li><a href="#config_customer_tab" data-toggle="tab">Configurações</a></li>
-        {{/if}}
-        {{#if application.currentDomain.isErp}}
-          <li><a href="#related_people_tab" data-toggle="tab">Pessoas Relacionadas</a></li>
-          <li><a href="#installment_credit_tab" data-toggle="tab">Crediário</a></li>
-        {{/if}}
-        {{#if application.isAcras}}
-          <li><a href="#a_contract_tab" data-toggle="tab">Contratos</a></li>
-          <li><a href="#a_invoice_tab" data-toggle="tab">Faturas</a></li>
-        {{/if}}
-      </ul>
-      <div class="tab-content form__container">
-        <div id="id_tab" class="tab-pane fade in active form__box">
-          {{inputs/input-radio-group name='legalType' field=model.legalType
-                                     options=constants.legalTypeOptions}}
-          <div class="form-group">
-            {{customers/id-form model=model constants=constants}}
-          </div>
-        </div>
-        <div id="contact_tab" class="tab-pane fade form__box">
-            {{#each model.contactInfos as |ci|}}
-              {{customers/contact-info-form model=ci label=ci.contactTypeLabel
-                                            constants=constants
-                                            removeContactInfo=(action removeContactInfo)}}
-            {{/each}}
-          <div class="div-vazia">&nbsp;</div>
-          <button type="button" name="button" class="btn btn--default btn--primary"
-            {{action "addContact"}}>
-            <i class="fa fa-plus"></i>
-             Adicionar Contato
-          </button>
-        </div>
-        <div id="address_tab" class="tab-pane fade form__box">
-          {{customers/address-form model=model fillAddressFields=(action fillAddressFields)
-                                   logradouroDisabled=logradouroDisabled
-                                   bairroDisabled=bairroDisabled cidadeDisabled=cidadeDisabled
-                                   fetchingCep=fetchingCep}}
-        </div>
-        {{#if model.showConfig}}
-          <div id="config_customer_tab" class="tab-pane fade form__box">
-              {{customers/config-customer-form model=model globalLookups=globalLookups
-                                               application=application
-                                               blockCustomerModal=blockCustomerModal
-                                               showBlockCustomerModal=(action showBlockCustomerModal)
-                                               blockCustomer=(action blockCustomer)
-                                               unblockCustomer=(action unblockCustomer)
-                                               deactivateCustomer=(action deactivateCustomer)
-                                               activateCustomer=(action activateCustomer)}}
-            </div>
-        {{/if}}
-        {{#if application.currentDomain.isErp}}
-          <div id="related_people_tab" class="tab-pane fade form__box">
-            {{#each model.relatedPeople as |rp|}}
-              {{customers/related-people-form model=rp relationshipTypes=relationshipTypes
-                                              globalLookups=globalLookups constants=constants
-                                              removeRelatedPerson=(action removeRelatedPerson)}}
-              <button type="button" class="btn btn--default btn--danger hidden"
-                {{action 'removeRelation' model}}>
-                  <span class="fa fa-trash"/>
-                </button>
-            {{/each}}
-            <button type="button" name="button" class="btn btn--default btn--primary"
-              {{action 'addRelatedPerson'}}>
-              <i class="fa fa-plus"></i>
-               Adicionar Pessoa Relacionada
-            </button>
-          </div>
-          <div id="installment_credit_tab" class="tab-pane fade form__box">
-            {{customers/installment-credit-form model=model constants=constants}}
-          </div>
-        {{/if}}
-        {{#if application.isAcras}}
-          <div id="a_contract_tab" class="tab-pane fade form__box">
-            {{#if model.isNew}}
-              <div class="row">
-                <div class="col-xs-12">
-                  <div class="alert alert-danger text-center">
-                    <h5><strong>Para inserir um contrato, primeiro salve o cliente</strong></h5>
-                    <div class="clear-10"></div>
-                  </div>
-                </div>
-              </div>
-            {{else}}
-              {{customers/contracts-tab model=currentContract customer=model constants=constants
-                                        saasPrices=saasPrices contractEditModal=contractEditModal
-                                        customerContracts=model.contracts
-                                        addNewContract=(action addNewContract)
-                                        editContract=(action editContract)
-                                        addEmitente=(action addEmitente)
-                                        selectEmitente=(action selectEmitente)
-                                        onSave=(action saveCurrentContractEdit)
-                                        onCancel=(action cancelCurrentContractEdit)}}
-            {{/if}}
-          </div>
-          <div id="a_invoice_tab" class="tab-pane fade form__box">
-            {{customers/invoices-tab currentInvoice=currentInvoice invoices=invoices
-                                     cancelInvoiceModal=cancelInvoiceModal
-                                     cancelInvoice=(action cancelInvoice)
-                                     cancelInvoiceShow=cancelInvoiceShow
-                                     cancelInvoiceReason=cancelInvoiceReason
-                                     detachedFeesModal=detachedFeesModal
-                                     showDetachedFeesModal=showDetachedFeesModal
-                                     onSaveDetachedFee=(action onSaveDetachedFee)
-                                     onCancelDetachedFee=(action onCancelDetachedFee)
-                                     currentDetachedFee=currentDetachedFee
-                                     detachedFeeBankBillUrl=detachedFeeBankBillUrl
-                                     showGenerateDetachedFeeButton=showGenerateDetachedFeeButton
-                                     advanceMonthBillingModal=advanceMonthBillingModal
-                                     currentAdvanceMonthBilling=currentAdvanceMonthBilling
-                                     showAdvanceMonthBillingModal=(action showAdvanceMonthBillingModal)
-                                     onCancelAdvanceMonthBilling=(action onCancelAdvanceMonthBilling)
-                                     onSaveAdvanceMonthBilling=(action onSaveAdvanceMonthBilling)
-                                     currentReissueInvoice=currentReissueInvoice
-                                     reissueInvoiceModal=reissueInvoiceModal
-                                     showReissueInvoiceModal=(action showReissueInvoiceModal)
-                                     onSaveReissueInvoice=(action onSaveReissueInvoice)
-                                     onCancelReissueInvoice=(action onCancelReissueInvoice)
-                                     currentIssueBankBill=currentIssueBankBill
-                                     issueBankBillModal=issueBankBillModal
-                                     showIssueBankBillModal=(action showIssueBankBillModal)
-                                     onCancelIssueBankBill=(action onCancelIssueBankBill)
-                                     onSaveIssueBankBill=(action onSaveIssueBankBill)
-                                     cancelBankBillModal=cancelBankBillModal
-                                     showCancelBankBillModal=(action showCancelBankBillModal)
-                                     onCancelBankBill=(action onCancelBankBill)
-                                     cancelBankBillReason=cancelBankBillReason
-                                     onIssueNFSe=(action onIssueNFSe)
-                                     addReceivableModal=addReceivableModal
-                                     currentReceivable=currentReceivable
-                                     showAddReceivableModal=(action showAddReceivableModal)
-                                     onSaveReceivable=(action onSaveReceivable)
-                                     onCancelSaveReceivable=(action onCancelSaveReceivable)
-                                     reIssueBankBillModal=reIssueBankBillModal
-                                     currentReIssueBankBill=currentReIssueBankBill
-                                     reIssueBankBill=(action reIssueBankBill)
-                                     onSaveReIssueBankBill=(action onSaveReIssueBankBill)
-                                     onCancelReIssueBankBill=(action onCancelReIssueBankBill)
-                                     constants=constants searchingInvoices=searchingInvoices
-                                     detachedFeeSpin=detachedFeeSpin
-                                     advancedMonthBillingFee=advancedMonthBillingFee
-                                     reissueInvoiceSpin=reissueInvoiceSpin
-                                     issueBankBillSpin=issueBankBillSpin
-                                     cancelBankBillSpin=cancelBankBillSpin
-                                     receivableSpin=receivableSpin
-                                     reissueBankBillSpin=reissueBankBillSpin
-                                     cancelInvoiceSpin=cancelInvoiceSpin
-                                     hideCancelled=hideCanceledInvoices}}
-          </div>
-        {{/if}}
-      </div>
-    </div>
-  </div>
-</div>
-{{/base/base-form}}

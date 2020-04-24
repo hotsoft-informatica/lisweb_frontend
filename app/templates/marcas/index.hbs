@@ -3,7 +3,7 @@
   <h4>Criar nova marca</h4>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <a class="btn btn-primary float-right" href="/marcas/new" role="button">Nova marca</a>
+      {{#link-to 'marcas/new' class="btn btn-success"}}Nova marca{{/link-to}}
     </div>
   </div>
 </td>
@@ -20,15 +20,18 @@
           <label>Descrição</label>
       </th>
     </tr>
-    {{#each @model.marcas as |marca|}}
+    {{#each @model as |marca|}}
       <tr>
         <td>{{marca.id}}</td>
         {{#if marca.id}}
           <td>{{marca.nome}}</td>
           <td>{{marca.descricao}}</td>
           <td>
+            {{!-- <LinkTo @route="marcas/{{marca.id}}">Editar</LinkTo> --}}
             <a class="btn btn-primary" href="/marcas/{{marca.id}}" role="button">Editar</a>
+            {{!-- {{#link-to '/marcas/{{marca.id}}' class="btn btn-success"}}Editar{{/link-to}} --}}
             <a class="btn btn-primary" {{action 'deleteMarca' marca}} role="button">Excluir</a>
+            {{!-- {{#link-to action 'deleteMarca' marca class="btn btn-success"}}Excluir{{/link-to}} --}}
           </td>
         {{/if}}
       </tr>
