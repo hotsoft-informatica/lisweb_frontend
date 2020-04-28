@@ -6,8 +6,8 @@ export default Component.extend({
   router: service(),
 
   actions: {
-
-    saveMarca(marca) {
+    deleteMarca(marca) {
+      marca.destroyRecord();
       marca.save().then(() => this.get('router').transitionTo('/marcas'));
     }
   }
