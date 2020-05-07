@@ -8,7 +8,6 @@ export default Component.extend({
   actions: {
     deleteMarca(marca) {
       marca.destroyRecord();
-      marca.save().then(() => this.get('router').transitionTo('/marcas'));
     }
   }
 });

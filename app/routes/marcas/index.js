@@ -6,4 +6,3 @@ export default Route.extend({
     return this.store.findAll('marca');
   }
 });
-3
