@@ -2,7 +2,7 @@ import Controller from '@glimmer/component';
 import { action } from "@ember/object";
 
 
-export default class MarcasController extends Controller {
+export default class MarcasEditController extends Controller {
 
 
   @action
