@@ -1,7 +1,17 @@
-import Controller from '@ember/controller';
+import Controller from '@glimmer/component';
+import { action } from "@ember/object";
 
-export default class MarcaController extends Controller {
 
+export default class MarcasController extends Controller {
+
+
+  @action
+  redirectTo(){
+    this.transitionToRoute('/marcas');
+  }
+}
+  
+  
   // actions: {
 
   //   let lab = this. store.findRecord('laboratorio', 1);
@@ -19,4 +29,4 @@ export default class MarcaController extends Controller {
   //      newMarca.save();
   //   }
   // }
-}
+
