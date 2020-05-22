@@ -25,6 +25,7 @@
     "@glimmer/tracking": "^1.0.0",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
+    "core-js": "3",
     "ember-auto-import": "^1.5.3",
     "ember-cli": "~3.11.0",
     "ember-cli-app-version": "^3.2.0",
@@ -53,7 +54,9 @@
     "eslint-plugin-node": "^11.0.0",
     "jquery-mask-plugin": "1.14.16",
     "loader.js": "^4.7.0",
+    "mkdirp": "^1.0.4",
     "qunit-dom": "^1.0.0",
+    "regenerator-runtime": "^0.13.5",
     "sass": "^1.26.1"
   },
   "engines": {
