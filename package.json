@@ -1,11 +1,11 @@
 {
   "name": "lisweb-frontend",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
-  "description": "Small description for lisweb-frontend goes here",
+  "description": "Frontend para o Stockfin e LIS na Web(Lisweb)",
   "repository": "",
   "license": "MIT",
-  "author": "",
+  "author": "Acras Sistemas, Hotsoft Informática",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -18,16 +18,15 @@
     "test": "ember test"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0-0",
     "@ember/jquery": "1.1.0",
     "@ember/optional-features": "^1.3.0",
-    "@fortawesome/ember-fontawesome": "^0.2.1",
-    "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@glimmer/component": "^1.0.0",
     "@glimmer/tracking": "^1.0.0",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^1.5.3",
-    "ember-cli": "~3.16.0",
+    "ember-cli": "~3.11.0",
     "ember-cli-app-version": "^3.2.0",
     "ember-cli-babel": "^7.18.0",
     "ember-cli-dependency-checker": "^3.2.0",
@@ -38,9 +37,10 @@
     "ember-cli-sri": "^2.1.1",
     "ember-cli-template-lint": "^2.0.2",
     "ember-cli-uglify": "^3.0.0",
-    "ember-data": "~3.16.0",
+    "ember-data": "~3.11.0",
     "ember-export-application-global": "^2.0.1",
     "ember-fetch": "^7.0.1",
+    "ember-inflector": "^3.0.1",
     "ember-link-action": "^2.0.0",
     "ember-load-initializers": "^2.1.1",
     "ember-maybe-import-regenerator": "^0.1.6",
@@ -48,6 +48,7 @@
     "ember-resolver": "^7.0.0",
     "ember-source": "~3.16.3",
     "ember-welcome-page": "^4.0.0",
+    "eslint": ">= 4.19.1",
     "eslint-plugin-ember": "^7.8.1",
     "eslint-plugin-node": "^11.0.0",
     "jquery-mask-plugin": "1.14.16",
@@ -62,7 +63,6 @@
     "edition": "octane"
   },
   "dependencies": {
-    "ember-ac-components": "../ember_ac_components",
-    "simple-line-icons": "^2.4.1"
+    "ember-ac-components": "../ember_ac_components"
   }
 }
