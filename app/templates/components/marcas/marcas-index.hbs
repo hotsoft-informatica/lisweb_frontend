@@ -2,7 +2,7 @@
   <h4>Criar nova marca</h4>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      {{#link-to 'marcas/new' class="btn btn-success"}}Nova marca{{/link-to}}
+      <LinkTo @route="marcas/new" class="btn btn-success">Nova marca</LinkTo>
     </div>
   </div>
 </td>
@@ -25,7 +25,7 @@
         <td>{{marca.nome}}</td>
         <td>{{marca.descricao}}</td>
         <td>
-          {{#link-to "marcas/edit" marca class="btn btn-primary"}}Editar{{/link-to}}
+          <LinkTo @route="marcas/edit" @model={{marca}} class="btn btn-primary">Editar</LinkTo>
           <button class="btn btn-primary" {{action 'deleteMarca' marca}}>Excluir</button>
         </td>
       </tr>

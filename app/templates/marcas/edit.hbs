@@ -1,6 +1,3 @@
 <h2>Edita marca</h2>
 
-{{marcas/marcas-form
-  model=model
-  saveMarcas="saveMarcas"
-  redirectTo="/marcas"}}
+<Marcas::MarcasForm @model={{model}} @saveMarcas="saveMarcas" @redirectTo="/marcas" />
