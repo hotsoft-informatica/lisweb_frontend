@@ -1,3 +1,9 @@
 <h1>Marcas</h1>
 
-<Marcas::MarcasIndex @model={{model}} @deleteMarca="deleteMarca" />
+{{!-- <Marcas::MarcasIndex @model={{model}} @deleteMarca="deleteMarca" /> --}}
+
+{{ marcas/marcas-index
+  model="model"
+  deleteMarca="deleteMarca"
+  redirectTo=(action "redirectTo")
+}}
