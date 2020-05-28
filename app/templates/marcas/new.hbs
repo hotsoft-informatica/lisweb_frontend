@@ -1,3 +1,8 @@
 <h2>Criar nova marca</h2>
+{{!-- https://github.com/ember-cli/eslint-plugin-ember/blob/master/docs/rules/closure-actions.md --}}
 
-<Marcas::MarcasForm @model={{model}} @redirectTo="/marcas"/>
+{{marcas/marcas-form 
+  model="model"
+  redirectTo=(action "redirectTo")
+}}
+

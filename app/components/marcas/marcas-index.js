@@ -1,11 +1,11 @@
 
-import Component from '@glimmer/component';
-import { action } from "@ember/object";
+import Component from '@ember/component';
 
-export default class MarcasIndexComponent extends Component{
+export default Component.extend({
 
-  @action
-  deleteMarca(marca) {
-    marca.destroyRecord();
+  actions: {
+    deleteMarca(marca) {
+      marca.destroyRecord();
+    }
   }
-}
+});
