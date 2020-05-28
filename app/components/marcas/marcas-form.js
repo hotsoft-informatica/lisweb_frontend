@@ -13,8 +13,7 @@ export default class MarcasFormComponent extends Component{
     marca.save().then( function(){
       if (!isEmpty(redirectTo)){
       // https://api.emberjs.com/ember/release/classes/RouterService
-      //self.router.transitionTo(redirectTo);
-      self.redirectTo();
+      self.router.transitionTo(redirectTo);
     }});
   }
 }
