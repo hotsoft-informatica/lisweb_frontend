@@ -7,13 +7,20 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
-  this.route('index');
   this.route('labs');
   this.route('grupos_centro_custo');
   this.route('centros_custo');
   this.route('categorias_produto');
   this.route('unidades_medida');
   this.route('marcas');
+  // Rotas para marcas.
+  this.route('marcas/new');
+  this.route('marcas/edit', {path: "/marcas/:marca_id"});
+  this.route('marcas/index', {path: "/marcas"});
+  // Rotas para laboratoios.
+  this.route('laboratorios/new');
+  this.route('laboratorios/edit', {path: "/laboratorios/:laboratorio_id"});
+  this.route('laboratorios/index', {path: "/laboratorios"});
   this.route('tipos_produto');
   this.route('unidades_atendimento');
   this.route('contas');
@@ -24,7 +31,7 @@ Router.map(function() {
   // Central de Lancamentos?
   this.route('lancamentos');
   this.route('notas');
-  // Requisicao de materiais
+  // Requisicao de materiais 
   this.route('atendimentos_requisicoes');
   // Lista compras?
   this.route('orcamentos');
@@ -37,6 +44,4 @@ Router.map(function() {
   this.route('chaves_nfse');
   this.route('grupos_parametros_nfse');
   this.route('ac_filter_defs');
- // Relatorios Estoque?
- // Relatorios Financeiro?
 });
