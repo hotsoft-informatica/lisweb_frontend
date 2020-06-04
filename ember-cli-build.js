@@ -4,10 +4,10 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    // Add options here
   });
 
-  app.import('node_modules/jquery-mask-plugin/dist/jquery.mask.min.js')
+  app.import('node_modules/jquery-mask-plugin/dist/jquery.mask.min.js');
+  app.import('node_modules/simple-line-icons/css/simple-line-icons.css');
 
 
   // Use `app.import` to add additional libraries to the generated
