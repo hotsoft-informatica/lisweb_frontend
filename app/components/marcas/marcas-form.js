@@ -1,7 +1,6 @@
 import Component from '@glimmer/component';
 import { action } from "@ember/object";
 import {inject as service} from '@ember/service';
-import { redirectTo } from '@ember/utils';
 import { isEmpty } from '@ember/utils';
 
 // https://guides.emberjs.com/v3.3.0/components/triggering-changes-with-actions/
