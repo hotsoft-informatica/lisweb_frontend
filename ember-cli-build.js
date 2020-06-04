@@ -4,10 +4,16 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    // Add options here
+    babel: {
+      sourceMaps: 'inline'
+    }
   });
 
-  app.import('node_modules/jquery-mask-plugin/dist/jquery.mask.min.js')
+  // TODO: Alinhar com o Acras para remover, pois depende do jQuery
+  // TODO: Remover dependencias do jQuery
+  app.import('node_modules/jquery-mask-plugin/dist/jquery.mask.min.js');
+  // TODO: Nao esta sendo usado, remover
+  // app.import('node_modules/simple-line-icons/css/simple-line-icons.css');
 
 
   // Use `app.import` to add additional libraries to the generated
@@ -25,3 +31,4 @@ module.exports = function(defaults) {
 
   return app.toTree();
 };
+
