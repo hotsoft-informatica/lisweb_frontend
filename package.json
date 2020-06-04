@@ -54,11 +54,9 @@
     "ember-template-lint": "^2.6.0",
     "ember-welcome-page": "^4.0.0",
     "eslint-plugin-ember": "^8.6.0",
-    "eslint-plugin-node": "^11.0.0",
     "loader.js": "^4.7.0",
-    "qunit-dom": "^1.0.0"
+    "qunit-dom": "^1.0.0",
     "eslint": "^6.8.0",
-    "eslint-plugin-ember": "^8.5.2",
     "eslint-plugin-node": "^11.1.0",
     "jquery": "3.5.1",
     "jquery-mask-plugin": "1.14.16",
@@ -80,3 +78,4 @@
     "ember-ac-components": "../ember_ac_components"
   }
 }
+
