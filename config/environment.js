@@ -47,5 +47,9 @@ module.exports = function(environment) {
     // here you can enable a production-specific feature
   }
 
+  ENV.APP.LOG_VIEW_LOOKUPS = true;
+  ENV.APP.LOG_ACTIVE_GENERATION = true;
+  ENV.APP.LOG_BINDINGS = true;
+
   return ENV;
 };
