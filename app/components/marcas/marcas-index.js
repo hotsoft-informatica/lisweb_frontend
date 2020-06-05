@@ -1,11 +1,14 @@
+import Component from '@glimmer/component';
+import { action } from '@ember/object';
+// TODO: Converter para Glimmer
+// TODO: Transformar em classe nativa
 
-import Component from '@ember/component';
-
-export default Component.extend({
-
-  actions: {
-    deleteMarca(marca) {
-      marca.destroyRecord();
-    }
+export default class MarcasIndexComponent extends Component {
+  // TODO: Usar decorator @action
+  @action
+  deleteMarca(marca) {
+    // TODO:Expected 'this' to be used by class method 'deleteMarca'.
+    // TODO: eslintclass-methods-use-this
+    marca.destroyRecord();
   }
-});
+}
