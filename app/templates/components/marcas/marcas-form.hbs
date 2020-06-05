@@ -2,19 +2,20 @@
   <div class="form-group">
     <label class="col-sm-2 control-label">Nome:</label>
     <div class="col-sm-6">
-      <Input @type="text" @value={{model.nome}} class="form-control" placeholder="Marca" />
+      <Input @type="text" @value={{@model.nome}} class="form-control" placeholder="Marca" />
     </div>
   </div>
   <div class="form-group">
     <label class="col-sm-2 control-label">Descrição:</label>
     <div class="col-sm-6">
-      <Input @type="text" @value={{model.descricao}} class="form-control" placeholder="Descrição" />
+      <Input @type="text" @value={{@model.descricao}} class="form-control" placeholder="Descrição" />
     </div>
   </div>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-success" {{action 'saveMarca' model}}>Salvar</button>
+      {{!- TODO: Do not use `action` as. Instead, use the `on` modifier and `fn` -}}
+      {{!- TODO: helper.ember-template-lint -}}
+      <button type="submit" class="btn btn-success" {{action 'saveMarca' @model}}>Salvar</button>
     </div>
   </div>
 </div>
-

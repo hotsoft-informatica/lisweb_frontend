@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "removeComments": true,
+    "strict": true,
+    "importHelpers": true,
+    "forceConsistentCasingInFileNames": true,
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
@@ -19,7 +23,7 @@
     "noUnusedParameters": true,
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
-    "target": "es2017",
+    "target": "es2018",
     "paths": {
       "lisweb-frontend/tests/*": [
         "tests/*"
