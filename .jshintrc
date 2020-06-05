@@ -1,3 +1,19 @@
+// https://jshint.com/docs/options/
+// https://github.com/victorporof/Sublime-JSHint/issues/142
+// https://gist.github.com/haschek/2595796
+// https://gist.github.com/ScheerMT/fa6e2f845c67ded9292f
 {
-  "esversion": 6
+  "browser": true,
+  "esnext": true,
+  "immed": true,
+  "node": true,
+  "undef": false,
+  "unused": false,
+  "moz": true,
+  "globals" : {
+    "moment": true,
+    "angular": true,
+    "saveAs": true
+  }
 }
+
