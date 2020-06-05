@@ -1,7 +1,4 @@
 <h2>Criar nova marca</h2>
-
-{{marcas/marcas-form 
-  model=model
-  redirectTo=(action "redirectTo")
-}}
+{{!- TODO: Resolver ambiguidade de model -}}
+<Marcas::MarcasForm model={{model}} redirectTo='/marcas' />
 
