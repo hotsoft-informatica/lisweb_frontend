@@ -7,6 +7,7 @@ module('Integration | Component | Navbar', function(hooks) {
   setupRenderingTest(hooks);
 
   // TODO: Revisar este teste de render do menu
+  // TODO: Linter reclamando muito nesse teste
   test('it renders', async function(assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
