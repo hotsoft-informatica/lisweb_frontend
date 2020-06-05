@@ -1,27 +1,29 @@
 {
   "compilerOptions": {
+    "removeComments": true,
+    "strict": true,
+    "importHelpers": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "baseUrl": ".",
+    "experimentalDecorators": true,
     "inlineSourceMap": true,
     "inlineSources": true,
-    "target": "es2017",
-    "allowJs": true,
+    "module": "es6",
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "strictNullChecks": true,
-    "strictPropertyInitialization": true,
+    "noEmit": true,
+    "noEmitOnError": false,
     "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noEmitOnError": false,
-    "noEmit": true,
-    "inlineSourceMap": true,
-    "inlineSources": true,
-    "baseUrl": ".",
-    "module": "es6",
-    "experimentalDecorators": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "target": "es2018",
     "paths": {
       "lisweb-frontend/tests/*": [
         "tests/*"
@@ -40,3 +42,4 @@
     "types/**/*"
   ]
 }
+

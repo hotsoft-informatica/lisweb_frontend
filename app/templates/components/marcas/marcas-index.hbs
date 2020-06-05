@@ -6,6 +6,8 @@
     </div>
   </div>
 </td>
+{{!- TODO: Tables must have a table group (thead, tbody or tfoot). -}}
+{{!- TODO: ember-template-lint(table-groups)  -}}
 <table>
   <ul>
     <tr>
@@ -26,6 +28,8 @@
         <td>{{marca.descricao}}</td>
         <td>
           <LinkTo @route="marcas/edit" @model={{marca}} class="btn btn-primary">Editar</LinkTo>
+          {{!- TODO: Do not use `action` Instead, use the `on` modifier and `fn` helper. -}}
+          {{!- TODO: ember-template-lint(no-action) -}}
           <button type="submit" class="btn btn-primary" {{action 'deleteMarca' marca}}>Excluir</button>
         </td>
       </tr>
