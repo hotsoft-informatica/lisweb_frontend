@@ -5,13 +5,13 @@ module.exports = function(/* environment, appConfig */) {
   // supported properties
 
   return {
-    name: "lisweb-frontend",
-    short_name: "lisweb-frontend",
-    description: "",
-    start_url: "/",
-    display: "standalone",
-    background_color: "#fff",
-    theme_color: "#fff",
+    name: 'lisweb-frontend',
+    short_name: 'lisweb-frontend',
+    description: '',
+    start_url: '/',
+    display: 'standalone',
+    background_color: '#fff',
+    theme_color: '#fff',
     ms: {
       tileColor: '#fff'
     }
