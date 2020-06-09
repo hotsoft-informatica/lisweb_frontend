@@ -71,6 +71,7 @@
     "ember-template-lint": "2.8.0",
     "ember-welcome-page": "4.0.0",
     "eslint": "7.2.0",
+    "eslint-config-airbnb": "18.1.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-import-resolver-node": "0.3.3",
     "eslint-loader": "4.0.2",
@@ -81,6 +82,7 @@
     "eslint-plugin-ember-suave": "2.0.1",
     "eslint-plugin-flowtype": "5.1.3",
     "eslint-plugin-import": "2.21.1",
+    "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-prettier": "3.1.3",
     "eslint-plugin-qunit": "4.2.0",
@@ -123,5 +125,8 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "eslintConfig": {
+    "extends": "plugin:unicorn/recommended"
   }
 }

@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function(/* environment, appConfig */) {
+module.exports = function (/* environment, appConfig */) {
   // See https://zonkyio.github.io/ember-web-app for a list of
   // supported properties
 
@@ -13,7 +13,7 @@ module.exports = function(/* environment, appConfig */) {
     background_color: '#fff',
     theme_color: '#fff',
     ms: {
-      tileColor: '#fff'
-    }
+      tileColor: '#fff',
+    },
   };
-}
+};
