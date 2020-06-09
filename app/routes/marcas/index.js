@@ -4,6 +4,9 @@ import Route from '@ember/routing/route';
 // TODO: eslintember/no-classic-classes
 export default Route.extend({
   model() {
-    return this.store.findAll('marca');
+    return this.store.query('marca', {
+      limit: 10,
+      offset: 0
+    });
   }
 });
