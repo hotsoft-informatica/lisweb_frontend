@@ -1,38 +1,33 @@
-<td>
+<div>
   <h4>Criar nova marca</h4>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
       <LinkTo @route="marcas/new" class="btn btn-success">Nova marca</LinkTo>
     </div>
   </div>
-</td>
+</div>
 {{!- TODO: Tables must have a table group (thead, tbody or tfoot). -}}
 {{!- TODO: ember-template-lint(table-groups)  -}}
-<table>
-  <ul>
+<table class="table table-stripped">
+  <thead>
+    <th>ID</th>
+    <th>Nome</th>
+    <th>Descrição</th>
+    <th colspan="2"></th>
+  </thead>
+  <tbody>
+  {{#each @model as |marca|}}
     <tr>
-      <th>
-          <label>Id</label>
-      </th>
-      <th>
-          <label>Nome</label>
-      </th>
-      <th>
-          <label>Descrição</label>
-      </th>
+      <td>{{marca.id}}</td>
+      <td>{{marca.nome}}</td>
+      <td>{{marca.descricao}}</td>
+      <td>
+        <LinkTo @route="marcas/edit" @model={{marca}} class="btn btn-primary">Editar</LinkTo>
+        {{!- TODO: Do not use `action` Instead, use the `on` modifier and `fn` helper. -}}
+        {{!- TODO: ember-template-lint(no-action) -}}
+        <button type="submit" class="btn btn-primary" {{on 'click' (fn this.deleteMarca marca)}}>Excluir</button>
+      </td>
     </tr>
-    {{#each @model as |marca|}}
-      <tr>
-        <td>{{marca.id}}</td>
-        <td>{{marca.nome}}</td>
-        <td>{{marca.descricao}}</td>
-        <td>
-          <LinkTo @route="marcas/edit" @model={{marca}} class="btn btn-primary">Editar</LinkTo>
-          {{!- TODO: Do not use `action` Instead, use the `on` modifier and `fn` helper. -}}
-          {{!- TODO: ember-template-lint(no-action) -}}
-          <button type="submit" class="btn btn-primary" {{action 'deleteMarca' marca}}>Excluir</button>
-        </td>
-      </tr>
-    {{/each}}
-  </ul>
+  {{/each}}
+  </tbody>
 </table>

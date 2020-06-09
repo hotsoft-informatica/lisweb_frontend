@@ -6,7 +6,7 @@ import { action } from '@ember/object';
 export default class MarcasIndexComponent extends Component {
   // TODO: Usar decorator @action
   @action
-  deleteMarca(marca) {
+  deleteMarca(marca, event) {
     // TODO:Expected 'this' to be used by class method 'deleteMarca'.
     // TODO: eslintclass-methods-use-this
     marca.destroyRecord();
