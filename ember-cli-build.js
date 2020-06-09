@@ -2,28 +2,28 @@
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-module.exports = function(defaults) {
+module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
     babel: {
-      sourceMaps: 'inline'
+      sourceMaps: 'inline',
     },
 
     eslint: {
       testGenerator: 'qunit',
       group: true,
       rulesDir: 'eslint-rules',
-      extensions: [ 'js' ]
+      extensions: ['js'],
     },
 
     'ember-cli-qunit': {
-      useLintTree: false
+      useLintTree: false,
     },
 
     'ember-cli-mocha': {
-      useLintTree: false
+      useLintTree: false,
     },
 
-    hinting: true
+    hinting: true,
   });
 
   // TODO: Alinhar com o Acras para remover, pois depende do jQuery

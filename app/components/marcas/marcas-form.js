@@ -7,13 +7,14 @@ import { isEmpty } from '@ember/utils';
 // https://github.com/ember-cli/eslint-plugin-ember/blob/master/docs/rules/closure-actions.md
 // https://api.emberjs.com/ember/release/classes/RouterService
 export default class MarcasFormComponent extends Component {
+  // TODO: 'service' is defined but never used.eslintno-unused-vars
   @service router;
 
   @action
   saveMarca(marca, redirectTo) {
     // TODO: Resolver sem esse selfthis
     let selfthis = this;
-    marca.save().then( function() {
+    marca.save().then(function () {
       if (!isEmpty(redirectTo)) {
         selfthis.router.transitionTo(redirectTo);
       }
