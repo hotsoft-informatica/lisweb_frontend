@@ -17,6 +17,10 @@ Router.map(function() {
   this.route('marcas/new');
   this.route('marcas/edit', {path: "/marcas/:marca_id"});
   this.route('marcas/index', {path: "/marcas"});
+  // Rotas para tipo produtos.
+  this.route('tipo_produtos/new');
+  this.route('tipo_produtos/edit', {path: "/tipo_produtos/:tipo_produto_id"});
+  this.route('tipo_produtos/index', {path: "/tipo_produtos"});
   // Rotas para laboratoios.
   this.route('laboratorios/new');
   this.route('laboratorios/edit', {path: "/laboratorios/:laboratorio_id"});
