@@ -17,7 +17,11 @@ Router.map(function() {
   this.route('marcas/new');
   this.route('marcas/edit', {path: "/marcas/:marca_id"});
   this.route('marcas/index', {path: "/marcas"});
-  // Rotas para Grupo Centro Custo.
+  // Rotas para Centro Custos.
+  this.route('centro_custos/new');
+  this.route('centro_custos/edit', {path: "/centro_custos/:centro_custo_id"});
+  this.route('centro_custos/index', {path: "/centro_custos"});
+  // Rotas para Grupo Centro Custos.
   this.route('grupo_centro_custos/new');
   this.route('grupo_centro_custos/edit', {path: "/grupo_centro_custos/:grupo_centro_custo_id"});
   this.route('grupo_centro_custos/index', {path: "/grupo_centro_custos"});
