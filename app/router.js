@@ -17,6 +17,10 @@ Router.map(function() {
   this.route('marcas/new');
   this.route('marcas/edit', {path: "/marcas/:marca_id"});
   this.route('marcas/index', {path: "/marcas"});
+  // Rotas para Grupo Centro Custo.
+  this.route('grupo_centro_custos/new');
+  this.route('grupo_centro_custos/edit', {path: "/grupo_centro_custos/:grupo_centro_custo_id"});
+  this.route('grupo_centro_custos/index', {path: "/grupo_centro_custos"});
   // Rotas para tipo produtos.
   this.route('tipo_produtos/new');
   this.route('tipo_produtos/edit', {path: "/tipo_produtos/:tipo_produto_id"});
