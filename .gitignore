@@ -24,7 +24,7 @@
 /bower.json.ember-try
 /package.json.ember-try
 
-# Local
+# Other
 yarn.lock
 package-lock.json
 

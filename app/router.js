@@ -31,8 +31,8 @@ Router.map(function() {
   this.route('tipo_produtos/index', {path: "/tipo_produtos"});
   // Rotas para laboratoios.
   this.route('laboratorios/new');
-  this.route('laboratorios/edit', {path: "/laboratorios/:laboratorio_id"});
-  this.route('laboratorios/index', {path: "/laboratorios"});
+  this.route('laboratorios/edit', { path: '/laboratorios/:laboratorio_id' });
+  this.route('laboratorios/index', { path: '/laboratorios' });
   this.route('tipos_produto');
   this.route('unidades_atendimento');
   this.route('contas');
@@ -43,7 +43,7 @@ Router.map(function() {
   // Central de Lancamentos?
   this.route('lancamentos');
   this.route('notas');
-  // Requisicao de materiais 
+  // Requisicao de materiais
   this.route('atendimentos_requisicoes');
   // Lista compras?
   this.route('orcamentos');
