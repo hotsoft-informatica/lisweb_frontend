@@ -30,7 +30,7 @@
           <LinkTo @route="marcas/edit" @model={{marca}} class="btn btn-primary">Editar</LinkTo>
           {{!- TODO: Do not use `action` Instead, use the `on` modifier and `fn` helper. -}}
           {{!- TODO: ember-template-lint(no-action) -}}
-          <button type="submit" class="btn btn-primary" {{action 'deleteMarca' marca}}>Excluir</button>
+          <button type="submit" class="btn btn-primary" {{on "click" (fn this.deleteMarca marca)}}>Excluir</button>
         </td>
       </tr>
     {{/each}}
