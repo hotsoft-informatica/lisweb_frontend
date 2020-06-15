@@ -5,18 +5,13 @@ module.exports = function(/* environment, appConfig */) {
   // supported properties
 
   return {
-    name: "lisweb-frontend",
-    short_name: "lisweb-frontend",
-    description: "",
-    start_url: "/",
-    display: "standalone",
-    background_color: "#fff",
-    theme_color: "#fff",
-    icons: [
-      src: "/ember-welcome-page/images/construction.png",
-      sizes: "540x540",
-      type: "image/png"
-    ],
+    name: 'lisweb-frontend',
+    short_name: 'lisweb-frontend',
+    description: '',
+    start_url: '/',
+    display: 'standalone',
+    background_color: '#fff',
+    theme_color: '#fff',
     ms: {
       tileColor: '#fff'
     }
