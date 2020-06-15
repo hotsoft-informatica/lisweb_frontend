@@ -15,8 +15,20 @@ Router.map(function() {
   this.route('marcas');
   // Rotas para marcas.
   this.route('marcas/new');
-  this.route('marcas/edit', { path: '/marcas/:marca_id' });
-  this.route('marcas/index', { path: '/marcas' });
+  this.route('marcas/edit', {path: "/marcas/:marca_id"});
+  this.route('marcas/index', {path: "/marcas"});
+  // Rotas para Centro Custos.
+  this.route('centro_custos/new');
+  this.route('centro_custos/edit', {path: "/centro_custos/:centro_custo_id"});
+  this.route('centro_custos/index', {path: "/centro_custos"});
+  // Rotas para Grupo Centro Custos.
+  this.route('grupo_centro_custos/new');
+  this.route('grupo_centro_custos/edit', {path: "/grupo_centro_custos/:grupo_centro_custo_id"});
+  this.route('grupo_centro_custos/index', {path: "/grupo_centro_custos"});
+  // Rotas para tipo produtos.
+  this.route('tipo_produtos/new');
+  this.route('tipo_produtos/edit', {path: "/tipo_produtos/:tipo_produto_id"});
+  this.route('tipo_produtos/index', {path: "/tipo_produtos"});
   // Rotas para laboratoios.
   this.route('laboratorios/new');
   this.route('laboratorios/edit', { path: '/laboratorios/:laboratorio_id' });
