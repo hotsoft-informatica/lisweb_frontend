@@ -23,13 +23,25 @@
     "lint:tsc": "tsc --noEmit",
     "lint:tslint": "tslint -p tsconfig.json",
     "precommit": "lint-staged",
-    "pretest": "ember build",
     "start": "ember serve",
+    "pretest": "ember build",
     "test": "npm-run-all lint:* test:*",
     "test:blueprints": "mocha node-tests/blueprints/**/*-test.js",
     "test:browserstack": "node bin/run-browserstack-tests.js",
     "test:ember": "ember test",
     "test:node": "qunit tests/node/**/*-test.js"
+  },
+  "lint-staged": {
+    "*.{js,json,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "plugin:unicorn/recommended"
+  },
+  "dependencies": {
+    "ember-ac-components": "../ember_ac_components"
   },
   "devDependencies": {
     "@babel/core": "7.10.2",
@@ -116,17 +128,6 @@
   },
   "ember": {
     "edition": "octane"
-  },
-  "dependencies": {
-    "ember-ac-components": "../ember_ac_components"
-  },
-  "lint-staged": {
-    "*.{js,json,css}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "eslintConfig": {
-    "extends": "plugin:unicorn/recommended"
   }
 }
+
