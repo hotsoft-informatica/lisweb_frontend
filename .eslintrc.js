@@ -44,7 +44,7 @@ module.exports = {
     'arrow-parens': ['error', 'always'],
     camelcase: [0],
     'computed-property-spacing': [2, 'always'],
-    'disable-features/disable-async-await': 'error',
+    'disable-features/disable-async-await': [0, 'always'],
     'disable-features/disable-generator-functions': 'error',
     'ember-suave/no-const-outside-module-scope': 'error',
     'ember-suave/no-direct-property-access': 'error',
