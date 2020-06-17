@@ -6,7 +6,7 @@ export default class ApplicationSerializer extends JSONAPISerializer {
   // TODO: Linter esta reclamando da sintaxe
   // TODO: Expected 'this' to be used by class method 'keyForAttribute'.
   // TODO: eslintclass-methods-use-this
-  keyForAttribute(key) {
+  /* keyForAttribute(key) {
     return decamelize(key);
-  }
+  } */
 }
