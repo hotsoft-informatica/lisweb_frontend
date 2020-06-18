@@ -17,6 +17,10 @@ Router.map(function () {
   this.route('marcas/new');
   this.route('marcas/edit', { path: '/marcas/:marca_id' });
   this.route('marcas/index', { path: '/marcas' });
+  // Rotas para Unidades Medida.
+  this.route('unidades_medidas/new');
+  this.route('unidades_medidas/edit', { path: '/unidades_medidas/:unidades_medida_id' });
+  this.route('unidades_medidas/index', { path: '/unidades_medidas' });
   // Rotas para Centro Custos.
   this.route('centro_custos/new');
   this.route('centro_custos/edit', { path: '/centro_custos/:centro_custo_id' });
