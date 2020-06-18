@@ -25,6 +25,10 @@ Router.map(function () {
   this.route('grupo_centro_custos/new');
   this.route('grupo_centro_custos/edit', { path: '/grupo_centro_custos/:grupo_centro_custo_id' });
   this.route('grupo_centro_custos/index', { path: '/grupo_centro_custos' });
+  // Rotas para Categoria Produtos.
+  this.route('categoria_produtos/new');
+  this.route('categoria_produtos/edit', { path: '/categoria_produtos/:categoria_produto_id' });
+  this.route('categoria_produtos/index', { path: '/categoria_produtos' });
   // Rotas para tipo produtos.
   this.route('tipo_produtos/new');
   this.route('tipo_produtos/edit', { path: '/tipo_produtos/:tipo_produto_id' });
