@@ -5,12 +5,19 @@ import config from './config/environment';
 
 export default class App extends Application {
   modulePrefix = config.modulePrefix;
+
   podModulePrefix = config.podModulePrefix;
+
   Resolver = Resolver;
+
   LOG_TRANSITIONS = true;
+
   LOG_TRANSITIONS_INTERNAL = true;
+
   LOG_RESOLVER = true;
+
   RAISE_ON_DEPRECATION = true;
+
   LOG_STACKTRACE_ON_DEPRECATION = true;
 }
 

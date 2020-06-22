@@ -3,6 +3,7 @@ import config from './config/environment';
 
 export default class Router extends EmberRouter {
   location = config.locationType;
+
   rootURL = config.rootURL;
 }
 
@@ -23,7 +24,9 @@ Router.map(function () {
   this.route('centro_custos/index', { path: '/centro_custos' });
   // Rotas para Grupo Centro Custos.
   this.route('grupo_centro_custos/new');
-  this.route('grupo_centro_custos/edit', { path: '/grupo_centro_custos/:grupo_centro_custo_id' });
+  this.route('grupo_centro_custos/edit', {
+    path: '/grupo_centro_custos/:grupo_centro_custo_id',
+  });
   this.route('grupo_centro_custos/index', { path: '/grupo_centro_custos' });
   // Rotas para tipo produtos.
   this.route('tipo_produtos/new');

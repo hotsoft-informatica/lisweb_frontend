@@ -7,27 +7,31 @@ module.exports = function (defaults) {
     'ember-cli-babel': {
       includePolyfill: true,
     },
-
     babel: {
       sourceMaps: 'inline',
     },
-
     eslint: {
       testGenerator: 'qunit',
       group: true,
       rulesDir: 'eslint-rules',
       extensions: ['js'],
     },
-
     'ember-cli-qunit': {
       useLintTree: false,
     },
 
-    'ember-cli-mocha': {
+    'ember-ci-mocha': {
       useLintTree: false,
     },
-
     hinting: true,
+    outputPaths: {
+      app: {
+        html: 'index.html',
+      },
+    },
+    sassOptions: {
+      extension: 'scss',
+    },
   });
 
   // TODO: Alinhar com o Acras para remover, pois depende do jQuery

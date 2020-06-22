@@ -13,17 +13,19 @@ module.exports = {
 
   plugins: [
     'disable-features',
-    'ember',
     'ember-internal',
     'ember-suave',
+    'ember',
     'qunit',
   ],
 
   extends: [
+    'airbnb-base',
     'eslint:recommended',
     'plugin:ember-suave/recommended',
     'plugin:ember/recommended',
     'plugin:qunit/recommended',
+    'prettier',
   ],
 
   env: {
@@ -37,7 +39,7 @@ module.exports = {
     'lines-between-class-members': [
       1,
       'always',
-      { exceptAfterSingleLine: true }
+      { exceptAfterSingleLine: true },
     ],
 
     'array-bracket-spacing': [0, 'always'],
@@ -70,7 +72,7 @@ module.exports = {
     'no-throw-literal': 'error',
     'no-undef': [1],
     'no-underscore-dangle': [0, 'always'],
-    'no-unused-vars': 'error',
+    'no-unused-vars': [0, 'always'],
     'no-use-before-define': [2, { functions: false }],
     'no-var': 'error',
     'object-curly-spacing': [2, 'always'],
@@ -80,10 +82,21 @@ module.exports = {
     'prefer-template': 'error',
     quotes: [1, 'single', 'avoid-escape'],
     semi: [0, 'never'],
-    'space-in-parens': [0, 'always'],
-    'space-before-function-paren': [0, 'always'],
     'comma-dangle': [0, 'never'],
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'space-before-function-paren': [0, 'always'],
+    'space-in-parens': [0, 'always'],
     'template-curly-spacing': [2, 'always'],
+    'import/no-unresolved': [
+      'error',
+      { ignore: ['^@ember', 'htmlbars-inline-precompile'] },
+    ],
+    'ember-suave/lines-between-object-properties': [0, 'always'],
+    'func-names': [0, 'always'],
+  },
+
+  settings: {
+    'import/resolver': 'eslint-import-resolver-ember',
   },
 
   overrides: [
@@ -91,13 +104,22 @@ module.exports = {
     {
       files: [
         '.eslintrc.js',
+        '.prettierrc.js',
+        'stylelint.config.js',
+        'commitlint.config.js',
+        'postcss.config.js',
+        'tailwind.config.js',
+        'app/tailwind/config.js',
+        'husky.config.js',
+        'lint-staged.config.js',
         '.template-lintrc.js',
+        'ember-cli-build.js',
+        'testem.js',
         'blueprints/*/index.js',
         'config/**/*.js',
-        'ember-cli-build.js',
         'lib/*/index.js',
         'server/**/*.js',
-        'testem.js',
+        'ember-cli-build.js',
       ],
 
       parserOptions: {
@@ -110,17 +132,16 @@ module.exports = {
       },
 
       plugins: ['node'],
-      rules: Object.assign(
-        {},
-        require('eslint-plugin-node').configs.recommended.rules,
-        {
-          // add your custom rules and overrides for node files here
+      rules: {
+        // eslint-disable-next-line global-require
+        ...require('eslint-plugin-node').configs.recommended.rules,
+        // add your custom rules and overrides for node files here
+        strict: ['error', 'global'],
 
-          // this can be removed once the following is fixed
-          // https://github.com/mysticatea/eslint-plugin-node/issues/77
-          'node/no-unpublished-require': 'off',
-        },
-      ),
+        // this can be removed once the following is fixed
+        // https://github.com/mysticatea/eslint-plugin-node/issues/77
+        'node/no-unpublished-require': 'off',
+      },
     },
   ],
 };
