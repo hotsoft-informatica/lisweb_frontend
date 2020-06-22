@@ -5,6 +5,8 @@ export default class CentroCustosEditRoute extends Route {
   @service store;
 
   async model(params) {
-    return this.store.findRecord('centro_custos', params.centro_custo_id);
+    // TODO: Revisar
+    return this.store.findRecord('conta', params.conta_id);
   }
 }
+
