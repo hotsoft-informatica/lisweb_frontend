@@ -6,6 +6,6 @@ export default class CentroCustosNewRoute extends Route {
   @service store;
 
   async model() {
-    return this.store.createRecord('centro_custos');
+    return this.store.createRecord('centro_custo');
   }
 }

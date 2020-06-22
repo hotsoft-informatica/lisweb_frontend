@@ -5,6 +5,6 @@ export default class GrupoCentroCustosIndexRoute extends Route {
   @service store;
 
   async model() {
-    return this.store.findAll('grupo_centro_custos');
+    return this.store.findAll('grupo_centro_custo');
   }
 }
