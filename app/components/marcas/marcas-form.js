@@ -10,7 +10,7 @@ export default class MarcasFormComponent extends Component {
   @service router;
 
   @action
-  saveMarca(marca, event, redirectTo = '/marcas') {
+  saveMarca(marca, redirectTo = 'redirectTo') {
     // TODO: Resolver sem esse selfthis
     let selfthis = this;
     marca.save().then(function () {
