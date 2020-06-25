@@ -7,12 +7,12 @@ export default class MarcasIndexComponent extends Component {
   @service store;
   @tracked errors;
   @tracked loading='Carregando...';
-  @tracked marcas;
+  @tracked model;
 
   constructor(owner, args) {
     super(owner, args);
     this.store.findAll('marca').then( (marcas) => {
-      this.marcas = marcas;
+      this.model = marcas;
     }, (errors) => {
       this.loading = 'Falha no carregamento!';
       this.errors = errors;
@@ -20,7 +20,7 @@ export default class MarcasIndexComponent extends Component {
   }
 
   @action
-  deleteMarca(marca) {
+  delete(marca) {
     marca.destroyRecord();
   }
 }
