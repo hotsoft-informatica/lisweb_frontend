@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function (environment) {
-  const ENV = {
+  let ENV = {
     modulePrefix: 'lisweb-frontend',
     environment,
     rootURL: '/',

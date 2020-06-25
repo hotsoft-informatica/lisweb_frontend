@@ -10,6 +10,6 @@ yarn run lint:tsc;
 yarn run lint:tslint;
 yarn run pretest;
 yarn run test;
-yarn run test:ember;
+# yarn run test:ember;
 yarn run start
 

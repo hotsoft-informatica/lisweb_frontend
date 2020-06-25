@@ -9,4 +9,3 @@ export default class CentroCustosEditRoute extends Route {
     return this.store.findRecord('conta', params.conta_id);
   }
 }
-
