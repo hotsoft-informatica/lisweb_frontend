@@ -3,6 +3,11 @@ import Resolver from 'ember-resolver';
 import loadInitializers from 'ember-load-initializers';
 import config from './config/environment';
 
+/* TODO: Relative imports from parent directories are not allowed.
+  Please either pass what you're importing through at runtime (dependency injection),
+  move `app.js` to same directory as `./config/environment` or
+  consider making `./config/environment` a package.eslintimport/no-relative-parent-imports */
+
 export default class App extends Application {
   modulePrefix = config.modulePrefix;
 
