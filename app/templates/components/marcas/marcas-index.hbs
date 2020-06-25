@@ -14,14 +14,14 @@
     <th colspan="2"></th>
   </thead>
   <tbody>
-    {{#each this.marcas as |marca|}}
+    {{#each this.model as |marca|}}
       <tr>
         <td>{{marca.id}}</td>
         <td>{{marca.nome}}</td>
         <td>{{marca.descricao}}</td>
         <td>
           <LinkTo @route="marcas/edit" @model={{marca}} class="btn btn-primary">Editar</LinkTo>
-          <button type="submit" class="btn btn-primary" {{on "click" (fn this.deleteMarca marca)}}>Excluir</button>
+          <button type="submit" class="btn btn-primary" {{on "click" (fn this.delete marca)}}>Excluir</button>
         </td>
       </tr>
     {{else}}
