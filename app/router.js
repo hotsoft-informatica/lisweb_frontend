@@ -53,6 +53,10 @@ Router.map(function () {
   this.route('tipo_pessoas/new');
   this.route('tipo_pessoas/edit', { path: '/tipo_pessoas/:tipo_pessoa_id' });
   this.route('tipo_pessoas/index', { path: '/tipo_pessoas' });
+  // Rotas para pessoas.
+  this.route('pessoas/new');
+  this.route('pessoas/edit', { path: '/pessoas/:pessoa_id' });
+  this.route('pessoas/index', { path: '/pessoas' });
   // Rotas para laboratoios.
   this.route('laboratorios/new');
   this.route('laboratorios/edit', { path: '/laboratorios/:laboratorio_id' });
@@ -64,6 +68,18 @@ Router.map(function () {
   // Plano de contas?
   this.route('tipos_pessoa');
   this.route('pessoas');
+  // Rotas para lançamentos.
+  this.route('lancamentos/new');
+  this.route('lancamentos/edit', { path: '/lancamentos/:lancamento_id' });
+  this.route('lancamentos/index', { path: '/lancamentos' });
+  // Rotas para notas.
+  this.route('notas/new');
+  this.route('notas/edit', { path: '/notas/:nota_id' });
+  this.route('notas/index', { path: '/notas' });
+  // Rotas para requisicao materiais.
+  this.route('requisicao_materiais/new');
+  this.route('requisicao_materiais/edit', { path: '/requisicao_materiais/:requisicao_material_id' });
+  this.route('requisicao_materiais/index', { path: '/requisicao_materiais' });
   // Central de Lancamentos?
   this.route('lancamentos');
   this.route('notas');
