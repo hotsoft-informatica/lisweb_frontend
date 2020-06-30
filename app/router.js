@@ -83,8 +83,14 @@ Router.map(function () {
   // Central de Lancamentos?
   this.route('lancamentos');
   this.route('notas');
-  // Requisicao de materiais
-  this.route('atendimentos_requisicoes');
+  // Rotas para atendimento requisições
+  this.route('atendimento_requisioes/new');
+  this.route('atendimento_requisioes/edit', { path: '/atendimento_requisioes/:atendimento_requisicao_id' });
+  this.route('atendimento_requisioes/index', { path: '/atendimento_requisioes' });
+  // Rotas para orçamentos
+  this.route('orcamentos/new');
+  this.route('orcamentos/edit', { path: '/orcamentos/:orcamento_id' });
+  this.route('orcamentos/index', { path: '/orcamentos' });
   // Lista compras?
   this.route('orcamentos');
   // Elaboracao de Pedidos?
