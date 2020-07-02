@@ -6,7 +6,7 @@ export default class Router extends EmberRouter {
   rootURL = config.rootURL;
 }
 
-Router.map(function () {
+Router.map(function() {
   this.route('labs');
   this.route('grupos_centro_custo');
   this.route('centros_custo');
@@ -93,10 +93,20 @@ Router.map(function () {
   this.route('orcamentos/index', { path: '/orcamentos' });
   // Lista compras?
   this.route('orcamentos');
-  // Elaboracao de Pedidos?
-  this.route('pedidos');
-  this.route('recebimentos_produtos');
-  this.route('pendencias_recebimento');
+  // Rotas para pedidos
+  this.route('pedidos/new');
+  this.route('pedidos/edit', { path: '/pedidos/:pedido_id' });
+  this.route('pedidos/index', { path: '/pedidos' });
+  // Rotas para recebimento produtos
+  this.route('recebimento_produtos/new');
+  this.route('recebimento_produtos/edit', { path: '/recebimento_produtos/:recebimento_produto_id' });
+  this.route('recebimento_produtos/index', { path: '/recebimento_produtos' });
+  // Rotas para pendencia recebimentos
+  this.route('pendencia_recebimentos/new');
+  this.route('pendencia_recebimentos/edit', { path: '/pendencia_recebimentos/:pendencia_recebimento_id' });
+  this.route('pendencia_recebimentos/index', { path: '/pendencia_recebimentos' });
+  //
+
   this.route('baixas_produtos');
   this.route('configuracoes_laboratorio');
   this.route('chaves_nfse');

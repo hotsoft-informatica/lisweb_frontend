@@ -1,6 +1,6 @@
 import Model, { attr, belongsTo } from '@ember-data/model';
 
-export default class Lancamento extends Model {
+export default class LancamentoModel extends Model {
   @attr('string') tipo;
   @attr('number') valor;
   @attr('date') data_vencimento;

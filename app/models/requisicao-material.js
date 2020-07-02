@@ -1,6 +1,6 @@
 import Model, { attr, belongsTo } from '@ember-data/model';
 
-export default class RequisicaoMaterial extends Model {
+export default class RequisicaoMaterialModel extends Model {
   @attr('string') quantidade;
   @attr('boolean') ativo;
   @attr('boolean') deleted;

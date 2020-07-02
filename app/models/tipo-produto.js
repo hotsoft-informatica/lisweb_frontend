@@ -1,6 +1,6 @@
 import Model, { attr, belongsTo } from '@ember-data/model';
 
-export default class TipoProduto extends Model {
+export default class TipoProdutoModel extends Model {
   @attr('string') mnemonico;
   @attr('string') nome;
   @attr('number') unidade_medida_saida_id;
