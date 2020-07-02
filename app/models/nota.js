@@ -1,6 +1,6 @@
 import Model, { attr, belongsTo } from '@ember-data/model';
 
-export default class Nota extends Model {
+export default class NotaModel extends Model {
   @attr('string') numero;
   @attr('string') status;
   @attr('string') descricao;

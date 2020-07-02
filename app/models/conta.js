@@ -1,6 +1,6 @@
 import Model, { attr, belongsTo } from '@ember-data/model';
 
-export default class Conta extends Model {
+export default class ContaModel extends Model {
   @attr('string') tipo;
   @attr('string') nome;
   @attr('number') saldo;
