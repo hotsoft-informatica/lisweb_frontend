@@ -105,11 +105,22 @@ Router.map(function() {
   this.route('pendencia_recebimentos/new');
   this.route('pendencia_recebimentos/edit', { path: '/pendencia_recebimentos/:pendencia_recebimento_id' });
   this.route('pendencia_recebimentos/index', { path: '/pendencia_recebimentos' });
-  //
-
-  this.route('baixas_produtos');
-  this.route('configuracoes_laboratorio');
-  this.route('chaves_nfse');
-  this.route('grupos_parametros_nfse');
+  // Rotas para confituração laboratórios
+  this.route('configuracao_laboratorios/new');
+  this.route('configuracao_laboratorios/edit', { path: '/configuracao_laboratorios/:configuracao_laboratorio_id' });
+  this.route('configuracao_laboratorios/index', { path: '/configuracao_laboratorios' });
+  // Rotas para grupos parametros nfse
+  this.route('grupos_parametros_nfses/new');
+  this.route('grupos_parametros_nfses/edit', { path: '/grupos_parametros_nfses/:grupos_parametros_nfse_id' });
+  this.route('grupos_parametros_nfses/index', { path: '/grupos_parametros_nfses' });
+  // Rotas para chaves nfses
+  this.route('chaves_nfses/new');
+  this.route('chaves_nfses/edit', { path: '/chaves_nfses/:chaves_nfse_id' });
+  this.route('chaves_nfses/index', { path: '/chaves_nfses' });
+  // Rotas para baixa produtos
+  this.route('baixa_produtos/new');
+  this.route('baixa_produtos/edit', { path: '/baixa_produtos/:baixa_produto_id' });
+  this.route('baixa_produtos/index', { path: '/baixa_produtos' });
   this.route('ac_filter_defs');
+
 });
