@@ -1,0 +1,33 @@
+<div>
+  <h4>Criar novo tipo produto</h4>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <LinkTo @route="tipo_produtos/new" class="btn btn-success">Novo tipo produto</LinkTo>
+    </div>
+  </div>
+</div>
+{{!- TODO: Tables must have a table group (thead, tbody or tfoot). -}}
+{{!- TODO: ember-template-lint(table-groups)  -}}
+<table class="table table-stripped">
+  <thead>
+    <th>ID</th>
+    <th>Nome</th>
+    <th>Descrição</th>
+    <th colspan="2"></th>
+  </thead>
+  <tbody>
+  {{#each @model as |tipo_produto|}}
+    <tr>
+      <td>{{tipo_produto.id}}</td>
+      <td>{{tipo_produto.nome}}</td>
+      <td>{{tipo_produto.descricao}}</td>
+      <td>
+        <LinkTo @route="tipo_produtos/edit" @model={{tipo_produto}} class="btn btn-primary">Editar</LinkTo>
+        {{!- TODO: Do not use `action` Instead, use the `on` modifier and `fn` helper. -}}
+        {{!- TODO: ember-template-lint(no-action) -}}
+        <button type="submit" class="btn btn-primary" {{on "click" (fn this.delete tipo_produto)}}>Excluir</button>
+      </td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>
