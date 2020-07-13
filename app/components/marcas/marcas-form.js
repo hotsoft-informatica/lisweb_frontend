@@ -14,9 +14,8 @@ export default class MarcasFormComponent extends Component {
   @tracked model;
 
   @action
-  saveMarca(marca, ...event) {
-    this.model = marca;
-    this.model.save().then( () => {
+  save(model, ...event) {
+    model.save().then( () => {
       this.router.transitionTo(this.redirectTo);
     });
   }

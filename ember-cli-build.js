@@ -37,8 +37,6 @@ module.exports = function (defaults) {
   // TODO: Alinhar com o Acras para remover, pois depende do jQuery
   // TODO: Remover dependencias do jQuery
   app.import('node_modules/jquery-mask-plugin/dist/jquery.mask.min.js');
-  // TODO: Nao esta sendo usado, remover
-  // app.import('node_modules/simple-line-icons/css/simple-line-icons.css');
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
