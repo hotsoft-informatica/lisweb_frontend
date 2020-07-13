@@ -20,7 +20,7 @@ export default class MarcasIndexComponent extends Component {
   }
 
   @action
-  delete(marca) {
-    marca.destroyRecord();
+  delete(model) {
+    model.destroyRecord();
   }
 }

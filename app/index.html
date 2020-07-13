@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <title>Lisweb</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <base href="{{rootURL}}" />
-    {{content-for "head"}}
-    {{content-for "head-footer"}}
-  </head>
-  <body>
-    {{content-for "body"}}
-    <link async="async" rel="stylesheet" href="{{rootURL}}assets/vendor.css" crossorigin="anonymous">
-    <link async="async" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <link async="async" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-themes@latest/dist/cable/index.min.css" crossorigin="anonymous">
 
-    <script src="{{rootURL}}assets/vendor.js" crossorigin="anonymous"></script>
-    <script src="{{rootURL}}assets/lisweb-frontend.js" crossorigin="anonymous"></script>
-    <script defer="defer" src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-    {{content-for "body-footer"}}
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Lisweb</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <base href="{{rootURL}}" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://stackpath.bootstrapcdn.com" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous" />
+  <link rel="preload" as="style" href="{{rootURL}}assets/vendor.css" crossorigin="anonymous" />
+  <link rel="preload" as="style" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    crossorigin="anonymous" />
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap-themes@latest/dist/cable/index.min.css"
+    crossorigin="anonymous">
+  <link async="async" rel="preload" as="style"
+    href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" />
+  {{content-for "head"}}
+  {{content-for "head-footer"}}
+</head>
+
+<body>
+  {{content-for "body"}}
+  <link async="async" rel="stylesheet" href="{{rootURL}}assets/vendor.css" crossorigin="anonymous" media="print"
+    onload="this.media='all'; this.onload=null;">
+  <link async="async" rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous"
+    onload="this.media='all'; this.onload=null;">
+  <link async="async" rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-themes@latest/dist/cable/index.min.css" crossorigin="anonymous"
+    onload="this.media='all'; this.onload=null;">
+
+  <script src="{{rootURL}}assets/vendor.js" crossorigin="anonymous"></script>
+  <script src="{{rootURL}}assets/lisweb-frontend.js" crossorigin="anonymous"></script>
+  <script defer="defer" src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+  </script>
+  {{content-for "body-footer"}}
+</body>
+
 </html>

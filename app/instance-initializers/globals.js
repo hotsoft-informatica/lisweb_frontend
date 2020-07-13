@@ -37,6 +37,7 @@ export function initialize(application) {
     };
   }
   window.App.ctx = new CurrentContext();
+  return environment;
 }
 
 export default {

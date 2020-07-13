@@ -4,7 +4,7 @@
     "candidmetrics.ember-module-snippets",
     "emberjs.emberjs",
     "emberjs.vscode-ember",
-    "felixrieseberg.vsc-ember-cli",
+    // "felixrieseberg.vsc-ember-cli",
     "josa.ember-related-files",
     "phanitejakomaravolu.EmberES6Snippets",
 
@@ -29,7 +29,7 @@
 
     // lint and format: js
     "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
+    // "esbenp.prettier-vscode",
 
     // git
     "eamodio.gitlens",

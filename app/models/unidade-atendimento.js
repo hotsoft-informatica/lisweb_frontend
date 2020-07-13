@@ -1,5 +1,4 @@
 import Model, { attr, belongsTo } from '@ember-data/model';
-// TODO: 'attr' is defined but never used.eslintno-unused-vars
 
 export default class UnidadeAtendimentoModel extends Model {
   @attr('string') nome;
