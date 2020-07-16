@@ -1,8 +1,7 @@
 <div>
-  <h4>Criar novo grupo centro custo</h4>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <LinkTo @route="grupo_centro_custos/new" class="btn btn-success">Novo grupo centro custo</LinkTo>
+      <LinkTo @route="pessoas/new" class="btn btn-success">Nova pessoa</LinkTo>
     </div>
   </div>
 </div>
@@ -12,18 +11,22 @@
   <thead>
     <th>ID</th>
     <th>Nome</th>
-    <th colspan="2"></th>
+    <th>RG</th>
+    <th>email</th>
+    <th colspan="3"></th>
   </thead>
   <tbody>
-  {{#each @model as |marca|}}
+  {{#each @model as |pessoa|}}
     <tr>
-      <td>{{marca.id}}</td>
-      <td>{{marca.nome}}</td>
+      <td>{{pessoa.id}}</td>
+      <td>{{pessoa.nome}}</td>
+      <td>{{pessoa.rg}}</td>
+      <td>{{pessoa.email}}</td>
       <td>
-        <LinkTo @route="grupo_centro_custos/edit" @model={{@grupo_centro_custo}} class="btn btn-primary">Editar</LinkTo>
+        <LinkTo @route="pessoas/edit" @model={{pessoa}} class="btn btn-primary">Editar</LinkTo>
         {{!- TODO: Do not use `action` Instead, use the `on` modifier and `fn` helper. -}}
         {{!- TODO: ember-template-lint(no-action) -}}
-        <button type="submit" class="btn btn-primary" {{on "click" (fn this.delete @grupo_centro_custo)}}>Excluir</button>
+        <button type="submit" class="btn btn-primary" {{on "click" (fn this.delete pessoa)}}>Excluir</button>
       </td>
     </tr>
   {{/each}}

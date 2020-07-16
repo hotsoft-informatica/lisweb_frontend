@@ -63,11 +63,9 @@ Router.map(function() {
   this.route('laboratorios/index', { path: '/laboratorios' });
   this.route('tipos_produto');
   this.route('unidades_atendimento');
-  this.route('contas');
   this.route('contas_contabeis');
   // Plano de contas?
   this.route('tipos_pessoa');
-  this.route('pessoas');
   // Rotas para lançamentos.
   this.route('lancamentos/new');
   this.route('lancamentos/edit', { path: '/lancamentos/:lancamento_id' });
