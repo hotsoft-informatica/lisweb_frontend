@@ -1,7 +1,7 @@
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
 
-export default class GruposCentroCustosRoute extends Route {
+export default class GrupoCentroCustosEditRoute extends Route {
   @service store;
 
   async model(params) {

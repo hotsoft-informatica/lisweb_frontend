@@ -1,0 +1,35 @@
+<div>
+  <h4>Criar nova conta</h4>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <LinkTo @route="contas/new" class="btn btn-success">Nova conta</LinkTo>
+    </div>
+  </div>
+</div>
+{{!- TODO: Tables must have a table group (thead, tbody or tfoot). -}}
+{{!- TODO: ember-template-lint(table-groups)  -}}
+<table class="table table-stripped">
+  <thead>
+    <th>ID</th>
+    <th>Tipo</th>
+    <th>Nome</th>
+    <th>Saldo</th>
+    <th colspan="2"></th>
+  </thead>
+  <tbody>
+  {{#each @model as |conta|}}
+    <tr>
+      <td>{{conta.id}}</td>
+      <td>{{conta.tipo}}</td>
+      <td>{{conta.nome}}</td>
+      <td>{{conta.saldo}}</td>
+      <td>
+        <LinkTo @route="contas/edit" @model={{@conta}} class="btn btn-primary">Editar</LinkTo>
+        {{!- TODO: Do not use `action` Instead, use the `on` modifier and `fn` helper. -}}
+        {{!- TODO: ember-template-lint(no-action) -}}
+        <button type="submit" class="btn btn-primary" {{on "click" (fn this.delete @conta)}}>Excluir</button>
+      </td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>

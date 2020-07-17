@@ -1,6 +1,6 @@
 import Model, { attr, belongsTo } from '@ember-data/model';
 
-export default class CentroCusto extends Model {
+export default class CentroCustoModel extends Model {
   @attr('string') nome;
   @attr('number') version;
   @attr('boolean') pode_solicitar_tudo;
