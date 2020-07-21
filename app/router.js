@@ -9,7 +9,6 @@ export default class Router extends EmberRouter {
 
 Router.map(function() {
   this.route('labs');
-  this.route('grupos_centro_custo');
   this.route('centros_custo');
   this.route('categorias_produto');
   this.route('unidades_medida');
@@ -40,9 +39,7 @@ Router.map(function() {
   this.route('conta_contabeis/index', { path: '/conta_contabeis' });
   // Rotas para grupo centro custos.
   this.route('grupo_centro_custos/new');
-  this.route('grupo_centro_custos/edit', {
-    path: '/grupo_centro_custos/:grupo_centro_custo_id',
-  });
+  this.route('grupo_centro_custos/edit', { path: '/grupo_centro_custos/:grupo_centro_custo_id' });
   this.route('grupo_centro_custos/index', { path: '/grupo_centro_custos' });
   // Rotas para categoria produtos.
   this.route('categoria_produtos/new');
