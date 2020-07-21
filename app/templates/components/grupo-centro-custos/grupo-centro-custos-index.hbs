@@ -15,15 +15,15 @@
     <th colspan="2"></th>
   </thead>
   <tbody>
-  {{#each @model as |marca|}}
+  {{#each @model as |grupo_centro_custo|}}
     <tr>
-      <td>{{marca.id}}</td>
-      <td>{{marca.nome}}</td>
+      <td>{{grupo_centro_custo.id}}</td>
+      <td>{{grupo_centro_custo.nome}}</td>
       <td>
-        <LinkTo @route="grupo_centro_custos/edit" @model={{@grupo_centro_custo}} class="btn btn-primary">Editar</LinkTo>
+        <LinkTo @route="grupo_centro_custos/edit" @model={{grupo_centro_custo}} class="btn btn-primary">Editar</LinkTo>
         {{!- TODO: Do not use `action` Instead, use the `on` modifier and `fn` helper. -}}
         {{!- TODO: ember-template-lint(no-action) -}}
-        <button type="submit" class="btn btn-primary" {{on "click" (fn this.delete @grupo_centro_custo)}}>Excluir</button>
+        <button type="submit" class="btn btn-primary" {{on "click" (fn this.delete grupo_centro_custo)}}>Excluir</button>
       </td>
     </tr>
   {{/each}}

@@ -24,10 +24,10 @@
       <td>{{conta.nome}}</td>
       <td>{{conta.saldo}}</td>
       <td>
-        <LinkTo @route="contas/edit" @model={{@conta}} class="btn btn-primary">Editar</LinkTo>
+        <LinkTo @route="contas/edit" @model={{conta}} class="btn btn-primary">Editar</LinkTo>
         {{!- TODO: Do not use `action` Instead, use the `on` modifier and `fn` helper. -}}
         {{!- TODO: ember-template-lint(no-action) -}}
-        <button type="submit" class="btn btn-primary" {{on "click" (fn this.delete @conta)}}>Excluir</button>
+        <button type="submit" class="btn btn-primary" {{on "click" (fn this.delete conta)}}>Excluir</button>
       </td>
     </tr>
   {{/each}}
