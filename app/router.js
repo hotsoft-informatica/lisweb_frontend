@@ -119,6 +119,6 @@ Router.map(function() {
   this.route('baixa_produtos/new');
   this.route('baixa_produtos/edit', { path: '/baixa_produtos/:baixa_produto_id' });
   this.route('baixa_produtos/index', { path: '/baixa_produtos' });
-  this.route('ac_filter_defs');
+  // this.route('ac_filter_defs');
 
 });

@@ -11,8 +11,8 @@ export default class MarcasIndexComponent extends Component {
 
   constructor(owner, args) {
     super(owner, args);
-    this.store.findAll('marca').then( (marcas) => {
-      this.model = marcas;
+    this.store.findAll('marca').then( (model) => {
+      this.model = model;
     }, (errors) => {
       this.loading = 'Falha no carregamento!';
       this.errors = errors;

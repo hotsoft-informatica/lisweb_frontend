@@ -9,7 +9,7 @@
     <div class="col-sm-offset-2 col-sm-10">
       {{!- TODO: Do not use `action` as. Instead, use the `on` modifier and `fn` -}}
       {{!- TODO: helper.ember-template-lint -}}
-      <button type="submit" class="btn btn-success" {{on "click" (fn this.save @model @redirectTo)}}>Salvar</button>
+      <button type="submit" class="btn btn-success" {{on "click" (fn this.save @model)}}>Salvar</button>
     </div>
   </div>
 </div>
