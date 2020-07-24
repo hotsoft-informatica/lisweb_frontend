@@ -1,14 +1,6 @@
-import { action } from '@ember/object';
-import { inject as service } from '@ember/service';
-import { tracked } from '@glimmer/tracking';
-import Component from '@glimmer/component';
+import DefaultComponent from '../default/default';
 
-export default class MarcasIndexComponent extends Component {
-  @service store;
-  @tracked errors;
-  @tracked loading='Carregando...';
-  @tracked model;
-
+export default class MarcasIndexComponent extends DefaultComponent {
   constructor(owner, args) {
     super(owner, args);
     this.store.findAll('marca').then( (marcas) => {
@@ -17,10 +9,5 @@ export default class MarcasIndexComponent extends Component {
       this.loading = 'Falha no carregamento!';
       this.errors = errors;
     });
-  }
-
-  @action
-  delete(model) {
-    model.destroyRecord();
   }
 }
