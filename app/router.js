@@ -7,7 +7,7 @@ export default class Router extends EmberRouter {
   rootURL = config.rootURL;
 }
 
-Router.map(function () {
+Router.map(function() {
   this.route('labs');
   this.route('grupos_centro_custo');
   this.route('centros_custo');
@@ -56,6 +56,10 @@ Router.map(function () {
   this.route('tipo_pessoas/new');
   this.route('tipo_pessoas/edit', { path: '/tipo_pessoas/:tipo_pessoa_id' });
   this.route('tipo_pessoas/index', { path: '/tipo_pessoas' });
+  // Rotas para pessoas.
+  this.route('pessoas/new');
+  this.route('pessoas/edit', { path: '/pessoas/:pessoa_id' });
+  this.route('pessoas/index', { path: '/pessoas' });
   // Rotas para laboratoios.
   this.route('laboratorios/new');
   this.route('laboratorios/edit', { path: '/laboratorios/:laboratorio_id' });
@@ -67,20 +71,59 @@ Router.map(function () {
   // Plano de contas?
   this.route('tipos_pessoa');
   this.route('pessoas');
+  // Rotas para lançamentos.
+  this.route('lancamentos/new');
+  this.route('lancamentos/edit', { path: '/lancamentos/:lancamento_id' });
+  this.route('lancamentos/index', { path: '/lancamentos' });
+  // Rotas para notas.
+  this.route('notas/new');
+  this.route('notas/edit', { path: '/notas/:nota_id' });
+  this.route('notas/index', { path: '/notas' });
+  // Rotas para requisicao materiais.
+  this.route('requisicao_materiais/new');
+  this.route('requisicao_materiais/edit', { path: '/requisicao_materiais/:requisicao_material_id' });
+  this.route('requisicao_materiais/index', { path: '/requisicao_materiais' });
   // Central de Lancamentos?
   this.route('lancamentos');
   this.route('notas');
-  // Requisicao de materiais
-  this.route('atendimentos_requisicoes');
+  // Rotas para atendimento requisições
+  this.route('atendimento_requisioes/new');
+  this.route('atendimento_requisioes/edit', { path: '/atendimento_requisioes/:atendimento_requisicao_id' });
+  this.route('atendimento_requisioes/index', { path: '/atendimento_requisioes' });
+  // Rotas para orçamentos
+  this.route('orcamentos/new');
+  this.route('orcamentos/edit', { path: '/orcamentos/:orcamento_id' });
+  this.route('orcamentos/index', { path: '/orcamentos' });
   // Lista compras?
   this.route('orcamentos');
-  // Elaboracao de Pedidos?
-  this.route('pedidos');
-  this.route('recebimentos_produtos');
-  this.route('pendencias_recebimento');
-  this.route('baixas_produtos');
-  this.route('configuracoes_laboratorio');
-  this.route('chaves_nfse');
-  this.route('grupos_parametros_nfse');
+  // Rotas para pedidos
+  this.route('pedidos/new');
+  this.route('pedidos/edit', { path: '/pedidos/:pedido_id' });
+  this.route('pedidos/index', { path: '/pedidos' });
+  // Rotas para recebimento produtos
+  this.route('recebimento_produtos/new');
+  this.route('recebimento_produtos/edit', { path: '/recebimento_produtos/:recebimento_produto_id' });
+  this.route('recebimento_produtos/index', { path: '/recebimento_produtos' });
+  // Rotas para pendencia recebimentos
+  this.route('pendencia_recebimentos/new');
+  this.route('pendencia_recebimentos/edit', { path: '/pendencia_recebimentos/:pendencia_recebimento_id' });
+  this.route('pendencia_recebimentos/index', { path: '/pendencia_recebimentos' });
+  // Rotas para confituração laboratórios
+  this.route('configuracao_laboratorios/new');
+  this.route('configuracao_laboratorios/edit', { path: '/configuracao_laboratorios/:configuracao_laboratorio_id' });
+  this.route('configuracao_laboratorios/index', { path: '/configuracao_laboratorios' });
+  // Rotas para grupos parametros nfse
+  this.route('grupos_parametros_nfses/new');
+  this.route('grupos_parametros_nfses/edit', { path: '/grupos_parametros_nfses/:grupos_parametros_nfse_id' });
+  this.route('grupos_parametros_nfses/index', { path: '/grupos_parametros_nfses' });
+  // Rotas para chaves nfses
+  this.route('chaves_nfses/new');
+  this.route('chaves_nfses/edit', { path: '/chaves_nfses/:chaves_nfse_id' });
+  this.route('chaves_nfses/index', { path: '/chaves_nfses' });
+  // Rotas para baixa produtos
+  this.route('baixa_produtos/new');
+  this.route('baixa_produtos/edit', { path: '/baixa_produtos/:baixa_produto_id' });
+  this.route('baixa_produtos/index', { path: '/baixa_produtos' });
   this.route('ac_filter_defs');
+
 });
