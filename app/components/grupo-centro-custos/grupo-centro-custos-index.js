@@ -3,7 +3,8 @@ import { inject as service } from '@ember/service';
 import { tracked } from '@glimmer/tracking';
 import Component from '@glimmer/component';
 
-export default class TipoProdutosIndexComponent extends Component {
+export default class GrupoCentroCustosIndexComponent extends Component {
+  // TODO: Usar decorator @action
   @service store;
   @tracked errors;
   @tracked loading='Carregando...';
@@ -11,7 +12,7 @@ export default class TipoProdutosIndexComponent extends Component {
 
   constructor(owner, args) {
     super(owner, args);
-    this.store.findAll('tipo_produto').then( (model) => {
+    this.store.findAll('grupo_centro_custo').then( (model) => {
       this.model = model;
     }, (errors) => {
       this.loading = 'Falha no carregamento!';

@@ -1,5 +1,4 @@
 <div>
-  <h4>Criar novo tipo produto</h4>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
       <LinkTo @route="tipo_produtos/new" class="btn btn-success">Novo tipo produto</LinkTo>
@@ -11,14 +10,16 @@
 <table class="table table-stripped">
   <thead>
     <th>ID</th>
+    <th>Mnemonico</th>
     <th>Nome</th>
     <th>Descrição</th>
     <th colspan="2"></th>
   </thead>
   <tbody>
-  {{#each @model as |tipo_produto|}}
+  {{#each this.model as |tipo_produto|}}
     <tr>
       <td>{{tipo_produto.id}}</td>
+      <td>{{tipo_produto.mnemonico}}</td>
       <td>{{tipo_produto.nome}}</td>
       <td>{{tipo_produto.descricao}}</td>
       <td>
