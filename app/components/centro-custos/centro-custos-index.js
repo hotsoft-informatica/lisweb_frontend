@@ -1,9 +1,9 @@
 import DefaultComponent from '../default/default';
 
-export default class TipoProdutosIndexComponent extends DefaultComponent {
+export default class CentroCustosIndexComponent extends DefaultComponent {
   constructor(owner, args) {
     super(owner, args);
-    this.store.findAll('tipo_produto').then( (model) => {
+    this.store.findAll('centro_custo').then( (model) => {
       this.model = model;
     }, (errors) => {
       this.loading = 'Falha no carregamento!';
