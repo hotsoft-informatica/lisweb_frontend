@@ -10,16 +10,15 @@ export default class Router extends EmberRouter {
 Router.map(function() {
   this.route('labs');
   this.route('centros_custo');
-  this.route('unidades_medida');
   this.route('marcas');
   // Rotas para marcas.
   this.route('marcas/new');
   this.route('marcas/edit', { path: '/marcas/:marca_id' });
   this.route('marcas/index', { path: '/marcas' });
   // Rotas para Unidades Medidas.
-  this.route('unidades_medidas/new');
-  this.route('unidades_medidas/edit', { path: '/unidades_medidas/:unidades_medida_id' });
-  this.route('unidades_medidas/index', { path: '/unidades_medidas' });
+  this.route('unidade_medidas/new');
+  this.route('unidade_medidas/edit', { path: '/unidade_medidas/:unidade_medida_id' });
+  this.route('unidade_medidas/index', { path: '/unidade_medidas' });
   // Rotas para Unidade Atendimentos.
   this.route('unidade_atendimentos/new');
   this.route('unidade_atendimentos/edit', { path: '/unidade_atendimentos/:unidade_atendimento_id' });
