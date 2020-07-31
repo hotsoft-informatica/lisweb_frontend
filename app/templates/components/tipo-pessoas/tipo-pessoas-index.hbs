@@ -1,0 +1,28 @@
+<div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <LinkTo @route="tipo_pessoas/new" class="btn btn-success">Novo tipo pessoa</LinkTo>
+    </div>
+  </div>
+</div>
+<table class="table table-stripped">
+  <thead>
+    <th>Nome</th>
+    <th>Tipo</th>
+    <th colspan="2"></th>
+  </thead>
+  <tbody>
+    {{#each this.model as |tipo_pessoa|}}
+      <tr>
+        <td>{{tipo_pessoa.nome}}</td>
+        <td>{{tipo_pessoa.tipo}}</td>
+        <td>
+          <LinkTo @route="tipo_pessoas/edit" @model={{tipo_pessoa}} class="btn btn-primary">Editar</LinkTo>
+          <button type="submit" class="btn btn-primary" {{on "click" (fn this.delete tipo_pessoa)}}>Excluir</button>
+        </td>
+      </tr>
+    {{else}}
+      <tr><td collspan="5">{{this.loading}}</td></tr>
+    {{/each}}
+  </tbody>
+</table>
