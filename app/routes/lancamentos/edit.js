@@ -1,9 +1,10 @@
 import Route from '@ember/routing/route';
+import { inject as service } from '@ember/service';
 
-// TODO: Native JS classes should be used instead of classic classes
-// TODO: eslintember/no-classic-classes
 export default class LancamentosEditRoute extends Route {
+  @service store;
+
   async model(params) {
-    return this.store.findRecord('lancamento', params.lancamento_id);
+    return this.store.findRecord('lacamento', params.lacamento_id);
   }
 }

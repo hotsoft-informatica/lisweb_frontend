@@ -73,8 +73,6 @@ Router.map(function() {
   this.route('requisicao_materiais/new');
   this.route('requisicao_materiais/edit', { path: '/requisicao_materiais/:requisicao_material_id' });
   this.route('requisicao_materiais/index', { path: '/requisicao_materiais' });
-  // Central de Lancamentos?
-  this.route('lancamentos');
   this.route('notas');
   // Rotas para atendimento requisições
   this.route('atendimento_requisioes/new');
