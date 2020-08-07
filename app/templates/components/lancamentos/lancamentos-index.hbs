@@ -16,8 +16,10 @@
   <tbody>
     {{#each this.model as |lancamento|}}
       <tr>
-        <td>{{lancamento.nome}}</td>
+        <td>{{lancamento.tipo}}</td>
+        <td>{{lancamento.valor}}</td>
         <td>{{lancamento.descricao}}</td>
+        <td>{{lancamento.natureza}}</td>
         <td>
           <LinkTo @route="lancamentos/edit" @model={{lancamento}} class="btn btn-primary">Editar</LinkTo>
           <button type="submit" class="btn btn-primary" {{on "click" (fn this.delete lancamento)}}>Excluir</button>
