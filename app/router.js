@@ -104,10 +104,10 @@ Router.map(function() {
   this.route('grupos_parametros_nfses/new');
   this.route('grupos_parametros_nfses/edit', { path: '/grupos_parametros_nfses/:grupos_parametros_nfse_id' });
   this.route('grupos_parametros_nfses/index', { path: '/grupos_parametros_nfses' });
-  // Rotas para chaves nfses
-  this.route('chaves_nfses/new');
-  this.route('chaves_nfses/edit', { path: '/chaves_nfses/:chaves_nfse_id' });
-  this.route('chaves_nfses/index', { path: '/chaves_nfses' });
+  // Rotas para chave nfses
+  this.route('chave_nfses/new');
+  this.route('chave_nfses/edit', { path: '/chave_nfses/:chave_nfse_id' });
+  this.route('chave_nfses/index', { path: '/chave_nfses' });
   // Rotas para baixa produtos
   this.route('baixa_produtos/new');
   this.route('baixa_produtos/edit', { path: '/baixa_produtos/:baixa_produto_id' });
