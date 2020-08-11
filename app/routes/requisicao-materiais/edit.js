@@ -4,6 +4,6 @@ import Route from '@ember/routing/route';
 // TODO: eslintember/no-classic-classes
 export default class RequisicaoMateriaisEditRoute extends Route {
   async model(params) {
-    return this.store.findRecord('requisicao_marial', params.requisicao_marial_id);
+    return this.store.findRecord('requisicao_material', params.requisicao_material_id);
   }
 }
