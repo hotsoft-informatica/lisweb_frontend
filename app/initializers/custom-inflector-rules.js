@@ -9,6 +9,7 @@ export function initialize() {
   inflector.singular(/s$/i, '');
   inflector.pluralize('conta');
   inflector.irregular('contabil', 'contabeis');
+  inflector.irregular('material', 'materiais');
 
 }
 
