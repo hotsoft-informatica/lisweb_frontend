@@ -10,6 +10,7 @@ export function initialize() {
   inflector.pluralize('conta');
   inflector.irregular('contabil', 'contabeis');
   inflector.irregular('material', 'materiais');
+  inflector.irregular('requisicao', 'requisicoes');
 
 }
 
