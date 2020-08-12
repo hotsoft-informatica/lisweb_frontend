@@ -1,9 +1,10 @@
-import Route from '@ember/routing/route';
+import Route from '@ember/routing/route'
+import { inject as service } from '@ember/service';
 
-// TODO: Native JS classes should be used instead of classic classes
-// TODO: eslintember/no-classic-classes
 export default class OrcamentosNewRoute extends Route {
+  @service store;
+
   async model() {
-    return this.store.createRecord('orcamento');
+    return this.store.createRecord('orcamento')
   }
 }
