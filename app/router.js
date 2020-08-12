@@ -83,7 +83,7 @@ Router.map(function() {
   this.route('orcamentos/edit', { path: '/orcamentos/:orcamento_id' });
   this.route('orcamentos/index', { path: '/orcamentos' });
   // Lista compras?
-  this.route('orcamentos');
+  // this.route('orcamentos');
   // Rotas para pedidos
   this.route('pedidos/new');
   this.route('pedidos/edit', { path: '/pedidos/:pedido_id' });
