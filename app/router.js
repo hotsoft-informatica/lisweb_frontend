@@ -75,9 +75,9 @@ Router.map(function() {
   this.route('requisicao_materiais/index', { path: '/requisicao_materiais' });
   this.route('notas');
   // Rotas para atendimento requisições
-  this.route('atendimento_requisioes/new');
-  this.route('atendimento_requisioes/edit', { path: '/atendimento_requisioes/:atendimento_requisicao_id' });
-  this.route('atendimento_requisioes/index', { path: '/atendimento_requisioes' });
+  this.route('atendimento_requisicoes/new');
+  this.route('atendimento_requisicoes/edit', { path: '/atendimento_requisicoes/:atendimento_requisicao_id' });
+  this.route('atendimento_requisicoes/index', { path: '/atendimento_requisicoes' });
   // Rotas para orçamentos
   this.route('orcamentos/new');
   this.route('orcamentos/edit', { path: '/orcamentos/:orcamento_id' });
