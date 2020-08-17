@@ -4,6 +4,6 @@ import Route from '@ember/routing/route';
 // TODO: eslintember/no-classic-classes
 export default class PendenciaRecebimentosEditRoute extends Route {
   async model(params) {
-    return this.store.findRecord('pendencia_recebimentoo', params.pendencia_recebimentoo_id);
+    return this.store.findRecord('pendencia_recebimento', params.pendencia_recebimento_id);
   }
 }
