@@ -108,7 +108,7 @@ Router.map(function() {
   this.route('chave_nfses/new');
   this.route('chave_nfses/edit', { path: '/chave_nfses/:chave_nfse_id' });
   this.route('chave_nfses/index', { path: '/chave_nfses' });
-  // Rotas para baixa produtos
+  // Rotas para Pendência recebimentos
   this.route('baixa_produtos/new');
   this.route('baixa_produtos/edit', { path: '/baixa_produtos/:baixa_produto_id' });
   this.route('baixa_produtos/index', { path: '/baixa_produtos' });
