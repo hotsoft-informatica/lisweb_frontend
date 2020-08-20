@@ -10,23 +10,42 @@ import Component from '@glimmer/component';
 */
 export default class DefaultComponent extends Component {
   @service store;
+  @service router;
+  // TODO: Tentar carregar do model
+  @tracked modelString;
   @tracked model;
   @tracked errors;
-  @service router;
+  @tracked page = 1;
   @tracked redirectTo = '/';
-  @tracked loading='Carregando...';
+  @tracked loading = 'Carregando...';
 
-/*
   constructor(owner, args) {
     super(owner, args);
-    this.store.findAll('marca').then( (marcas) => {
-      this.model = marcas;
+    this.loadModel();
+  }
+
+  // https://www.w3schools.com/js/js_operators.asp
+  @action
+  pageUp(){
+    this.page += 1;
+    this.loadModel();
+  }
+
+  @action
+  pageDown(){
+    this.page -= 1;
+    this.loadModel();
+  }
+
+  @action
+  async loadModel(){
+    this.store.query(this.modelString, { page: this.page }).then( (model) => {
+      this.model = model;
     }, (errors) => {
       this.loading = 'Falha no carregamento!';
       this.errors = errors;
     });
   }
-*/
 
   @action
   delete(model) {
