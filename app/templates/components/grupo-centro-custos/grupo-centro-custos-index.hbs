@@ -5,8 +5,6 @@
     </div>
   </div>
 </div>
-{{!- TODO: Tables must have a table group (thead, tbody or tfoot). -}}
-{{!- TODO: ember-template-lint(table-groups)  -}}
 <table class="table table-stripped">
   <thead>
     <th>ID</th>
@@ -20,11 +18,13 @@
       <td>{{grupo_centro_custo.nome}}</td>
       <td>
         <LinkTo @route="grupo_centro_custos/edit" @model={{grupo_centro_custo}} class="btn btn-primary">Editar</LinkTo>
-        {{!- TODO: Do not use `action` Instead, use the `on` modifier and `fn` helper. -}}
-        {{!- TODO: ember-template-lint(no-action) -}}
-        <button type="submit" class="btn btn-primary" {{on "click" (fn this.delete grupo_centro_custo)}}>Excluir</button>
+        <button type="button" class="btn btn-primary" {{on "click" (fn this.delete grupo_centro_custo)}}>Excluir</button>
       </td>
     </tr>
+  {{else}}
+    <tr><td collspan="5">{{this.loading}}</td></tr>
   {{/each}}
   </tbody>
 </table>
+<button type="button" class="btn btn-success" {{on "click" this.pageDown}}>Aterior</button>
+<button type="button" class="btn btn-success" {{on "click" this.pageUp}}>Próxima</button>

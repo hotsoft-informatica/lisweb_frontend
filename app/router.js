@@ -10,7 +10,6 @@ export default class Router extends EmberRouter {
 Router.map(function() {
   this.route('labs');
   this.route('centros_custo');
-  this.route('marcas');
   // Rotas para marcas.
   this.route('marcas/new');
   this.route('marcas/edit', { path: '/marcas/:marca_id' });

@@ -18,7 +18,7 @@
         <td>{{marca.descricao}}</td>
         <td>
           <LinkTo @route="marcas/edit" @model={{marca}} class="btn btn-primary">Editar</LinkTo>
-          <button type="submit" class="btn btn-primary" {{on "click" (fn this.delete marca)}}>Excluir</button>
+          <button type="button" class="btn btn-primary" {{on "click" (fn this.delete marca)}}>Excluir</button>
         </td>
       </tr>
     {{else}}
@@ -26,6 +26,6 @@
     {{/each}}
   </tbody>
 </table>
-<button type="button" class="btn btn-success" {{on "click" this.pageDown}}>Voltar</button>
-<button type="button" class="btn btn-success" {{on "click" this.pageUp}}>Avançar</button>
+<button type="button" class="btn btn-success" {{on "click" this.pageDown}}>Aterior</button>
+<button type="button" class="btn btn-success" {{on "click" this.pageUp}}>Próxima</button>
 

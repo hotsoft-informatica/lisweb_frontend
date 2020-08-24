@@ -5,6 +5,6 @@ export default class MarcasNewRoute extends Route {
   @service store;
 
   async model() {
-    return this.store.createRecord('marca')
+    return this.store.createRecord('marca');
   }
 }
