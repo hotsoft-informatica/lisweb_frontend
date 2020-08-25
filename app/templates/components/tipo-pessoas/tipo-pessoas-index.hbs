@@ -18,7 +18,7 @@
         <td>{{tipo_pessoa.tipo}}</td>
         <td>
           <LinkTo @route="tipo_pessoas/edit" @model={{tipo_pessoa}} class="btn btn-primary">Editar</LinkTo>
-          <button type="submit" class="btn btn-primary" {{on "click" (fn this.delete tipo_pessoa)}}>Excluir</button>
+          <button type="button" class="btn btn-primary" {{on "click" (fn this.delete tipo_pessoa)}}>Excluir</button>
         </td>
       </tr>
     {{else}}
@@ -26,3 +26,5 @@
     {{/each}}
   </tbody>
 </table>
+<button type="button" class="btn btn-success" {{on "click" this.pageDown}}>Anterior</button>
+<button type="button" class="btn btn-success" {{on "click" this.pageUp}}>Próxima</button>

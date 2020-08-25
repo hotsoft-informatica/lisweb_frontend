@@ -20,7 +20,7 @@
         <td>{{unidade_medida.descricao}}</td>
         <td>
           <LinkTo @route="unidade_medidas/edit" @model={{unidade_medida}} class="btn btn-primary">Editar</LinkTo>
-          <button type="submit" class="btn btn-primary" {{on "click" (fn this.delete unidade_medida)}}>Excluir</button>
+          <button type="button" class="btn btn-primary" {{on "click" (fn this.delete unidade_medida)}}>Excluir</button>
         </td>
       </tr>
     {{else}}
@@ -28,3 +28,5 @@
     {{/each}}
   </tbody>
 </table>
+<button type="button" class="btn btn-success" {{on "click" this.pageDown}}>Anterior</button>
+<button type="button" class="btn btn-success" {{on "click" this.pageUp}}>Próxima</button>

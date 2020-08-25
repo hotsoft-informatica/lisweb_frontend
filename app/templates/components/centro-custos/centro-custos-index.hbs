@@ -16,7 +16,7 @@
         <td>{{centro_custo.nome}}</td>
         <td>
           <LinkTo @route="centro_custos/edit" @model={{centro_custo}} class="btn btn-primary">Editar</LinkTo>
-          <button type="submit" class="btn btn-primary" {{on "click" (fn this.delete centro_custo)}}>Excluir</button>
+          <button type="button" class="btn btn-primary" {{on "click" (fn this.delete centro_custo)}}>Excluir</button>
         </td>
       </tr>
     {{else}}
@@ -24,3 +24,5 @@
     {{/each}}
   </tbody>
 </table>
+<button type="button" class="btn btn-success" {{on "click" this.pageDown}}>Anterior</button>
+<button type="button" class="btn btn-success" {{on "click" this.pageUp}}>Próxima</button>
