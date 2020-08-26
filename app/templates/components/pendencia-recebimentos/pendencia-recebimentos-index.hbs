@@ -28,9 +28,11 @@
         <LinkTo @route="pendencia_recebimentos/edit" @model={{pendencia_recebimento}} class="btn btn-primary">Editar</LinkTo>
         {{!- TODO: Do not use `action` Instead, use the `on` modifier and `fn` helper. -}}
         {{!- TODO: ember-template-lint(no-action) -}}
-        <button type="submit" class="btn btn-primary" {{on "click" (fn this.delete pendencia_recebimento)}}>Excluir</button>
+        <button type="button" class="btn btn-primary" {{on "click" (fn this.delete pendencia_recebimento)}}>Excluir</button>
       </td>
     </tr>
   {{/each}}
   </tbody>
 </table>
+<button type="button" class="btn btn-success" {{on "click" this.pageDown}}>Anterior</button>
+<button type="button" class="btn btn-success" {{on "click" this.pageUp}}>Próxima</button>

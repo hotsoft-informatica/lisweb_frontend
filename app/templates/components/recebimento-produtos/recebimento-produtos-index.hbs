@@ -18,7 +18,7 @@
         <td>{{recebimento_produto.observacoes}}</td>
         <td>
           <LinkTo @route="recebimento_produtos/edit" @model={{recebimento_produto}} class="btn btn-primary">Editar</LinkTo>
-          <button type="submit" class="btn btn-primary" {{on "click" (fn this.delete recebimento_produto)}}>Excluir</button>
+          <button type="button" class="btn btn-primary" {{on "click" (fn this.delete recebimento_produto)}}>Excluir</button>
         </td>
       </tr>
     {{else}}
@@ -26,3 +26,5 @@
     {{/each}}
   </tbody>
 </table>
+<button type="button" class="btn btn-success" {{on "click" this.pageDown}}>Anterior</button>
+<button type="button" class="btn btn-success" {{on "click" this.pageUp}}>Próxima</button>
