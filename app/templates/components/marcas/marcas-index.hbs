@@ -5,6 +5,12 @@
     </div>
   </div>
 </div>
+<select {{on "change" (fn this.sortData ) }}>
+  <option value='id'>Id cresc</option>
+  <option value='-id'>Id decresc</option>
+  <option value='nome'>Nome decresc</option>
+  <option value='-nome'>Nome decresc</option>
+</select>
 <table class="table table-stripped">
   <thead>
     <th>Nome</th>
