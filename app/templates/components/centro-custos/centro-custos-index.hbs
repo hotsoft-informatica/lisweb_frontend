@@ -5,14 +5,27 @@
     </div>
   </div>
 </div>
+<div class="form-group">
+  <div class="col-sm-offset-2 col-sm-10">
+    <label for="order">Ordem:</label>
+    <select id ="order" {{on "change" (fn this.sortData ) }}>
+      <option value='nome'>Nome cresc</option>
+      <option value='-nome'>Nome decresc</option>
+      <option value='id'>Id cresc</option>
+      <option value='-id'>Id decresc</option>
+    </select>
+  </div>
+</div>
 <table class="table table-stripped">
   <thead>
+    <th>Id</th>
     <th>Nome</th>
     <th colspan="2"></th>
   </thead>
   <tbody>
     {{#each this.model as |centro_custo|}}
       <tr>
+        <td>{{centro_custo.id}}</td>
         <td>{{centro_custo.nome}}</td>
         <td>
           <LinkTo @route="centro_custos/edit" @model={{centro_custo}} class="btn btn-primary">Editar</LinkTo>
