@@ -5,8 +5,22 @@
     </div>
   </div>
 </div>
+<div class="form-group">
+  <div class="col-sm-offset-2 col-sm-10">
+    <label for="order">Ordem:</label>
+    <select id ="order" {{on "change" (fn this.sortData ) }}>
+      <option value='nome'>Nome cresc</option>
+      <option value='-nome'>Nome decresc</option>
+      <option value='sigla'>Sigla cresc</option>
+      <option value='-sigla'>Sigla decresc</option>
+      <option value='id'>Id cresc</option>
+      <option value='-id'>Id decresc</option>
+    </select>
+  </div>
+</div>
 <table class="table table-stripped">
   <thead>
+    <th>Id</th>
     <th>Nome</th>
     <th>Sigla</th>
     <th>Descrição</th>
@@ -15,6 +29,7 @@
   <tbody>
     {{#each this.model as |unidade_medida|}}
       <tr>
+        <td>{{unidade_medida.id}}</td>
         <td>{{unidade_medida.nome}}</td>
         <td>{{unidade_medida.sigla}}</td>
         <td>{{unidade_medida.descricao}}</td>

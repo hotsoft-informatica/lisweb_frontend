@@ -5,12 +5,17 @@
     </div>
   </div>
 </div>
-<select {{on "change" (fn this.sortData ) }}>
-  <option value='id'>Id cresc</option>
-  <option value='-id'>Id decresc</option>
-  <option value='nome'>Nome decresc</option>
-  <option value='-nome'>Nome decresc</option>
-</select>
+<div class="form-group">
+  <div class="col-sm-offset-2 col-sm-10">
+    <label for="order">Ordem:</label>
+    <select id ="order" {{on "change" (fn this.sortData ) }}>
+      <option value='nome'>Nome cresc</option>
+      <option value='-nome'>Nome decresc</option>
+      <option value='id'>Id cresc</option>
+      <option value='-id'>Id decresc</option>
+    </select>
+  </div>
+</div>
 <table class="table table-stripped">
   <thead>
     <th>Nome</th>
