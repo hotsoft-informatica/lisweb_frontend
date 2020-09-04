@@ -5,6 +5,17 @@
     </div>
   </div>
 </div>
+<div class="form-group">
+  <div class="col-sm-offset-2 col-sm-10">
+    <label for="order">Ordem:</label>
+    <select id ="order" {{on "change" (fn this.sortData ) }}>
+      <option value='quantidade'>Quantidade cresc</option>
+      <option value='-quantidade'>Quantidade decresc</option>
+      <option value='id'>Id cresc</option>
+      <option value='-id'>Id decresc</option>
+    </select>
+  </div>
+</div>
 {{!- TODO: Tables must have a table group (thead, tbody or tfoot). -}}
 {{!- TODO: ember-template-lint(table-groups)  -}}
 <table class="table table-stripped">
