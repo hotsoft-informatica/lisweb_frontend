@@ -7,22 +7,25 @@
 </div>
 <div class="form-group">
   <div class="col-sm-offset-2 col-sm-10">
-    <select {{on "change" (fn this.sortData ) }}>
+    <label for="order">Ordem:</label>
+    <select id ="order" {{on "change" (fn this.sortData ) }}>
+      <option value='numero'>Numero cresc</option>
+      <option value='-numero'>Numero decresc</option>
       <option value='id'>Id cresc</option>
       <option value='-id'>Id decresc</option>
-      <option value='nome'>Nome decresc</option>
-      <option value='-nome'>Nome decresc</option>
     </select>
   </div>
 </div>
 <table class="table table-stripped">
   <thead>
+    <th>Id</th>
     <th>Número</th>
     <th colspan="2"></th>
   </thead>
   <tbody>
     {{#each this.model as |atendimento_requisicao|}}
       <tr>
+        <td>{{atendimento_requisicao.id}}</td>
         <td>{{atendimento_requisicao.numero}}</td>
         <td>
           <LinkTo @route="atendimento_requisicoes/edit" @model={{atendimento_requisicao}} class="btn btn-primary">Editar</LinkTo>

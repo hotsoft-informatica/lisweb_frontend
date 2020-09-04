@@ -35,7 +35,7 @@ export default class DefaultComponent extends Component {
     this.sortColumn = event.target.value;
     // this.sortDirection = direction;
     this.loadModel();
-    event.priventDefault();
+    event.preventDefault();
   }
 
   @action
