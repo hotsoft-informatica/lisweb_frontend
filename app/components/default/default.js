@@ -67,8 +67,11 @@ export default class DefaultComponent extends Component {
 
   @action
   save(model, ...event) {
-    model.save().then( () => {
-      this.router.transitionTo(this.redirectTo);
+    this.store.findRecord('laboratorio', 2).then( (laboratorio) => {
+      model.set('laboratorio', laboratorio);
+      model.save().then( () => {
+        this.router.transitionTo(this.redirectTo);
+      });
     });
   }
 }
