@@ -2,7 +2,7 @@ import Model, { attr, belongsTo } from '@ember-data/model';
 
 export default class CentroCustoModel extends Model {
   @attr('string') nome;
-  // @attr('number') version;
+  @attr('number') version;
   // @attr('boolean') pode_solicitar_tudo;
   // @attr('number') version_id;
   // @attr('number') laboratory_domain_id;
