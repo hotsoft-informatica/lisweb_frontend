@@ -31,29 +31,32 @@ export default class DefaultComponent extends Component {
 
   // https://www.w3schools.com/js/js_operators.asp
   @action
-  sortData(event){
+  async sortData(event){
+    this.page = 1;
     this.sortColumn = event.target.value;
     // this.sortDirection = direction;
-    this.loadModel();
+    await this.loadModel();
     event.preventDefault();
   }
 
   @action
-  pageUp(){
+  async pageUp(){
     this.page += 1;
-    this.loadModel();
+    await this.loadModel();
   }
 
   @action
-  pageDown(){
+  async pageDown(){
     this.page -= 1;
-    this.loadModel();
+    await this.loadModel();
   }
 
   @action
   async loadModel(){
-    this.store.query(this.modelString, { page: this.page, sort: this.sortColumn }).then( (model) => {
+    this.loading = 'Carregando...'
+    await this.store.query(this.modelString, { page: this.page, sort: this.sortColumn }).then( (model) => {
       this.model = model;
+      this.loading = '';
     }, (errors) => {
       this.loading = 'Falha no carregamento!';
       this.errors = errors;
@@ -61,13 +64,13 @@ export default class DefaultComponent extends Component {
   }
 
   @action
-  delete(model) {
-    model.destroyRecord();
+  async delete(model) {
+    await model.destroyRecord();
   }
 
   @action
-  save(model, ...event) {
-    this.store.findRecord('laboratorio', 2).then( (laboratorio) => {
+  async save(model, ...event) {
+    await this.store.findRecord('laboratorio', 2).then( (laboratorio) => {
       model.set('laboratorio', laboratorio);
       model.save().then( () => {
         this.router.transitionTo(this.redirectTo);
@@ -75,3 +78,4 @@ export default class DefaultComponent extends Component {
     });
   }
 }
+
