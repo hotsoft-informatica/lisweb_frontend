@@ -8,5 +8,5 @@ export default class ContaModel extends Model {
   // @attr('number') version_id;
   // @attr('number') laboratory_domain_id;
   // @attr('boolean') deleted;
-  // @belongsTo('laboratorio') laboratorio;
+  @belongsTo('laboratorio') laboratorio;
 }
