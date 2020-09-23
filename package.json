@@ -45,7 +45,6 @@
     "@ember-data/model": "3.19.0",
     "@glimmer/component": "1.0.0",
     "@glimmer/tracking": "1.0.0",
-    "ember-ac-components": "../ember_ac_components",
     "ember-load-initializers": "2.1.1",
     "ember-resolver": "8.0.0"
   },
