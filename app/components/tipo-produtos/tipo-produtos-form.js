@@ -5,6 +5,7 @@ import DefaultComponent from '../default/default';
 export default class TipoProdutosFormComponent extends DefaultComponent {
   @tracked redirectTo = '/tipo_produtos';
   @tracked modelString = 'tipo_produto';
+  @tracked modelString = 'categoria_produto';
 
   @action
   save(model, ...event) {

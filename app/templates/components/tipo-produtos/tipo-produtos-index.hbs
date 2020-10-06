@@ -21,6 +21,8 @@
 <table class="table table-stripped">
   <thead>
     <th>ID</th>
+    <th>Unidade medida saída</th>
+    <th>Categoria produto</th>
     <th>Mnemonico</th>
     <th>Nome</th>
     <th>Descrição</th>
@@ -30,6 +32,8 @@
   {{#each this.model as |tipo_produto|}}
     <tr>
       <td>{{tipo_produto.id}}</td>
+      <td>{{tipo_produto.unidade_medida.nome}}</td>
+      <td>{{tipo_produto.categoria_produto.nome}}</td>
       <td>{{tipo_produto.mnemonico}}</td>
       <td>{{tipo_produto.nome}}</td>
       <td>{{tipo_produto.descricao}}</td>
