@@ -15,6 +15,9 @@ export default class DefaultComponent extends Component {
   @service store;
   @service router;
   // TODO: Tentar carregar do model
+  // TODO: Montar array dinamico atraves do model
+  //  Hoje suprido por always_include_linkage_data
+  @tracked includeString;
   @tracked modelString;
   @tracked sortColumn = '-id';
   @tracked sortDirection;
@@ -52,7 +55,7 @@ export default class DefaultComponent extends Component {
 
   @action
   async loadModel(){
-    this.store.query(this.modelString, { page: this.page, sort: this.sortColumn }).then( (model) => {
+    this.store.query(this.modelString, { page: this.page, include: this.includeString, sort: this.sortColumn }).then( (model) => {
       this.model = model;
     }, (errors) => {
       this.loading = 'Falha no carregamento!';

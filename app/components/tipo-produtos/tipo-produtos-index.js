@@ -3,4 +3,5 @@ import DefaultComponent from '../default/default';
 
 export default class TipoProdutosIndexComponent extends DefaultComponent {
   @tracked modelString = 'tipo_produto';
+  @tracked includeString = 'categoria-produto,unidade-medida';
 }

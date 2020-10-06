@@ -1,4 +1,4 @@
-import Model, { attr, belongsTo } from '@ember-data/model';
+import Model, { attr, belongsTo, hasMany } from '@ember-data/model';
 
 export default class CategoriaProdutoModel extends Model {
   @attr('string') nome;
@@ -6,4 +6,5 @@ export default class CategoriaProdutoModel extends Model {
   // @attr('number') version_id;
   // @attr('boolean') deleted;
   @belongsTo('laboratorio') laboratorio;
+  @hasMany('tipo_produto') tipo_produtos;
 }
