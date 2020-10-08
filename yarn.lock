@@ -6384,12 +6384,6 @@ els-addon-docs@1.0.2:
     vscode-uri "^2.1.1"
     walk-sync "^2.0.2"
 
-ember-ac-components@../ember_ac_components:
-  version "0.0.1"
-  dependencies:
-    ember-cli-babel "^7.7.3"
-    ember-cli-htmlbars "^3.0.1"
-
 ember-assign-polyfill@^2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/ember-assign-polyfill/-/ember-assign-polyfill-2.6.0.tgz#07847e3357ee35b33f886a0b5fbec6873f6860eb"
@@ -6696,16 +6690,6 @@ ember-cli-htmlbars@5.2.0, ember-cli-htmlbars@^5.1.2:
     silent-error "^1.1.1"
     strip-bom "^4.0.0"
     walk-sync "^2.1.0"
-
-ember-cli-htmlbars@^3.0.1:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/ember-cli-htmlbars/-/ember-cli-htmlbars-3.1.0.tgz#87806c2a0bca2ab52d4fb8af8e2215c1ca718a99"
-  integrity sha512-cgvRJM73IT0aePUG7oQ/afB7vSRBV3N0wu9BrWhHX2zkR7A7cUBI7KC9VPk6tbctCXoM7BRGsCC4aIjF7yrfXA==
-  dependencies:
-    broccoli-persistent-filter "^2.3.1"
-    hash-for-dep "^1.5.1"
-    json-stable-stringify "^1.0.1"
-    strip-bom "^3.0.0"
 
 ember-cli-inject-live-reload@2.0.2:
   version "2.0.2"
