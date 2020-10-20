@@ -5,12 +5,28 @@
       <Input @type="text" @value={{@model.unidade_medida_saida_id}} class="form-control" />
     </div>
   </div>
-  <div class="form-group">
+  {{!-- <div class="form-group">
+    <label class="col-sm-2 control-label">Unidade medida saída:</label>
+    <div class="col-sm-6">
+      <select required name="unidade_medida" {{action "selectValue" on="change"}}>      
+        <option disabled selected> -- Selecione -- </option>
+        {{#each @model as |unidade|}}
+          <option value={{unidade.unidade_medida.id}>{{unidade.unidade_medida.nome}</option>
+        {{/each}}
+      </select>
+    </div>
+  </div> --}}
+  {{!-- <div class="form-group">
     <label class="col-sm-2 control-label">Categoria produto:</label>
     <div class="col-sm-6">
-      <Input @type="text" @value={{@model.categoria_produto_id}} class="form-control" />
+      <select required name="categoria_produto" {{action "selectValue" on="change"}}>      
+        <option disabled selected> -- Selecione -- </option>
+        {{#each @model as |categoria|}}
+          <option value={{categoria.categoria_produto_id}}>{{categoria.categoria_produto.nome}</option>
+        {{/each}}
+      </select>
     </div>
-  </div>
+  </div> --}}
   <div class="form-group">
     <label class="col-sm-2 control-label">Mnemonico:</label>
     <div class="col-sm-6">
