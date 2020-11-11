@@ -23,11 +23,9 @@ export default class DefaultComponent extends Component {
   // @tracked store = this.store;
   @tracked includeString;
   @tracked modelString;
-  @tracked modelStrings = A();
   @tracked sortColumn = '-id';
   @tracked sortDirection;
   @tracked model;
-  @tracked models = {};
   @tracked errors;
   @tracked page = 1;
   @tracked redirectTo = '/';
@@ -36,14 +34,13 @@ export default class DefaultComponent extends Component {
   
   constructor(owner, args) {
     super(owner, args);
-    this.loadModels();
+    this.loadModel();
   }
   
   @action
-  async loadModel(modelString){
-    console.error(modelString);
-    this.store.query(modelString, { page: this.page, include: this.includeString, sort: this.sortColumn }).then( (model) => {
-      this.models[ modelString ] = model;
+  async loadModel(){
+    this.store.query(this.modelString, { page: this.page, include: this.includeString, sort: this.sortColumn }).then( (model) => {
+      this.model = model;
     }, (errors) => {
       this.loading = 'Falha no carregamento!';
       this.errors = errors;
@@ -51,16 +48,7 @@ export default class DefaultComponent extends Component {
     
   }
 
-  @action
-  loadModels(){
-    this.loadModel(this.modelString);
-    this.model = this.models[ this.modelString ];
-    this.modelStrings.forEach((modelString) => {
-      this.loadModel(modelString);
-    });
-  }
-
-  // https://www.w3schools.com/js/js_operators.asp
+   // https://www.w3schools.com/js/js_operators.asp
   @action
   sortData(event){
     this.sortColumn = event.target.value;
@@ -87,13 +75,15 @@ export default class DefaultComponent extends Component {
   }
 
   @action
-  save(model, ...event) {
-    this.store.findRecord('laboratorio', 2).then( (laboratorio) => {
-      model.set('laboratorio', laboratorio);
-      model.save().then( () => {
-        this.router.transitionTo(this.redirectTo);
-      });
-    });
+  save(event) {
+    console.log(event.target);
+    event.preventDefault();
+    // this.store.findRecord('laboratorio', 2).then( (laboratorio) => {
+    //   model.set('laboratorio', laboratorio);
+    //   model.save().then( () => {
+    //     this.router.transitionTo(this.redirectTo);
+    //   });
+    // });
   }
 
   @action
