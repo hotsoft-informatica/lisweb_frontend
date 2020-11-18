@@ -1,4 +1,21 @@
-<form role="form" {{on "submit" (fn this.save)}}>
+<FormBuilder @for={{this}} @action={{this.submit}} as |f|>
+  <div class="form-horizontal">
+    <div class="form-group">
+      <div class="col-sm-6">
+
+        <f.input @attr="Unidade medida saída" @collection={{this.unidade_medida}} />
+        <f.input @attr="Categoria produto" @collection={{this.categoria_produto}} />
+        <f.input @attr="mnemonico" />
+        <f.input @attr="nome" />
+        <f.input @attr="descricao" />
+
+        <f.submit />
+      </div>
+    </div>
+  </div>
+</FormBuilder>
+
+{{!-- <form role="form" {{on "submit" (fn this.save)}}>
   <div class="form-horizontal">
     <div class="form-group">
       <label class="col-sm-2 control-label">Unidade medida saída:</label>
@@ -48,4 +65,4 @@
       </div>
     </div>
   </div>
-</form>
+</form> --}}
