@@ -17,3 +17,8 @@ export default class TipoProdutosFormComponent extends DefaultComponent {
     super.save(model, ...event);
   }
 }
+// @tracked unidade_medidas = this.store.findAll('unidade_medida').mapBy((unidade_medida) => ({
+//       value: unidade_medida.id,
+//       label: unidade_medida.nome,
+//       content: unidade_medida
+//     }));
