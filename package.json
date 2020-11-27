@@ -45,10 +45,11 @@
     "@ember-data/model": "3.19.0",
     "@glimmer/component": "1.0.0",
     "@glimmer/tracking": "1.0.0",
-    "ember-ac-components": "../ember_ac_components",
     "ember-changeset": "^3.10.2",
     "ember-changeset-validations": "^3.10.0",
+    "ember-foxy-forms": "^2.13.0",
     "ember-load-initializers": "2.1.1",
+    "ember-rapid-forms": "^1.2.5",
     "ember-resolver": "8.0.0",
     "ember-validated-form": "^3.0.2"
   },
