@@ -1,6 +1,4 @@
 yarn autoclean --force;
-yarn ; 
-yarn link "ember-ac-components";
 yarn ;
 yarn run lint:fix;
 yarn run build ;
