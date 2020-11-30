@@ -45,8 +45,13 @@
     "@ember-data/model": "3.19.0",
     "@glimmer/component": "1.0.0",
     "@glimmer/tracking": "1.0.0",
+    "ember-changeset": "^3.10.2",
+    "ember-changeset-validations": "^3.10.0",
+    "ember-foxy-forms": "^2.13.0",
     "ember-load-initializers": "2.1.1",
-    "ember-resolver": "8.0.0"
+    "ember-rapid-forms": "^1.2.5",
+    "ember-resolver": "8.0.0",
+    "ember-validated-form": "^3.0.2"
   },
   "devDependencies": {
     "@babel/core": "7.10.2",
@@ -125,6 +130,7 @@
     "ember-data-lexascms": "^0.1.2",
     "ember-decorators": "6.1.1",
     "ember-export-application-global": "2.0.1",
+    "ember-form-builder": "^2.1.1",
     "ember-handy-globals": "0.0.2",
     "ember-inflector": "3.0.1",
     "ember-intl": "5.3.1",

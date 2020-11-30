@@ -1,4 +1,54 @@
-<form role="form" {{on "submit" (fn this.save)}}>
+<ValidatedForm @model={{@model}} @on-submit={{perform this.save}} as |f|>
+  <div class="form-horizontal">
+    <div class="form-group">
+      <div class="col-sm-6">
+        <f.input
+          @type="select"
+          @label="Unidade Medida"
+          @name="nome"
+          @includeBlank="Select a unidade medida"
+          @options={{this.unidade_medidas}}
+          @value={{@model.unidade_medida}}
+          @required={{true}}
+        />
+        <f.input
+          @type="select"
+          @label="categoria_produto"
+          @name="nome"
+          @includeBlank="Select a categoria_produto"
+          @options={{this.categoria_produtos}}
+          @value={{@model.categoria_produto}}
+          @required={{true}}
+        />
+        <f.input
+          @label="Mnemonico"
+          @name="mnemonico"
+          @required={{true}}
+        />
+        <f.input
+          @label="Nome"
+          @name="nome"
+          @required={{true}}
+        />
+        <f.input
+          @label="Descrição"
+          @name="descricao"
+          @required={{true}}
+        />
+
+        {{!-- <f.input @name="unidade_medida" @collection={{this.unidade_medidas}} />
+        <f.input @name="categoria_produto" @collection={{this.categoria_produtos}} />
+        <f.input @name="mnemonico" />
+        <f.input @name="nome" />
+        <f.input @name="descricao" /> --}}
+
+        <f.submit @label="Save" />
+      </div>
+    </div>
+  </div>
+</ValidatedForm>
+
+{{!-- <form role="form" {{on "submit" (fn this.save)}}>
   <div class="form-horizontal">
     <div class="form-group">
       <label class="col-sm-2 control-label">Unidade medida saída:</label>
@@ -48,4 +98,4 @@
       </div>
     </div>
   </div>
-</form>
+</form> --}}
