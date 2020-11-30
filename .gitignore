@@ -29,4 +29,5 @@ yarn.lock
 package-lock.json
 yarn.lock~*
 .eslintcache
+..bfg-report/
 
