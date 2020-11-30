@@ -34,10 +34,6 @@ module.exports = function (defaults) {
     },
   });
 
-  // TODO: Alinhar com o Acras para remover, pois depende do jQuery
-  // TODO: Remover dependencias do jQuery
-  app.import('node_modules/jquery-mask-plugin/dist/jquery.mask.min.js');
-
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
@@ -53,3 +49,4 @@ module.exports = function (defaults) {
 
   return app.toTree();
 };
+

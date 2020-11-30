@@ -7555,12 +7555,6 @@ els-addon-docs@1.0.2:
     vscode-uri "^2.1.1"
     walk-sync "^2.0.2"
 
-ember-ac-components@../ember_ac_components:
-  version "0.0.1"
-  dependencies:
-    ember-cli-babel "^7.7.3"
-    ember-cli-htmlbars "^3.0.1"
-
 ember-assign-helper@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/ember-assign-helper/-/ember-assign-helper-0.3.0.tgz#7a023dd165ef56b28f77f70fd20e88261380aca7"
