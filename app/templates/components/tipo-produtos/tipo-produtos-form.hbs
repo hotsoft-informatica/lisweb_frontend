@@ -1,52 +1,44 @@
-<ValidatedForm @model={{@model}} @on-submit={{perform this.save}} as |f|>
+<Form @for={{this.model}} @onSubmit={{this.save}} as |f|>
   <div class="form-horizontal">
     <div class="form-group">
       <div class="col-sm-6">
-        <f.input
-          @type="select"
-          @label="Unidade Medida"
-          @name="nome"
-          @includeBlank="Select a unidade medida"
-          @options={{this.unidade_medidas}}
-          @value={{@model.unidade_medida}}
-          @required={{true}}
+        <f.field
+          @for="unidade_medida"
+          @using="select"
+          @label="Unidade de medida"
+          @values={{this.unidade_medidas}}
+          @valueTooltip="An Select"
         />
-        <f.input
-          @type="select"
-          @label="categoria_produto"
-          @name="nome"
-          @includeBlank="Select a categoria_produto"
-          @options={{this.categoria_produtos}}
-          @value={{@model.categoria_produto}}
-          @required={{true}}
+        <f.field
+          @for="categoria_produto"
+          @using="select"
+          @label="Categoria de produto"
+          @values={{this.categoria_produtos}}
+          @valueTooltip="An Select"
         />
-        <f.input
-          @label="Mnemonico"
-          @name="mnemonico"
-          @required={{true}}
-        />
-        <f.input
+        <f.field
+          @for="nome"
+          @using="input"
           @label="Nome"
-          @name="nome"
-          @required={{true}}
+          @valueTooltip="Nome"
         />
-        <f.input
+        <f.field
+          @for="mnemonico"
+          @using="input"
+          @label="Mnemonico"
+          @valueTooltip="Mnemonico"
+        />
+        <f.field
+          @for="descricao"
+          @using="input"
           @label="Descrição"
-          @name="descricao"
-          @required={{true}}
+          @valueTooltip="Descrição"
         />
-
-        {{!-- <f.input @name="unidade_medida" @collection={{this.unidade_medidas}} />
-        <f.input @name="categoria_produto" @collection={{this.categoria_produtos}} />
-        <f.input @name="mnemonico" />
-        <f.input @name="nome" />
-        <f.input @name="descricao" /> --}}
-
-        <f.submit @label="Save" />
+        <f.submit />
       </div>
     </div>
   </div>
-</ValidatedForm>
+</Form>
 
 {{!-- <form role="form" {{on "submit" (fn this.save)}}>
   <div class="form-horizontal">
