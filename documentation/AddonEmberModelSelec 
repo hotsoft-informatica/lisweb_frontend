@@ -1,0 +1,2 @@
+Por sugestão do de um dos desenvolvedores do Ember observer, foi efetuada a tentativa de utilizar o addon ember-model-select em conjunto com o ember-foxy-form. Contudo a sugestão ná prática não
+se mostrou promissora, pois com o novo addon o template do form não renderizava e nem ao menos retornava algum tipo de erro, o que tornou impossível de entender o seu não funcionamento.
