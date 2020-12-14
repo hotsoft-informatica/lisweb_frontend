@@ -1,11 +1,34 @@
 'use strict';
 
+const CssImport = require('postcss-import');
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const Funnel = require('broccoli-funnel');
+const autoprefixer = require('autoprefixer');
+const gitRev = require('git-rev-sync');
+const mergeTrees = require('broccoli-merge-trees');
 
 module.exports = function (defaults) {
+  let disabledAddons = [];
+  let environment = EmberApp.env();
+  let isProduction = environment === 'production';
+
+  let swDisabled = process.env.SW_DISABLED;
+  let version = gitRev.short();
+
+  console.info('\n---------------');
+  console.info('environment: ', environment);
+  console.info('isProduction: ', isProduction);
+  console.info('SW_DISABLED: ', swDisabled);
+  console.info('git version: ', version);
+  console.info('---------------\n');
+
   let app = new EmberApp(defaults, {
     'ember-cli-babel': {
       includePolyfill: true,
+    },
+    sourcemaps: {
+      enabled: !isProduction,
+      extensions: 'js',
     },
     babel: {
       sourceMaps: 'inline',
@@ -14,20 +37,49 @@ module.exports = function (defaults) {
       testGenerator: 'qunit',
       group: true,
       rulesDir: 'eslint-rules',
-      extensions: ['js'],
+      extensions: ['js','ts'],
     },
     'ember-cli-qunit': {
       useLintTree: false,
     },
-
     'ember-ci-mocha': {
       useLintTree: false,
     },
     hinting: true,
+    minifyJS: { enabled: isProduction },
+    minifyCSS: { enabled: isProduction },
     outputPaths: {
       app: {
         html: 'index.html',
       },
+    },
+    autoImport: {
+      alias: {
+        qrcode: 'qrcode/build/qrcode.min.js',
+        'qr-scanner': 'qr-scanner/qr-scanner.min.js',
+        uuid: 'uuid/index.js',
+      },
+      exclude: ['libsodium', 'libsodium-wrappers'],
+    },
+    'ember-cli-babel': {
+      includePolyfill: true,
+      disablePresetEnv: true,
+      disableDebugTooling: false,
+      includeExternalHelpers: true,
+      // disableDebugTooling: isProduction,
+      // Will not build if uncommented:
+      // disableEmberModulesAPIPolyfill: true
+      // compileModules: false,
+    },
+    addons: { blacklist: disabledAddons },
+    'asset-cache': {
+      version,
+      include: ['assets/**/*', '**/*.html', 'index.html'],
+      exclude: ['.well-known/**/*', 'bundle.html', 'favicon.ico', 'robots.txt'],
+    },
+    'esw-index': {
+      version,
+      excludeScope: [/\.well-known/, /bundle.html/, /favicon.ico/, /robots.txt/],
     },
     sassOptions: {
       extension: 'scss',

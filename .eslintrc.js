@@ -1,5 +1,7 @@
 'use strict';
 
+// TODO: Compare with that:
+// https://gitlab.com/NullVoxPopuli/emberclear/-/blob/master/packages/frontend/.eslintrc.js
 module.exports = {
   root: true,
   parser: 'babel-eslint',
