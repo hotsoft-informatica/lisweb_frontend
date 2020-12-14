@@ -21,3 +21,15 @@
 
 # vscode
 /.vscode/
+
+# accent
+jipt/dist
+jipt/.cache
+jipt/package-lock.json
+cli/lib
+cli/package-lock.json
+webapp/dist
+webapp/.cache
+webapp/tmp
+webapp/package-lock.json
+
