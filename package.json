@@ -112,10 +112,7 @@
     "cross-env": "7.0.3",
     "debug": "4.3.1",
     "els-addon-docs": "1.0.2",
-<<<<<<< HEAD
-=======
     "ember-auto-import": "1.9.0",
->>>>>>> 6e67685a556f2fc528612a46d2d2947dd3c862f6
     "ember-classic-decorator": "2.0.0",
     "ember-cli": "3.22.0",
     "ember-cli-app-version": "4.0.0",
@@ -175,10 +172,7 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-qunit": "4.2.0",
     "esutils": "2.0.3",
-<<<<<<< HEAD
-=======
     "git-rev-sync": "3.0.1",
->>>>>>> 6e67685a556f2fc528612a46d2d2947dd3c862f6
     "globals": "13.1.0",
     "graceful-fs": "4.2.4",
     "heimdalljs": "0.2.6",
