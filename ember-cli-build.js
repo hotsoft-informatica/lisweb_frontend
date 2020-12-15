@@ -1,9 +1,7 @@
 'use strict';
 
-const CssImport = require('postcss-import');
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 const Funnel = require('broccoli-funnel');
-const autoprefixer = require('autoprefixer');
 const gitRev = require('git-rev-sync');
 const mergeTrees = require('broccoli-merge-trees');
 
@@ -82,7 +80,7 @@ module.exports = function (defaults) {
       excludeScope: [/\.well-known/, /bundle.html/, /favicon.ico/, /robots.txt/],
     },
     sassOptions: {
-      extension: 'scss',
+      // extension: 'scss',
     },
   });
 
