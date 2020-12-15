@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
-    "removeComments": true,
-    "strict": true,
-    "importHelpers": true,
-    "forceConsistentCasingInFileNames": true,
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
     "baseUrl": ".",
+    "esModuleInterop": true,
     "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
     "inlineSourceMap": true,
     "inlineSources": true,
     "module": "es6",
@@ -17,16 +16,21 @@
     "noEmitOnError": false,
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
-    "noImplicitReturns": true,
+    "noImplicitReturns": false,
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "removeComments": true,
+    "strict": true,
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "target": "es2018",
     "paths": {
       "lisweb-frontend/tests/*": [
         "tests/*"
+      ],
+      "lisweb-frontend/config/*": [
+        "config/*"
       ],
       "lisweb-frontend/*": [
         "app/*"
@@ -42,3 +46,5 @@
     "types/**/*"
   ]
 }
+
+

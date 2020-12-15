@@ -31,3 +31,16 @@ yarn.lock~*
 .eslintcache
 ..bfg-report/
 
+/coverage*
+/junit.xml
+
+# bundle analysis
+/concat-stats-for
+
+# compiled output
+/dist/
+/tmp/
+
+# generated as a part of deployment
+/public/bundle.html
+

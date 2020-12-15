@@ -1,5 +1,8 @@
 'use strict';
 
+// TODO: Compare with that:
+// https://gitlab.com/NullVoxPopuli/emberclear/-/blob/master/packages/frontend/.eslintrc.js
+// https://github.com/mirego/accent/blob/master/.eslintrc.js
 module.exports = {
   root: true,
   parser: 'babel-eslint',
@@ -98,7 +101,9 @@ module.exports = {
   settings: {
     'import/resolver': 'eslint-import-resolver-ember',
   },
-
+  globals: {
+    JsDiff: true
+  },
   overrides: [
     // node files
     {
