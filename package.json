@@ -36,7 +36,6 @@
     "lint:tsc": "tsc --noEmit",
     "lint:tslint": "tslint -p tsconfig.json",
     "merge-coverage": "ember coverage-merge",
-    "precommit": "lint-staged",
     "start": "yarn ember serve -p 4201",
     "pretest": "ember build",
     "test": "cross-env SW_DISABLED=true yarn ember exam --random",
@@ -50,8 +49,6 @@
   },
   "lint-staged": {
     "*.{js,json,css}": [
-      "prettier --write",
-      "git add"
     ]
   },
   "eslintConfig": {
