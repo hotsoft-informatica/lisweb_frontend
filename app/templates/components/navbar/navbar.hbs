@@ -5,7 +5,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-    <ul class="navbar-nav mr-auto">
+    <ul class="mr-auto navbar-nav">
       <li class="nav-item active">
         <LinkTo @route="labs" class="nav-link">Labs <span class="sr-only">(página atual)</span></LinkTo>
       </li>
@@ -14,19 +14,19 @@
           Cadastros
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Grupos de Centros de Custo</a>
-          <a class="dropdown-item" href="#">Centros de Custo</a>
+          <a class="dropdown-item" href="/grupo_centro_custos">Grupos de Centros de Custo</a>
+          <a class="dropdown-item" href="/centro_custos">Centros de Custo</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Categorias de Produto</a>
-          <a class="dropdown-item" href="#">Unidades Entrada/Saída</a>
-          <LinkTo @route="marcas/index" class="dropdown-item"> Marcas</LinkTo>
-          <a class="dropdown-item" href="#">Tipos de Produto</a>
-          <a class="dropdown-item" href="#">Unidades de Atendimento</a>
-          <a class="dropdown-item" href="#">Contas (Caixa e Bancárias)</a>
-          <a class="dropdown-item" href="#">Plano de Contas</a>
+          <a class="dropdown-item" href="/categoria_produtos">Categorias de Produto</a>
+          <a class="dropdown-item" href="/unidade_medidas">Unidades Entrada/Saída</a>
+          <a class="dropdown-item" href="/marcas">Marcas</a>
+          <a class="dropdown-item" href="/tipo_produtos">Tipos de Produto</a>
+          <a class="dropdown-item" href="/unidade_atendimentos">Unidades de Atendimento</a>
+          <a class="dropdown-item" href="/contas">Contas (Caixa e Bancárias)</a>
+          <a class="dropdown-item" href="/conta_contabeis">Plano de Contas</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Tipos de Pessoa</a>
-          <a class="dropdown-item" href="#">Pessoas</a>
+          <a class="dropdown-item" href="/tipo_pessoas">Tipos de Pessoa</a>
+          <a class="dropdown-item" href="/pessoas">Pessoas</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -35,8 +35,8 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Central de Lançamentos</a>
-          <a class="dropdown-item" href="#">Lançamentos</a>
-          <a class="dropdown-item" href="#">NFSe</a>
+          <a class="dropdown-item" href="lancamentos">Lançamentos</a>
+          <a class="dropdown-item" href="chave_nfses">NFSe</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -44,17 +44,17 @@
           Movimentações
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Requisição de Materiais</a>
-          <a class="dropdown-item" href="#">Atendimento a Solicitações dos Setores</a>
+          <a class="dropdown-item" href="/requisicao_materiais">Requisição de Materiais</a>
+          <a class="dropdown-item" href="/atendimento_requisicoes">Atendimento a Solicitações dos Setores</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Lista de Compras</a>
-          <a class="dropdown-item" href="#">Orçamentos</a>
+          <a class="dropdown-item" href="/orcamentos">Orçamentos</a>
           <a class="dropdown-item" href="#">Elaboração de Pedidos</a>
-          <a class="dropdown-item" href="#">Pedidos</a>
-          <a class="dropdown-item" href="#">Recebimentos de Pedidos</a>
+          <a class="dropdown-item" href="/pedidos">Pedidos</a>
+          <a class="dropdown-item" href="/recebimento_produtos">Recebimentos de Pedidos</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Pendências de Recebimento</a>
-          <a class="dropdown-item" href="#">Outras Movimentações</a>
+          <a class="dropdown-item" href="/pendencia_recebimentos">Pendências de Recebimento</a>
+          <a class="dropdown-item" href="/baixa_produtos">Outras Movimentações</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -72,6 +72,15 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Catálogo
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Relatório Estoque</a>
+          <a class="dropdown-item" href="#">Relatório Financeiro</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Gerencial
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Relatório Estoque</a>

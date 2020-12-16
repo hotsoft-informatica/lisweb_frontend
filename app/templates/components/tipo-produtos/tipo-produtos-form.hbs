@@ -1,0 +1,93 @@
+<Form @for={{this.model}} @onSubmit={{this.save}} as |f|>
+  <div class="form-horizontal">
+    <div class="form-group">
+      <div class="col-sm-6">
+        <f.field
+          @for="unidade_medida"
+          @using="select"
+          @label="Unidade de medida"
+          @values={{this.unidade_medidas}}
+          @valueTooltip="An Select"
+        />
+        <f.field
+          @for="categoria_produto"
+          @using="select"
+          @label="Categoria de produto"
+          @values={{this.categoria_produtos}}
+          @valueTooltip="An Select"
+        />
+        <f.field
+          @for="nome"
+          @using="input"
+          @label="Nome"
+          @valueTooltip="Nome"
+        />
+        <f.field
+          @for="mnemonico"
+          @using="input"
+          @label="Mnemonico"
+          @valueTooltip="Mnemonico"
+        />
+        <f.field
+          @for="descricao"
+          @using="input"
+          @label="Descrição"
+          @valueTooltip="Descrição"
+        />
+        <f.submit />
+      </div>
+    </div>
+  </div>
+</Form>
+
+{{!-- <form role="form" {{on "submit" (fn this.save)}}>
+  <div class="form-horizontal">
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Unidade medida saída:</label>
+      <div class="col-sm-6">
+        <select required name="unidade_medida">
+          <option disabled selected> -- Selecione -- </option>
+          {{#each this.unidade_medidas as |unidade_medida|}}
+            <option value={{unidade_medida.id}}>{{unidade_medida.nome}}</option>
+          {{/each}}
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Categoria produto:</label>
+      <div class="col-sm-6">
+        <select required name="categoria_produto">
+          <option disabled selected> -- Selecione -- </option>
+          {{#each this.categoria_produtos as |categoria_produto|}}
+            <option value={{categoria_produto.id}}>{{categoria_produto.nome}}</option>
+          {{/each}}
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Mnemonico:</label>
+      <div class="col-sm-6">
+        <Input @type="text" @value={{@model.mnemonico}} class="form-control" />
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Nome:</label>
+      <div class="col-sm-6">
+        <Input @type="text" @value={{@model.nome}} class="form-control" placeholder="Nome" />
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Descrição:</label>
+      <div class="col-sm-6">
+        <Input @type="text" @value={{@model.descricao}} class="form-control" placeholder="Descrição" />
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        {{!- TODO: Do not use `action` as. Instead, use the `on` modifier and `fn` -}}
+        {{!- TODO: helper.ember-template-lint -}}
+        <button type="submit" class="btn btn-success">Salvar</button>
+      </div>
+    </div>
+  </div>
+</form> --}}

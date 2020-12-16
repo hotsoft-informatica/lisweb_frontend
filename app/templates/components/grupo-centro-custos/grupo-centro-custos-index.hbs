@@ -1,0 +1,41 @@
+<div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <LinkTo @route="grupo_centro_custos/new" class="btn btn-success">Novo grupo centro custo</LinkTo>
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <div class="col-sm-offset-2 col-sm-10">
+    <label for="order">Ordem:</label>
+    <select id ="order" {{on "change" (fn this.sortData ) }}>
+      <option value='nome'>Nome cresc</option>
+      <option value='-nome'>Nome decresc</option>
+      <option value='id'>Id cresc</option>
+      <option value='-id'>Id decresc</option>
+    </select>
+  </div>
+</div>
+<table class="table table-stripped">
+  <thead>
+    <th>Id</th>
+    <th>Nome</th>
+    <th colspan="2"></th>
+  </thead>
+  <tbody>
+  {{#each this.model as |grupo_centro_custo|}}
+    <tr>
+      <td>{{grupo_centro_custo.id}}</td>
+      <td>{{grupo_centro_custo.nome}}</td>
+      <td>
+        <LinkTo @route="grupo_centro_custos/edit" @model={{grupo_centro_custo}} class="btn btn-primary">Editar</LinkTo>
+        <button type="button" class="btn btn-primary" {{on "click" (fn this.delete grupo_centro_custo)}}>Excluir</button>
+      </td>
+    </tr>
+  {{else}}
+    <tr><td collspan="5">{{this.loading}}</td></tr>
+  {{/each}}
+  </tbody>
+</table>
+<button type="button" class="btn btn-success" {{on "click" this.pageDown}}>Anterior</button>
+<button type="button" class="btn btn-success" {{on "click" this.pageUp}}>Próxima</button>

@@ -2,6 +2,18 @@
 <div class="form-horizontal">
   <div class="form-group">
     <label class="col-sm-2 control-label">
+      Laboratório:
+    </label>
+    {{!-- <div class="col-sm-6">
+      <select id="laboratorioId" class="form-control" {{on 'change' this.laboratorio @model}} >
+        {{#each @model.laboratorios as |lab|}}
+          <option value="{{lab.id}}">{{lab.nome}}</option>
+        {{/each}}
+      </select>
+    </div> --}}
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">
       Nome:
     </label>
     <div class="col-sm-6">
@@ -27,3 +39,4 @@
 {{else}}
 Registro não Encontrado
 {{/if}}
+

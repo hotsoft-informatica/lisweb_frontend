@@ -1,0 +1,49 @@
+<div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <LinkTo @route="baixa_produtos/new" class="btn btn-success">Nova pendência recebimento</LinkTo>
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <div class="col-sm-offset-2 col-sm-10">
+    <label for="order">Ordem:</label>
+    <select id ="order" {{on "change" (fn this.sortData ) }}>
+      <option value='numero'>Numero cresc</option>
+      <option value='-numero'>Numero decresc</option>
+      <option value='tipo_movimento'>Tipo cresc</option>
+      <option value='-tipo_movimento'>Tipo decresc</option>
+      <option value='id'>Id cresc</option>
+      <option value='-id'>Id decresc</option>
+    </select>
+  </div>
+</div>
+<table class="table table-stripped">
+  <thead>
+    <th>Id</th>
+    <th>Número</th>
+    <th>Tipo</th>
+    <th>Classificação</th>
+    <th>Observações</th>
+    <th colspan="2"></th>
+  </thead>
+  <tbody>
+    {{#each this.model as |baixa_produto|}}
+      <tr>
+        <td>{{baixa_produto.id}}</td>
+        <td>{{baixa_produto.numero}}</td>
+        <td>{{baixa_produto.tipo_movimento}}</td>
+        <td>{{baixa_produto.classificacao}}</td>
+        <td>{{baixa_produto.observacoes}}</td>
+        <td>
+          <LinkTo @route="baixa_produtos/edit" @model={{baixa_produto}} class="btn btn-primary">Editar</LinkTo>
+          <button type="button" class="btn btn-primary" {{on "click" (fn this.delete baixa_produto)}}>Excluir</button>
+        </td>
+      </tr>
+    {{else}}
+      <tr><td collspan="5">{{this.loading}}</td></tr>
+    {{/each}}
+  </tbody>
+</table>
+<button type="button" class="btn btn-success" {{on "click" this.pageDown}}>Anterior</button>
+<button type="button" class="btn btn-success" {{on "click" this.pageUp}}>Próxima</button>
