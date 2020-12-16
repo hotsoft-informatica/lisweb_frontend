@@ -8,7 +8,7 @@ module.exports = function (defaults) {
       includePolyfill: true,
     },
     babel: {
-      sourceMaps: 'inline',
+      sourceMaps: 'inline'
     },
     eslint: {
       testGenerator: 'qunit',
@@ -30,13 +30,16 @@ module.exports = function (defaults) {
       },
     },
     sassOptions: {
-      extension: 'scss',
+      extensions: [ 'js', 'scss' ]
     },
+    'ember-cli-qunit': {
+      useLintTree: false
+    },
+    'ember-cli-mocha': {
+      useLintTree: false
+    },
+    hinting: true
   });
-
-  // TODO: Alinhar com o Acras para remover, pois depende do jQuery
-  // TODO: Remover dependencias do jQuery
-  app.import('node_modules/jquery-mask-plugin/dist/jquery.mask.min.js');
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
@@ -53,3 +56,4 @@ module.exports = function (defaults) {
 
   return app.toTree();
 };
+

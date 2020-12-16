@@ -94,6 +94,8 @@ Router.map(function() {
   this.route('orcamentos/new');
   this.route('orcamentos/edit', { path: '/orcamentos/:orcamento_id' });
   this.route('orcamentos/index', { path: '/orcamentos' });
+  // Requisicao de materiais
+  this.route('atendimentos_requisicoes');
   // Lista compras?
   this.route('orcamentos');
   // Rotas para pedidos

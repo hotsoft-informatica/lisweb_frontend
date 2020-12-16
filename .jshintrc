@@ -1,3 +1,7 @@
+// https://jshint.com/docs/options/
+// https://github.com/victorporof/Sublime-JSHint/issues/142
+// https://gist.github.com/haschek/2595796
+// https://gist.github.com/ScheerMT/fa6e2f845c67ded9292f
 {
   "browser": true,
   "esnext": true,

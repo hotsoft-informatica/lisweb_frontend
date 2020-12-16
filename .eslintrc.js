@@ -47,6 +47,17 @@ module.exports = {
     camelcase: [0],
     'computed-property-spacing': [2, 'always'],
     'disable-features/disable-async-await': [0, 'always'],
+  },
+
+  rules: {
+    'class-methods-use-this': [ 0, 'never' ],
+    'lines-between-class-members': [ 1, 'always', { 'exceptAfterSingleLine': true } ],
+    'array-bracket-spacing': [ 2, 'always' ],
+    'arrow-parens': [ 'error', 'always' ],
+    'camelcase': [ 1 ],
+    'class-methods-use-this': [ 1 ],
+    'computed-property-spacing': [ 2, 'always' ],
+    'disable-features/disable-async-await': 'error',
     'disable-features/disable-generator-functions': 'error',
     'ember-suave/no-const-outside-module-scope': 'error',
     'ember-suave/no-direct-property-access': 'error',
@@ -97,6 +108,30 @@ module.exports = {
 
   settings: {
     'import/resolver': 'eslint-import-resolver-ember',
+    'generator-star-spacing': [ 'error', { 'before': false, 'after': true } ],
+    'new-cap': [ 'error', { 'capIsNewExceptions': [ 'A' ] } ],
+    'no-case-declarations': [ 1 ],
+    'no-implicit-coercion': 'error',
+    'no-multiple-empty-lines': [ 2, { 'max': 1, 'maxEOF': 0, 'maxBOF': 0 } ],
+    'no-new-wrappers': 'error',
+    'no-param-reassign': [ 1 ],
+    'no-return-assign': [ 1 ],
+    'no-shadow': [ 1 ],
+    'no-throw-literal': 'error',
+    'no-undef': [ 1 ],
+    'no-underscore-dangle': [ 0, 'always' ],
+    'no-unused-vars': 'error',
+    'no-use-before-define': [ 2, { 'functions': false } ],
+    'no-var': 'error',
+    'object-curly-spacing': [ 2, 'always' ],
+    'object-shorthand': [ 'error', 'always' ],
+    'prefer-const': 0,
+    'prefer-spread': 'error',
+    'prefer-template': 'error',
+    'quotes': [ 1, 'single', 'avoid-escape' ],
+    'semi': [ 0, 'never' ],
+    'space-in-parens': [ 0, 'always' ],
+    'template-curly-spacing': [ 2, 'always' ]
   },
 
   overrides: [
@@ -113,13 +148,12 @@ module.exports = {
         'husky.config.js',
         'lint-staged.config.js',
         '.template-lintrc.js',
-        'ember-cli-build.js',
-        'testem.js',
         'blueprints/*/index.js',
         'config/**/*.js',
+        'ember-cli-build.js',
         'lib/*/index.js',
         'server/**/*.js',
-        'ember-cli-build.js',
+        'testem.js'
       ],
 
       parserOptions: {
@@ -130,7 +164,6 @@ module.exports = {
         browser: false,
         node: true,
       },
-
       plugins: ['node'],
       rules: {
         // eslint-disable-next-line global-require
@@ -145,3 +178,4 @@ module.exports = {
     },
   ],
 };
+

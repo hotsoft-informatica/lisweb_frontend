@@ -8,3 +8,4 @@ export default class LaboratoriosIndexRoute extends Route {
     return this.store.findAll('laboratorio');
   }
 }
+

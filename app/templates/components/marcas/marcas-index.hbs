@@ -13,12 +13,32 @@
   </thead>
   <tbody>
     {{#each this.model as |marca|}}
+</td>
+{{!- TODO: Tables must have a table group (thead, tbody or tfoot). -}}
+{{!- TODO: ember-template-lint(table-groups)  -}}
+<table>
+  <ul>
+    <tr>
+      <th>
+          <label>Id</label>
+      </th>
+      <th>
+          <label>Nome</label>
+      </th>
+      <th>
+          <label>Descrição</label>
+      </th>
+    </tr>
+    {{#each @model as |marca|}}
       <tr>
         <td>{{marca.nome}}</td>
         <td>{{marca.descricao}}</td>
         <td>
           <LinkTo @route="marcas/edit" @model={{marca}} class="btn btn-primary">Editar</LinkTo>
           <button type="submit" class="btn btn-primary" {{on "click" (fn this.delete marca)}}>Excluir</button>
+          {{!- TODO: Do not use `action` Instead, use the `on` modifier and `fn` helper. -}}
+          {{!- TODO: ember-template-lint(no-action) -}}
+          <button type="submit" class="btn btn-primary" {{action 'deleteMarca' marca}}>Excluir</button>
         </td>
       </tr>
     {{else}}

@@ -14,7 +14,6 @@ export default class App extends Application {
   podModulePrefix = config.podModulePrefix;
 
   Resolver = Resolver;
-
   LOG_TRANSITIONS = true;
 
   LOG_TRANSITIONS_INTERNAL = true;
@@ -27,3 +26,4 @@ export default class App extends Application {
 }
 
 loadInitializers(App, config.modulePrefix);
+
