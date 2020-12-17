@@ -18,9 +18,3 @@ updates:
     commit-message:
       # Prefix all commit messages with "npm"
       prefix: "npm"
-  - package-ecosystem: "bundler"
-    # Raise pull requests to update vendored dependencies that are checked in to the repository
-    vendor: true
-    directory: "/"
-    schedule:
-      interval: "daily"
