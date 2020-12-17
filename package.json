@@ -230,7 +230,7 @@
     "sass": "1.26.8",
     "semver": "7.3.4",
     "socks": "2.5.1",
-    "stylelint": "13.6.1",
+    "stylelint": "13.8.0",
     "stylelint-config-prettier": "8.0.1",
     "stylelint-config-standard": "20.0.0",
     "to-fast-properties": "3.0.1",
