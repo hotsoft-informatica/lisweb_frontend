@@ -1,46 +1,24 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
-
-# compiled output
-/dist/
-/tmp/
-
-# dependencies
-/bower_components/
-/node_modules/
-
-# misc
+..bfg-report/
+.eslintcache
 /.env*
+/.node_modules.ember-try/
 /.pnp*
 /.sass-cache
-/connect.lock
-/coverage/
-/libpeerconnection.log
-/npm-debug.log*
-/testem.log
-/yarn-error.log
-
-# ember-try
-/.node_modules.ember-try/
 /bower.json.ember-try
-/package.json.ember-try
-
-# Other
-yarn.lock
-package-lock.json
-yarn.lock~*
-.eslintcache
-..bfg-report/
-
-/coverage*
-/junit.xml
-
-# bundle analysis
+/bower_components/
 /concat-stats-for
-
-# compiled output
+/connect.lock
+/coverage*
+/coverage/
 /dist/
-/tmp/
-
-# generated as a part of deployment
+/junit.xml
+/libpeerconnection.log
+/node_modules/
+/npm-debug.log*
+/package.json.ember-try
 /public/bundle.html
+/testem.log
+/tmp/
+/yarn-error.log
 
