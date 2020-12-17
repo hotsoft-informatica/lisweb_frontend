@@ -3353,10 +3353,10 @@ babel-plugin-filter-imports@^4.0.0:
     "@babel/types" "^7.7.2"
     lodash "^4.17.15"
 
-babel-plugin-htmlbars-inline-precompile@4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-htmlbars-inline-precompile/-/babel-plugin-htmlbars-inline-precompile-4.1.0.tgz#11796422e65d900a968481fa3fb37e0425c928dd"
-  integrity sha512-gM+UP6HO5RlGiOQzJVGRUHgAsefJeOdh5Pn+rZRS6Tr1MnEqVgTJ2G2ywnl+G+Zcuec18fz7XA+O2tHhsmct6w==
+babel-plugin-htmlbars-inline-precompile@4.2.1, babel-plugin-htmlbars-inline-precompile@^4.2.0:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-htmlbars-inline-precompile/-/babel-plugin-htmlbars-inline-precompile-4.2.1.tgz#9a367f8d7ecb9fb2c2e886edfe285caf7cb9766d"
+  integrity sha512-MCJXk+1R0YjlF/F52eDbhJTpsnqRVYsPYVP9d0jEu7E46AcRPEWDL5tfSweiQWHLKG017BIedATb91KcIoT3zA==
 
 babel-plugin-htmlbars-inline-precompile@^1.0.0:
   version "1.0.0"
@@ -3367,11 +3367,6 @@ babel-plugin-htmlbars-inline-precompile@^3.0.1, babel-plugin-htmlbars-inline-pre
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-htmlbars-inline-precompile/-/babel-plugin-htmlbars-inline-precompile-3.2.0.tgz#c4882ea875d0f5683f0d91c1f72e29a4f14b5606"
   integrity sha512-IUeZmgs9tMUGXYu1vfke5I18yYJFldFGdNFQOWslXTnDWXzpwPih7QFduUqvT+awDpDuNtXpdt5JAf43Q1Hhzg==
-
-babel-plugin-htmlbars-inline-precompile@^4.2.0:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-htmlbars-inline-precompile/-/babel-plugin-htmlbars-inline-precompile-4.2.1.tgz#9a367f8d7ecb9fb2c2e886edfe285caf7cb9766d"
-  integrity sha512-MCJXk+1R0YjlF/F52eDbhJTpsnqRVYsPYVP9d0jEu7E46AcRPEWDL5tfSweiQWHLKG017BIedATb91KcIoT3zA==
 
 babel-plugin-module-resolver@^3.1.1:
   version "3.2.0"

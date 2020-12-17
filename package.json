@@ -96,7 +96,7 @@
     "babel-loader": "8.1.0",
     "babel-messages": "6.23.0",
     "babel-plugin-ember-modules-api-polyfill": "2.13.4",
-    "babel-plugin-htmlbars-inline-precompile": "4.1.0",
+    "babel-plugin-htmlbars-inline-precompile": "4.2.1",
     "babel-plugin-transform-es2015-modules-amd": "6.24.1",
     "babel-polyfill": "6.26.0",
     "babel-preset-env": "1.7.0",
