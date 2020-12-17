@@ -179,7 +179,7 @@
     "ember-sortable": "2.2.1",
     "ember-source": "3.23.1",
     "ember-svg-jar": "2.2.3",
-    "ember-template-lint": "2.14.0",
+    "ember-template-lint": "2.15.0",
     "ember-test-waiters": "1.1.1",
     "ember-truth-helpers": "2.1.0",
     "ember-try": "1.4.0",

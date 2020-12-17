@@ -1554,13 +1554,6 @@
   resolved "https://registry.yarnpkg.com/@glimmer/env/-/env-0.1.7.tgz#fd2d2b55a9029c6b37a6c935e8c8871ae70dfa07"
   integrity sha1-/S0rVakCnGs3psk16MiHGucN+gc=
 
-"@glimmer/global-context@0.62.5":
-  version "0.62.5"
-  resolved "https://registry.yarnpkg.com/@glimmer/global-context/-/global-context-0.62.5.tgz#2cce781e1dfa7cb6bcfa28f79d67ef44dadb97db"
-  integrity sha512-bE8v/d/DBVXYJXsRYbeuuboC4UgpONq82ZleGHRNps/YKVD6Xfx3frCyvKq5CMxNtqf3TZIN80TNNPm2qb1t0A==
-  dependencies:
-    "@glimmer/env" "^0.1.7"
-
 "@glimmer/global-context@0.65.1":
   version "0.65.1"
   resolved "https://registry.yarnpkg.com/@glimmer/global-context/-/global-context-0.65.1.tgz#390224b619f4ca0aca1f1ce4e42a33db76ec9c48"
@@ -1608,17 +1601,6 @@
   dependencies:
     "@glimmer/util" "^0.42.2"
 
-"@glimmer/reference@^0.62.4":
-  version "0.62.5"
-  resolved "https://registry.yarnpkg.com/@glimmer/reference/-/reference-0.62.5.tgz#9cca530bbdb67b09410224d3d946a1d1bf090e27"
-  integrity sha512-d9T5WpKzU+T22MWrnkFaN1IM60TBQbeR6C43x1Cto4QvQfDAh3EImnLfETr8CUyz9WK+jc+IyWKQrpQdgMI+4Q==
-  dependencies:
-    "@glimmer/env" "^0.1.7"
-    "@glimmer/global-context" "0.62.5"
-    "@glimmer/interfaces" "0.62.5"
-    "@glimmer/util" "0.62.5"
-    "@glimmer/validator" "0.62.5"
-
 "@glimmer/reference@^0.65.0":
   version "0.65.1"
   resolved "https://registry.yarnpkg.com/@glimmer/reference/-/reference-0.65.1.tgz#44515e7bef58c9ce4ea65c2eb3403caec11a2060"
@@ -1653,7 +1635,7 @@
     handlebars "^4.0.13"
     simple-html-tokenizer "^0.5.8"
 
-"@glimmer/syntax@^0.62.1", "@glimmer/syntax@^0.62.4":
+"@glimmer/syntax@^0.62.1":
   version "0.62.5"
   resolved "https://registry.yarnpkg.com/@glimmer/syntax/-/syntax-0.62.5.tgz#03dff491d1bba40a88a34085688fdce961518be2"
   integrity sha512-4e1KP3bAkTQIHcwjSjRsRvuzw6t1AMOU6zT1zo4g4QtwivKFG1pYmMTXmuLo/F25hRK4McdwST251AC/gc6w7Q==
@@ -1708,14 +1690,6 @@
   version "0.44.0"
   resolved "https://registry.yarnpkg.com/@glimmer/util/-/util-0.44.0.tgz#45df98d73812440206ae7bda87cfe04aaae21ed9"
   integrity sha512-duAsm30uVK9jSysElCbLyU6QQYO2X9iLDLBIBUcCqck9qN1o3tK2qWiHbGK5d6g8E2AJ4H88UrfElkyaJlGrwg==
-
-"@glimmer/validator@0.62.5", "@glimmer/validator@^0.62.4":
-  version "0.62.5"
-  resolved "https://registry.yarnpkg.com/@glimmer/validator/-/validator-0.62.5.tgz#b122e9e53922e0b606c05a423f6cc4b9c0560f5b"
-  integrity sha512-9+4QO3xH18etOJh8RJEh05R+g1/m4Qwta0bg0Go+m/yeYuGKH5v89DOe9PUWYcEQqug+TQSBJbspQJ4zMF6J3Q==
-  dependencies:
-    "@glimmer/env" "^0.1.7"
-    "@glimmer/global-context" "0.62.5"
 
 "@glimmer/validator@0.65.1", "@glimmer/validator@^0.65.0":
   version "0.65.1"
@@ -8183,23 +8157,7 @@ ember-svg-jar@2.2.3:
     mkdirp "^0.5.1"
     path-posix "^1.0.0"
 
-ember-template-lint@2.14.0:
-  version "2.14.0"
-  resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-2.14.0.tgz#8b52b23e9237a730de9808a43f75100455fadcee"
-  integrity sha512-psRhYfw894mp6tF2Vv9gBbpHJwKz2dyEEwsL/zX1ksWGo7vQ4vAqrqPuLtCi/NPpoFnTr2VaCCK7xvef+fZ3MA==
-  dependencies:
-    chalk "^4.0.0"
-    ember-template-recast "^4.2.0"
-    find-up "^5.0.0"
-    get-stdin "^8.0.0"
-    globby "^11.0.1"
-    is-glob "^4.0.1"
-    micromatch "^4.0.2"
-    resolve "^1.17.0"
-    v8-compile-cache "^2.1.1"
-    yargs "^16.0.3"
-
-ember-template-lint@^2.0.1:
+ember-template-lint@2.15.0, ember-template-lint@^2.0.1:
   version "2.15.0"
   resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-2.15.0.tgz#7a3b8dd97498bc777b4633f1a2a5ad63f63a6e77"
   integrity sha512-hARl20XxqDbAPC68He1GBi0nDenJuy13Czo4NKaD72Vro+M3AxXOkKoSibeup1hxMAfuY/mWQYfqRij+bKWOhA==
@@ -8214,23 +8172,6 @@ ember-template-lint@^2.0.1:
     resolve "^1.19.0"
     v8-compile-cache "^2.2.0"
     yargs "^16.2.0"
-
-ember-template-recast@^4.2.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/ember-template-recast/-/ember-template-recast-4.3.0.tgz#580bd50ffc3e877c399bba513438994f24bba331"
-  integrity sha512-8sh2IqGZmiZzaFtwH99WK2dYpsa6pywPbqPHZfEIsY+SjtIDzVuE+fhS9d0grIWpraXyv/gPTnzSqrJq9e2xNA==
-  dependencies:
-    "@glimmer/reference" "^0.62.4"
-    "@glimmer/syntax" "^0.62.4"
-    "@glimmer/validator" "^0.62.4"
-    async-promise-queue "^1.0.5"
-    colors "^1.4.0"
-    commander "^6.2.0"
-    globby "^11.0.1"
-    ora "^5.1.0"
-    slash "^3.0.0"
-    tmp "^0.2.1"
-    workerpool "^6.0.3"
 
 ember-template-recast@^5.0.1:
   version "5.0.1"
@@ -19016,7 +18957,7 @@ yargs@^15.0.0, yargs@^15.1.0, yargs@^15.3.1:
     y18n "^4.0.0"
     yargs-parser "^18.1.2"
 
-yargs@^16.0.3, yargs@^16.2.0:
+yargs@^16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-16.2.0.tgz#1c82bf0f6b6a66eafce7ef30e376f49a12477f66"
   integrity sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw==
