@@ -12,3 +12,12 @@ updates:
     # Add assignees
     assignees:
       - "octocat"
+    labels:
+      - "npm"
+      - "dependencies"
+  - package-ecosystem: "bundler"
+    # Raise pull requests to update vendored dependencies that are checked in to the repository
+    vendor: true
+    directory: "/"
+    schedule:
+      interval: "daily"
