@@ -48,8 +48,7 @@
     "test:server": "cross-env SW_DISABLED=true yarn ember exam --server"
   },
   "lint-staged": {
-    "*.{js,json,css}": [
-    ]
+    "*.{js,json,css}": []
   },
   "eslintConfig": {
     "extends": "plugin:unicorn/recommended"
@@ -120,7 +119,7 @@
     "els-addon-docs": "1.0.2",
     "ember-auto-import": "1.9.0",
     "ember-classic-decorator": "2.0.0",
-    "ember-cli": "3.22.0",
+    "ember-cli": "3.23.0",
     "ember-cli-app-version": "4.0.0",
     "ember-cli-babel": "7.23.0",
     "ember-cli-babel-plugin-helpers": "1.1.1",
@@ -133,7 +132,7 @@
     "ember-cli-page-object": "1.17.4",
     "ember-cli-sri": "2.1.1",
     "ember-cli-template-lint": "2.0.2",
-    "ember-cli-terser": "4.0.0",
+    "ember-cli-terser": "4.0.1",
     "ember-cli-test-loader": "3.0.0",
     "ember-cli-typescript": "4.0.0",
     "ember-cli-uglify": "3.0.0",
@@ -161,14 +160,14 @@
     "ember-render-helpers": "0.1.0",
     "ember-resolver": "8.0.2",
     "ember-router-scroll": "1.2.1",
-    "ember-source": "3.23.0",
+    "ember-source": "3.23.1",
     "ember-template-lint": "2.14.0",
     "ember-test-waiters": "1.1.1",
     "ember-truth-helpers": "2.1.0",
     "ember-validated-form": "3.0.2",
     "ember-welcome-page": "4.0.0",
     "emberx-select": "3.1.1",
-    "eslint": "7.2.0",
+    "eslint": "7.15.0",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-config-prettier": "7.0.0",
     "eslint-import-resolver-ember": "0.0.1",

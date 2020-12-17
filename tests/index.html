@@ -5,13 +5,8 @@
     <title>LiswebFrontend Tests</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     {{content-for "head"}}
-
-    <script src="{{rootURL}}assets/vendor.js"></script>
-    <script src="{{rootURL}}assets/lisweb-frontend.js"></script>
-    <script src="{{rootURL}}assets/test-support.js"></script>
-    <script src="{{rootURL}}assets/tests.js"></script>
-    <script src="/testem.js" integrity=""></script>
 
     {{content-for "test-head"}}
     {{content-for "head-footer"}}
@@ -20,12 +15,19 @@
   <body>
     {{content-for "body"}}
     {{content-for "test-body"}}
+
     <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
     <link rel="stylesheet" href="{{rootURL}}assets/lisweb-frontend.css">
     <link rel="stylesheet" href="{{rootURL}}assets/test-support.css">
 
+    <script src="/testem.js" integrity=""></script>
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/test-support.js"></script>
+    <script src="{{rootURL}}assets/lisweb-frontend.js"></script>
+    <script src="{{rootURL}}assets/tests.js"></script>
 
     {{content-for "body-footer"}}
     {{content-for "test-body-footer"}}
   </body>
 </html>
+
