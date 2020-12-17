@@ -57,23 +57,25 @@ export default class DefaultComponent extends Component {
 
   // https://www.w3schools.com/js/js_operators.asp
   @action
-  sortData(event) {
+  async sortData(event){
+    this.page = 1;
     this.sortColumn = event.target.value;
     // this.sortDirection = direction;
-    this.loadModels();
+    await this.loadModel();
     event.preventDefault();
   }
 
   @action
-  pageUp() {
+  async pageUp(){
     this.page += 1;
-    this.loadModel();
+    await this.loadModel();
   }
 
   @action
   pageDown() {
+  async pageDown(){
     this.page -= 1;
-    this.loadModel();
+    await this.loadModel();
   }
 
   @action
@@ -100,3 +102,4 @@ export default class DefaultComponent extends Component {
     // console.log(this.get('selectedOptionUndMedida'));
   }
 }
+

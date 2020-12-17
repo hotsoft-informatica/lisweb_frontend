@@ -8,7 +8,7 @@
 <div class="form-group">
   <div class="col-sm-offset-2 col-sm-10">
     <label for="order">Ordem:</label>
-    <select id ="order" {{on "change" (fn this.sortData ) }}>
+    <select id ="order" {{on "change" this.sortData}}>
       <option value='nome'>Nome cresc</option>
       <option value='-nome'>Nome decresc</option>
       <option value='id'>Id cresc</option>
