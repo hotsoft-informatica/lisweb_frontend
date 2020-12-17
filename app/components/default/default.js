@@ -72,7 +72,6 @@ export default class DefaultComponent extends Component {
   }
 
   @action
-  pageDown() {
   async pageDown(){
     this.page -= 1;
     await this.loadModel();
