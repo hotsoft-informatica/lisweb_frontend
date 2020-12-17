@@ -202,7 +202,7 @@
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-qunit": "5.1.1",
     "eslint-plugin-standard": "4.0.1",
-    "eslint-plugin-unicorn": "20.1.0",
+    "eslint-plugin-unicorn": "24.0.0",
     "esutils": "2.0.3",
     "git-rev-sync": "3.0.1",
     "globals": "13.1.0",
