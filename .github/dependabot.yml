@@ -11,10 +11,8 @@ updates:
       interval: "daily"
     # Add assignees
     assignees:
-      - "octocat"
       - "wellington1993"
     reviewers:
-      - "octocat"
       - "wellington1993"
     labels:
       - "npm"
