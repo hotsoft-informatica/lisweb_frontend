@@ -241,7 +241,7 @@
     "tslint-misc-rules": "3.6.0",
     "typescript": "3.9.7",
     "update-notifier": "4.1.0",
-    "webpack": "4.43.0",
+    "webpack": "5.11.0",
     "workerpool": "6.0.3"
   },
   "engines": {
