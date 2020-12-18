@@ -181,7 +181,7 @@
     "ember-svg-jar": "2.2.3",
     "ember-template-lint": "2.15.0",
     "ember-test-waiters": "1.1.1",
-    "ember-truth-helpers": "2.1.0",
+    "ember-truth-helpers": "3.0.0",
     "ember-try": "1.4.0",
     "ember-validated-form": "3.0.2",
     "ember-welcome-page": "4.0.0",
