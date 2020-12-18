@@ -240,7 +240,7 @@
     "tslint-microsoft-contrib": "6.2.0",
     "tslint-misc-rules": "3.5.1",
     "typescript": "3.9.7",
-    "update-notifier": "4.1.0",
+    "update-notifier": "5.0.1",
     "webpack": "4.43.0",
     "workerpool": "6.0.3"
   },
