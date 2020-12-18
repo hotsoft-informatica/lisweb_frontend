@@ -227,7 +227,7 @@
     "qunit-dom": "1.6.0",
     "regenerator-runtime": "0.13.7",
     "rsvp": "4.8.5",
-    "sass": "1.26.8",
+    "sass": "1.30.0",
     "semver": "7.3.4",
     "socks": "2.5.1",
     "stylelint": "13.8.0",
