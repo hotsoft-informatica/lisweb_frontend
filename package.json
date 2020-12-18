@@ -208,7 +208,7 @@
     "globals": "13.1.0",
     "graceful-fs": "4.2.4",
     "heimdalljs": "0.2.6",
-    "husky": "4.2.5",
+    "husky": "4.3.6",
     "invariant": "2.2.4",
     "lint-staged": "10.5.3",
     "livereload": "0.9.1",
