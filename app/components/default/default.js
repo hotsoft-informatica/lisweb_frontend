@@ -60,7 +60,6 @@ export default class DefaultComponent extends Component {
   async sortData(event){
     this.page = 1;
     this.sortColumn = event.target.value;
-    // this.sortDirection = direction;
     await this.loadModel();
     event.preventDefault();
   }
@@ -85,20 +84,16 @@ export default class DefaultComponent extends Component {
   @action
   save(event) {
     console.log(event.target);
-    event.preventDefault();
+    this.model.save().then( () => {
+      this.router.transitionTo(this.redirectTo);
+    });
+    // TODO: Uncaught TypeError: event.preventDefault is not a function	  
+    // event.preventDefault();
+
+    // TODO: Get relationships from combo select
     // this.store.findRecord('laboratorio', 2).then( (laboratorio) => {
     //   model.set('laboratorio', laboratorio);
-    //   model.save().then( () => {
-    //     this.router.transitionTo(this.redirectTo);
-    //   });
     // });
-  }
-
-  @action
-  setSelection(selectedOption, ...event) {
-    this.selectedOption[selectedOption] = event.target.value;
-    // console.log(this.get('selectedOptionCatProduto'));
-    // console.log(this.get('selectedOptionUndMedida'));
   }
 }
 
