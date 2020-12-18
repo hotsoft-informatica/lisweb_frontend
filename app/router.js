@@ -7,7 +7,7 @@ export default class Router extends EmberRouter {
   rootURL = config.rootURL;
 }
 
-Router.map(function() {
+Router.map(function () {
   this.route('labs');
   this.route('centros_custo');
   // Rotas para marcas.
@@ -16,11 +16,15 @@ Router.map(function() {
   this.route('marcas/index', { path: '/marcas' });
   // Rotas para Unidades Medidas.
   this.route('unidade_medidas/new');
-  this.route('unidade_medidas/edit', { path: '/unidade_medidas/:unidade_medida_id' });
+  this.route('unidade_medidas/edit', {
+    path: '/unidade_medidas/:unidade_medida_id',
+  });
   this.route('unidade_medidas/index', { path: '/unidade_medidas' });
   // Rotas para Unidade Atendimentos.
   this.route('unidade_atendimentos/new');
-  this.route('unidade_atendimentos/edit', { path: '/unidade_atendimentos/:unidade_atendimento_id' });
+  this.route('unidade_atendimentos/edit', {
+    path: '/unidade_atendimentos/:unidade_atendimento_id',
+  });
   this.route('unidade_atendimentos/index', { path: '/unidade_atendimentos' });
   // Rotas para Centro Custos.
   this.route('centro_custos/new');
@@ -32,15 +36,21 @@ Router.map(function() {
   this.route('contas/index', { path: '/contas' });
   // Rotas para conta contabeis = Plano de Contas.
   this.route('conta_contabeis/new');
-  this.route('conta_contabeis/edit', { path: '/conta_contabeis/:conta_contabil_id' });
+  this.route('conta_contabeis/edit', {
+    path: '/conta_contabeis/:conta_contabil_id',
+  });
   this.route('conta_contabeis/index', { path: '/conta_contabeis' });
   // Rotas para grupo centro custos.
   this.route('grupo_centro_custos/new');
-  this.route('grupo_centro_custos/edit', { path: '/grupo_centro_custos/:grupo_centro_custo_id' });
+  this.route('grupo_centro_custos/edit', {
+    path: '/grupo_centro_custos/:grupo_centro_custo_id',
+  });
   this.route('grupo_centro_custos/index', { path: '/grupo_centro_custos' });
   // Rotas para categoria produtos.
   this.route('categoria_produtos/new');
-  this.route('categoria_produtos/edit', { path: '/categoria_produtos/:categoria_produto_id' });
+  this.route('categoria_produtos/edit', {
+    path: '/categoria_produtos/:categoria_produto_id',
+  });
   this.route('categoria_produtos/index', { path: '/categoria_produtos' });
   // Rotas para tipo produtos.
   this.route('tipo_produtos/new');
@@ -70,17 +80,25 @@ Router.map(function() {
   this.route('notas/index', { path: '/notas' });
   // Rotas para requisicao materiais.
   this.route('requisicao_materiais/new');
-  this.route('requisicao_materiais/edit', { path: '/requisicao_materiais/:requisicao_material_id' });
+  this.route('requisicao_materiais/edit', {
+    path: '/requisicao_materiais/:requisicao_material_id',
+  });
   this.route('requisicao_materiais/index', { path: '/requisicao_materiais' });
   this.route('notas');
   // Rotas para atendimento requisições
   this.route('atendimento_requisicoes/new');
-  this.route('atendimento_requisicoes/edit', { path: '/atendimento_requisicoes/:atendimento_requisicao_id' });
-  this.route('atendimento_requisicoes/index', { path: '/atendimento_requisicoes' });
+  this.route('atendimento_requisicoes/edit', {
+    path: '/atendimento_requisicoes/:atendimento_requisicao_id',
+  });
+  this.route('atendimento_requisicoes/index', {
+    path: '/atendimento_requisicoes',
+  });
   // Rotas para orçamentos
   this.route('orcamentos/new');
   this.route('orcamentos/edit', { path: '/orcamentos/:orcamento_id' });
   this.route('orcamentos/index', { path: '/orcamentos' });
+  // Requisicao de materiais
+  this.route('atendimentos_requisicoes');
   // Lista compras?
   // this.route('orcamentos');
   // Rotas para pedidos
@@ -89,28 +107,43 @@ Router.map(function() {
   this.route('pedidos/index', { path: '/pedidos' });
   // Rotas para recebimento produtos
   this.route('recebimento_produtos/new');
-  this.route('recebimento_produtos/edit', { path: '/recebimento_produtos/:recebimento_produto_id' });
+  this.route('recebimento_produtos/edit', {
+    path: '/recebimento_produtos/:recebimento_produto_id',
+  });
   this.route('recebimento_produtos/index', { path: '/recebimento_produtos' });
   // Rotas para pendencia recebimentos
   this.route('pendencia_recebimentos/new');
-  this.route('pendencia_recebimentos/edit', { path: '/pendencia_recebimentos/:pendencia_recebimento_id' });
-  this.route('pendencia_recebimentos/index', { path: '/pendencia_recebimentos' });
+  this.route('pendencia_recebimentos/edit', {
+    path: '/pendencia_recebimentos/:pendencia_recebimento_id',
+  });
+  this.route('pendencia_recebimentos/index', {
+    path: '/pendencia_recebimentos',
+  });
   // Rotas para confituração laboratórios
   this.route('configuracao_laboratorios/new');
-  this.route('configuracao_laboratorios/edit', { path: '/configuracao_laboratorios/:configuracao_laboratorio_id' });
-  this.route('configuracao_laboratorios/index', { path: '/configuracao_laboratorios' });
+  this.route('configuracao_laboratorios/edit', {
+    path: '/configuracao_laboratorios/:configuracao_laboratorio_id',
+  });
+  this.route('configuracao_laboratorios/index', {
+    path: '/configuracao_laboratorios',
+  });
   // Rotas para grupos parametros nfse
   this.route('grupos_parametros_nfses/new');
-  this.route('grupos_parametros_nfses/edit', { path: '/grupos_parametros_nfses/:grupos_parametros_nfse_id' });
-  this.route('grupos_parametros_nfses/index', { path: '/grupos_parametros_nfses' });
+  this.route('grupos_parametros_nfses/edit', {
+    path: '/grupos_parametros_nfses/:grupos_parametros_nfse_id',
+  });
+  this.route('grupos_parametros_nfses/index', {
+    path: '/grupos_parametros_nfses',
+  });
   // Rotas para chave nfses
   this.route('chave_nfses/new');
   this.route('chave_nfses/edit', { path: '/chave_nfses/:chave_nfse_id' });
   this.route('chave_nfses/index', { path: '/chave_nfses' });
   // Rotas para Pendência recebimentos
   this.route('baixa_produtos/new');
-  this.route('baixa_produtos/edit', { path: '/baixa_produtos/:baixa_produto_id' });
+  this.route('baixa_produtos/edit', {
+    path: '/baixa_produtos/:baixa_produto_id',
+  });
   this.route('baixa_produtos/index', { path: '/baixa_produtos' });
   // this.route('ac_filter_defs');
-
 });

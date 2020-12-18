@@ -7,7 +7,7 @@ export default class OrcamentosFormComponent extends DefaultComponent {
   @tracked modelString = 'orcamento';
 
   @action
-  save(model, ...event){
+  save(model, ...event) {
     super.save(model, ...event);
   }
 }

@@ -21,3 +21,54 @@
 
 # vscode
 /.vscode/
+
+# emberclear
+/tmp
+/blueprints/*/files/**/*.js
+/src/utils/mnemonic/bip39/wordlists/english.ts
+/src/data/models/application/*.js
+/config/optional-features.json
+/concat-stats-for
+/node_modules
+/dist
+*.lock
+*.log
+*.json
+*.yaml
+
+
+# unconventional js
+/blueprints/*/files/
+/vendor/
+
+# compiled output
+/dist/
+/tmp/
+
+# dependencies
+/bower_components/
+/node_modules/
+
+# misc
+/coverage/
+!.*
+
+# ember-try
+/.node_modules.ember-try/
+/bower.json.ember-try
+/package.json.ember-try
+
+webapp/node_modules/*
+webapp/**/vendor/*.js
+webapp/vendor/**/*.js
+webapp/bower_components/**/*.js
+webapp/webapp-dist/**/*.js
+webapp/dist/**/*.js
+webapp/tmp/**/*.js
+webapp/app/locales/*/translations.js
+webapp/app/utils/phoenix.js
+
+jipt/node_modules
+jipt/dist
+jipt/.cache
+

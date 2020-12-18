@@ -9,5 +9,7 @@ export default class ApplicationAdapter extends JSONAPIAdapter {
   - TODO: Paginacao
   - TODO: Ordenacao
   - TODO: Busca */
+  // TODO: Contruir dinamicamente endereco do backend
   host = 'http://localhost:3010';
 }
+

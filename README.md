@@ -8,7 +8,8 @@ A short introduction of this app could easily go here.
 You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
+* [Node.js](https://nodejs.org/) (with npm) or
+* [Yarn](https://yarnpkg.com/)
 * [Ember CLI](https://ember-cli.com/)
 * [Google Chrome](https://google.com/chrome/)
 
@@ -16,7 +17,8 @@ You will need the following things properly installed on your computer.
 
 * `git clone <repository-url>` this repository
 * `cd lisweb-frontend`
-* `npm install`
+* `npm install`  or
+* `yarn install`
 
 ## Running / Development
 
@@ -38,6 +40,10 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `npm run lint:hbs`
 * `npm run lint:js`
 * `npm run lint:js -- --fix`
+Or
+* `yarn lint:hbs`
+* `yarn lint:js`
+* `yarn lint:js --fix`
 
 ### Building
 
@@ -55,3 +61,4 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+

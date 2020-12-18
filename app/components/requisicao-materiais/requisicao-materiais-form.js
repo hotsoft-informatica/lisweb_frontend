@@ -9,7 +9,7 @@ export default class RequisicaoMateriaisFormComponent extends Component {
 
   @action
   save(model, ...event) {
-    model.save().then( () => {
+    model.save().then(() => {
       this.router.transitionTo(this.redirectTo);
     });
   }

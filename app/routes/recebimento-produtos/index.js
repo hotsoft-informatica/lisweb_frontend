@@ -6,7 +6,7 @@ export default class RecebimentoProdutosIndexRoute extends Route {
   async model() {
     return this.store.query('recebimento_produto', {
       limit: 10,
-      offset: 0
+      offset: 0,
     });
   }
 }

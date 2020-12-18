@@ -4,6 +4,9 @@ import Route from '@ember/routing/route';
 // TODO: eslintember/no-classic-classes
 export default class RecebimentoProdutosEditRoute extends Route {
   async model(params) {
-    return this.store.findRecord('recebimento_produto', params.recebimento_produto_id);
+    return this.store.findRecord(
+      'recebimento_produto',
+      params.recebimento_produto_id
+    );
   }
 }

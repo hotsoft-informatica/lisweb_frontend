@@ -7,7 +7,7 @@ export default class PedidosFormComponent extends DefaultComponent {
   @tracked modelString = 'pedido';
 
   @action
-  save(model, ...event){
+  save(model, ...event) {
     super.save(model, ...event);
   }
 }

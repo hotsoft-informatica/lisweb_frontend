@@ -1,3 +1,4 @@
+import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
 import DefaultComponent from '../default/default';
 

@@ -3,7 +3,7 @@ language: node_js
 node_js:
   - "10"
 
-dist: trusty
+dist: xenial
 
 addons:
   chrome: stable
@@ -11,6 +11,7 @@ addons:
 cache:
   directories:
     - $HOME/.npm
+  yarn: true
 
 env:
   global:
@@ -30,4 +31,5 @@ install:
 
 script:
   - yarn test
+
 

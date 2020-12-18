@@ -6,7 +6,7 @@ export default class PendenciaRecebimentosIndexRoute extends Route {
   async model() {
     return this.store.query('pendencia_recebimento', {
       limit: 10,
-      offset: 0
+      offset: 0,
     });
   }
 }

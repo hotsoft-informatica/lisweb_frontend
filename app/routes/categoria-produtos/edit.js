@@ -5,6 +5,9 @@ export default class CategoriaProdutosEditRoute extends Route {
   @service store;
 
   async model(params) {
-    return this.store.findRecord('categoria_produto', params.categoria_produto_id);
+    return this.store.findRecord(
+      'categoria_produto',
+      params.categoria_produto_id
+    );
   }
 }

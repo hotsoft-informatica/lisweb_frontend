@@ -6,7 +6,7 @@ export default class RequisicaoMateriaisIndexRoute extends Route {
   async model() {
     return this.store.query('requisicao_material', {
       limit: 10,
-      offset: 0
+      offset: 0,
     });
   }
 }
