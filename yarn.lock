@@ -6855,11 +6855,6 @@ els-addon-docs@1.0.2:
     vscode-uri "^2.1.1"
     walk-sync "^2.0.2"
 
-ember-assign-polyfill@^2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/ember-assign-polyfill/-/ember-assign-polyfill-2.6.0.tgz#07847e3357ee35b33f886a0b5fbec6873f6860eb"
-  integrity sha512-Y8NzOmHI/g4PuJ+xC14eTYiQbigNYddyHB8FY2kuQMxThTEIDE7SJtgttJrYYcPciOu0Tnb5ff36iO46LeiXkw==
-
 ember-app-scheduler@^5.0.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/ember-app-scheduler/-/ember-app-scheduler-5.1.1.tgz#1dd0bd26d8b82b709b7ec760472059c65951e93d"
