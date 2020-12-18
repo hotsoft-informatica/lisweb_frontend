@@ -171,7 +171,7 @@
     "ember-model-validator": "3.10.0",
     "ember-power-select": "4.1.0",
     "ember-power-select-with-create": "0.8.0",
-    "ember-qunit": "4.6.0",
+    "ember-qunit": "5.1.1",
     "ember-rapid-forms": "1.2.5",
     "ember-render-helpers": "0.1.1",
     "ember-resolver": "8.0.2",
