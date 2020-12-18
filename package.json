@@ -114,7 +114,7 @@
     "broccoli-templater": "2.0.2",
     "chokidar": "3.4.3",
     "clean-css": "4.2.3",
-    "core-js": "3.6.5",
+    "core-js": "3.8.1",
     "cross-env": "7.0.3",
     "debug": "4.3.1",
     "els-addon-docs": "1.0.2",
