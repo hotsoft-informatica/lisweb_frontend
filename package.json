@@ -205,7 +205,7 @@
     "eslint-plugin-unicorn": "24.0.0",
     "esutils": "2.0.3",
     "git-rev-sync": "3.0.1",
-    "globals": "13.1.0",
+    "globals": "13.4.0",
     "graceful-fs": "4.2.4",
     "heimdalljs": "0.2.6",
     "husky": "4.3.6",
