@@ -242,7 +242,7 @@
     "typescript": "3.9.7",
     "update-notifier": "4.1.0",
     "webpack": "4.43.0",
-    "workerpool": "6.0.0"
+    "workerpool": "6.0.3"
   },
   "engines": {
     "node": "8.* || 10.* || >= 12.* || >= 15.*"
