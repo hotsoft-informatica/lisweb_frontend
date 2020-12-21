@@ -118,7 +118,7 @@
     "cross-env": "7.0.3",
     "debug": "4.3.1",
     "els-addon-docs": "1.0.2",
-    "ember-auto-import": "1.10.0",
+    "ember-auto-import": "1.10.1",
     "ember-await": "2.0.0",
     "ember-basic-dropdown": "3.0.11",
     "ember-classic-decorator": "2.0.0",
