@@ -1371,10 +1371,10 @@
     walk-sync "^1.1.3"
     wrap-legacy-hbs-plugin-if-needed "^1.0.1"
 
-"@embroider/core@0.34.0":
-  version "0.34.0"
-  resolved "https://registry.yarnpkg.com/@embroider/core/-/core-0.34.0.tgz#73ea046e0cacc4037d5d5e94b057e311dfb0772f"
-  integrity sha512-c4SWbmZDj0kwMVcWkdWP/g3OK4Gx7yWjqjMvnuqnTS6kiWrzILxaV+HWgqnq36n0JFRuQBQk8AJmfSJRsI+43w==
+"@embroider/core@0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@embroider/core/-/core-0.35.0.tgz#92b4da43910b5db9df428b5c368de8f3b2870900"
+  integrity sha512-ZMEgVMki/ZmwoBvFN5t6vTsymJKws2eRJw1t19gmGdvubkJ4gcX2NhvI1+pck7Stt+64TCmud6nqrlYTE+oOkQ==
   dependencies:
     "@babel/core" "^7.12.3"
     "@babel/parser" "^7.12.3"
@@ -1383,7 +1383,7 @@
     "@babel/runtime" "^7.12.5"
     "@babel/traverse" "^7.12.1"
     "@babel/types" "^7.12.1"
-    "@embroider/macros" "0.34.0"
+    "@embroider/macros" "0.35.0"
     assert-never "^1.1.0"
     babel-plugin-syntax-dynamic-import "^6.18.0"
     broccoli-node-api "^1.7.0"
@@ -1494,15 +1494,15 @@
     resolve "^1.8.1"
     semver "^7.3.2"
 
-"@embroider/macros@0.34.0":
-  version "0.34.0"
-  resolved "https://registry.yarnpkg.com/@embroider/macros/-/macros-0.34.0.tgz#5612ceab11a837d99c2dc53d6bcb089ff771f6fc"
-  integrity sha512-9cT84ppXUiJMSpI6wYmZyHIrccDofdWq9F5ZhARTCKxCJ5ArlSbgYnFERAdmXth6WazdzjbI5IoFPVIpmGs2ZA==
+"@embroider/macros@0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@embroider/macros/-/macros-0.35.0.tgz#7b02395eac704324bcd67de3cd532401374a61b1"
+  integrity sha512-RZK5Gk7hw0honNz2HodXCOV6K9azrSKZdByQ7y7rI2zqePX2RC7Pnsbp/AnSwy4kKRP2Kw5xr7tuz4jf9+mzfg==
   dependencies:
     "@babel/core" "^7.12.3"
     "@babel/traverse" "^7.12.1"
     "@babel/types" "^7.12.1"
-    "@embroider/core" "0.34.0"
+    "@embroider/core" "0.35.0"
     assert-never "^1.1.0"
     ember-cli-babel "^7.23.0"
     lodash "^4.17.10"
@@ -8794,10 +8794,10 @@ eslint-config-airbnb-base@14.2.1:
     object.assign "^4.1.2"
     object.entries "^1.1.2"
 
-eslint-config-prettier@7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-7.0.0.tgz#c1ae4106f74e6c0357f44adb076771d032ac0e97"
-  integrity sha512-8Y8lGLVPPZdaNA7JXqnvETVC7IiVRgAP6afQu9gOQRn90YY3otMNh+x7Vr2vMePQntF+5erdSUBqSzCmU/AxaQ==
+eslint-config-prettier@7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-7.1.0.tgz#5402eb559aa94b894effd6bddfa0b1ca051c858f"
+  integrity sha512-9sm5/PxaFG7qNJvJzTROMM1Bk1ozXVTKI0buKOyb0Bsr1hrwi0H/TzxF/COtf1uxikIK8SwhX7K6zg78jAzbeA==
 
 eslint-import-resolver-ember@0.0.1:
   version "0.0.1"
@@ -8938,10 +8938,10 @@ eslint-plugin-prettier@3.3.0:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-eslint-plugin-qunit@5.1.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-qunit/-/eslint-plugin-qunit-5.1.1.tgz#caf9df004a4f15e02ad135038e3d2160640e03de"
-  integrity sha512-PmYBaZ77R0nerc18nZOtChTdr/bbb8Qs2NvbfMFgeLPhzW/X57hh3VGI9jzdwCig2svIhBunbuBZBxBTnoxH7g==
+eslint-plugin-qunit@5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-qunit/-/eslint-plugin-qunit-5.2.0.tgz#51286a6d1f6ccc1853f806801c7f95063ee1ba66"
+  integrity sha512-vwvLfu67Qx2XOv8WIxTF4EcNgo7tRZBzqyZUXxMxY3QQE8RPbXEjvcFbYCtf+lQD5fceQejWttI3xbu13xvm0w==
   dependencies:
     eslint-utils "^2.1.0"
 
@@ -12443,10 +12443,10 @@ lockfile@~1.0.3:
   dependencies:
     signal-exit "^3.0.2"
 
-lodash-es@4.17.15, lodash-es@^4.17.4:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.15.tgz#21bd96839354412f23d7a10340e5eac6ee455d78"
-  integrity sha512-rlrc3yU3+JNOpZ9zj5pQtxnx2THmvRykwL4Xlxoa8I9lHBlVbbyPhgyPMioxVZ4NqyxaVVtaJnzsyOidQIhyyQ==
+lodash-es@4.17.20, lodash-es@^4.17.4:
+  version "4.17.20"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.20.tgz#29f6332eefc60e849f869c264bc71126ad61e8f7"
+  integrity sha512-JD1COMZsq8maT6mnuz1UMV0jvYD0E0aUsSOdrr1/nAG3dhqQXwRRgeW0cSqH1U43INKcqxaiVIQNOUDld7gRDA==
 
 lodash._arraycopy@^3.0.0:
   version "3.0.0"
