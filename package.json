@@ -295,5 +295,9 @@
   "ember": {
     "edition": "octane"
   },
-  "homepage": "https://hotsoft.github.io/lisweb_frontend"
+  "homepage": "https://hotsoft.github.io/lisweb_frontend",
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/<YOUR-COLLECTIVE-SLUG>"
+  }
 }
