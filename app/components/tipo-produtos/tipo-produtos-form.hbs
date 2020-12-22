@@ -1,6 +1,6 @@
 <!-- TODO: Didn't Render, make render -->
 <!-- # https://github.com/martndemus/ember-form-for --!>
-<FormFor @model as |f|>
+<FormFor @object={{@model}} as |f|>
   <f.select-field "unidade_medidas"/>
   <f.select-field "categoria_produtos"/>
   <f.text-field "nome"/>
