@@ -7508,11 +7508,6 @@ ember-cli-bundle-analyzer@0.2.2:
     tmp "^0.2.1"
     touch "^3.1.0"
 
-ember-cli-combobox@0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/ember-cli-combobox/-/ember-cli-combobox-0.0.6.tgz#f83ca4e52f18ccf92a071f8bcb0beab14ed9bc95"
-  integrity sha1-+Dyk5S8YzPkqBx+LywvqsU7ZvJU=
-
 ember-cli-content-security-policy@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ember-cli-content-security-policy/-/ember-cli-content-security-policy-1.1.1.tgz#7d91a695319d8f99c317f3a594fba77bbfedf6c7"
@@ -8368,16 +8363,6 @@ ember-invoke-action@^1.5.0:
   integrity sha512-co6Yg9r5qtK4LvZTZHk+u02YLPbnM2c5ZkXvundxEj3V7qdZg7RULfjU09LmohD+rxW5ADZlwgBi/32XIEWTlw==
   dependencies:
     ember-cli-babel "^6.6.0"
-
-ember-keyboard@6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/ember-keyboard/-/ember-keyboard-6.0.2.tgz#efe260be34621a403a4d4688b038d65b371f6892"
-  integrity sha512-ZGAXYGfN4gxGFRcv3ix2X8HA8j/VluwhlENT9pfbFjAAGtvFz9wzNUJuaq3LS5Ksj+f2oXL5f++tSOrO7Ha1wA==
-  dependencies:
-    ember-cli-babel "^7.22.1"
-    ember-cli-htmlbars "^5.3.1"
-    ember-compatibility-helpers "^1.2.1"
-    ember-modifier "^2.1.0"
 
 ember-link-action@2.0.3:
   version "2.0.3"
