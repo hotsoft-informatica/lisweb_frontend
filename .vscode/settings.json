@@ -41,5 +41,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true
-  }
+  },
+  "compile-hero.disable-compile-files-on-did-save-code": false
 }

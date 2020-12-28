@@ -1,48 +1,21 @@
 {
   "recommendations": [
-    // ember
     "candidmetrics.ember-module-snippets",
-    "emberjs.emberjs",
-    "emberjs.vscode-ember",
-    // "felixrieseberg.vsc-ember-cli",
     "josa.ember-related-files",
     "phanitejakomaravolu.EmberES6Snippets",
-
-    // syntax : glimmer
     "dhedgecock.ember-syntax",
-
-    // formatting: glimmer
     "AdamBaker.vsc-prettier-glimmer",
-
-    // tailwindcss
     "bradlc.vscode-tailwindcss",
     "heybourn.headwind",
-
-
-    // debug: js
     "msjsdiag.debugger-for-chrome",
-
-
-    // lint: css
     "stylelint.vscode-stylelint",
-
-
-    // lint and format: js
     "dbaeumer.vscode-eslint",
-    // "esbenp.prettier-vscode",
-
-    // git
     "eamodio.gitlens",
-
-    // comments
     "aaron-bond.better-comments",
-
-    // visual enhancements
     "CoenraadS.bracket-pair-colorizer-2",
     "oderwat.indent-rainbow",
-
-    // productivity
     "BriteSnow.vscode-toggle-quotes",
     "nanlei.save-all"
   ]
 }
+
