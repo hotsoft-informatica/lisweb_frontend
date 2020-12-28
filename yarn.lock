@@ -731,7 +731,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.10.4"
 
-"@babel/plugin-transform-typescript@^7.12.0":
+"@babel/plugin-transform-typescript@^7.12.0", "@babel/plugin-transform-typescript@^7.12.1":
   version "7.12.1"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.12.1.tgz#d92cc0af504d510e26a754a7dbc2e5c8cd9c7ab4"
   integrity sha512-VrsBByqAIntM+EYMqSm59SiMEf7qkmI9dqMt6RbD/wlwueWmYcI0FFK5Fj47pP6DRZm+3teXjosKlwcZJ5lIMw==
@@ -1502,16 +1502,6 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fimbul/bifrost@0.22.0":
-  version "0.22.0"
-  resolved "https://registry.yarnpkg.com/@fimbul/bifrost/-/bifrost-0.22.0.tgz#b7179c2e1fc2162295d220b930a7e2b3122bfbaa"
-  integrity sha512-nPYFRzfUuou5avUFmTRoOwoQ+O/pUIv9a7PPwk/fLW7vup+Kim4pk/0MvGgKEulzVZb4PTHjg+qAaeVhWMrriA==
-  dependencies:
-    "@fimbul/ymir" "^0.22.0"
-    get-caller-file "^2.0.0"
-    tslib "^2.0.0"
-    tsutils "^3.5.0"
-
 "@fimbul/bifrost@^0.21.0":
   version "0.21.0"
   resolved "https://registry.yarnpkg.com/@fimbul/bifrost/-/bifrost-0.21.0.tgz#d0fafa25938fda475657a6a1e407a21bbe02c74e"
@@ -1520,6 +1510,16 @@
     "@fimbul/ymir" "^0.21.0"
     get-caller-file "^2.0.0"
     tslib "^1.8.1"
+    tsutils "^3.5.0"
+
+"@fimbul/bifrost@^0.22.0":
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/@fimbul/bifrost/-/bifrost-0.22.0.tgz#b7179c2e1fc2162295d220b930a7e2b3122bfbaa"
+  integrity sha512-nPYFRzfUuou5avUFmTRoOwoQ+O/pUIv9a7PPwk/fLW7vup+Kim4pk/0MvGgKEulzVZb4PTHjg+qAaeVhWMrriA==
+  dependencies:
+    "@fimbul/ymir" "^0.22.0"
+    get-caller-file "^2.0.0"
+    tslib "^2.0.0"
     tsutils "^3.5.0"
 
 "@fimbul/ymir@^0.21.0":
@@ -2399,7 +2399,7 @@
     eslint-scope "^5.0.0"
     eslint-utils "^2.0.0"
 
-"@typescript-eslint/experimental-utils@4.11.0":
+"@typescript-eslint/experimental-utils@4.11.0", "@typescript-eslint/experimental-utils@^4.11.0":
   version "4.11.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-4.11.0.tgz#d1a47cc6cfe1c080ce4ead79267574b9881a1565"
   integrity sha512-1VC6mSbYwl1FguKt8OgPs8xxaJgtqFpjY/UzUYDBKq4pfQ5lBvN2WVeqYkzf7evW42axUHYl2jm9tNyFsb8oLg==
@@ -8180,7 +8180,7 @@ ember-element-helper@^0.2.0:
   dependencies:
     ember-cli-babel "^6.16.0"
 
-ember-exam@6.0.1:
+ember-exam@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/ember-exam/-/ember-exam-6.0.1.tgz#0a6412c81aa1dfb571b537c6428ceb671dd7ebb4"
   integrity sha512-L63kB4Dxon7R/SAbGpvpJUlVFFlVbDDqfI7YYitXhufc2uKuhx3TkZfld9prEbaVPExKw4EuIWZkkuYjwJbttQ==
@@ -18039,7 +18039,7 @@ tailwindcss-ember-power-select@0.4.0, tailwindcss-ember-power-select@^0.4.0:
     mini-svg-data-uri "^1.2.3"
     traverse "^0.6.6"
 
-tailwindcss@2.0.2:
+tailwindcss@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-2.0.2.tgz#28e1573d29dd4547b26782facb05bcfaa92be366"
   integrity sha512-nO9JRE1pO7SF9RnYAl6g7uzeHdrmKAFqNjT9NtZUfxqimJZAOOLOEyIEUiMq12+xIc7mC2Ey3Vf90XjHpWKfbw==
