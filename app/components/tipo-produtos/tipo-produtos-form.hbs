@@ -1,10 +1,17 @@
-<!-- TODO: Didn't Render, make render -->
-<!-- # https://github.com/martndemus/ember-form-for -->
-<!--FormFor @object={{@model}} as |f|>
-  <f.select-field "unidade_medidas"/>
-  <f.select-field "categoria_produtos"/>
-  <f.text-field "nome"/>
-  <f.text-field "mnemonico"/>
-  <f.text-field "descricao"/>
-  <f.submit "Salvar" />
-</FormFor-->
+<FormSelect
+  @hint="Select your country of residence"
+  @errors={{this.countryErrors}}
+  @allowClear={{true}}
+  @label="Country"
+  @searchEnabled={{true}}
+  @searchField="name"
+  @options={{this.countries}}
+  @selected={{this.country}}
+  @onChange={{this.setCountry}} as |country|
+>
+  {{country.name}}
+</FormSelect>
+
+<p class="mt-4">
+  You selected, "{{this.country.name}}"
+</p>
