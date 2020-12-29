@@ -306,7 +306,7 @@
     "user-home": "2.0.0",
     "validate-npm-package-license": "3.0.4",
     "validated-changeset": "0.10.5",
-    "webpack": "5.11.0",
+    "webpack": "5.11.1",
     "window-size": "1.1.1",
     "workerpool": "6.0.3",
     "wrappy": "1.0.2"
