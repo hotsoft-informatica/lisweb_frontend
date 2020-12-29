@@ -9,6 +9,19 @@ export default class GrupoCentroCustosFormComponent extends DefaultComponent {
   // TODO: 'service' is defined but never used.eslintno-unused-vars
   @tracked redirectTo = '/grupo_centro_custos';
   @tracked modelString = 'grupo_centro_custo';
+  @tracked value = '';
+
+  get validationErrors() {
+    if (/^$/.test(this.value)) {
+      return ['Digite o Nome'];
+    } else {
+      return [];
+    }
+  }
+
+  @action setValue(value) {
+    this.value = value;
+  }
 
   @action
   save(model, ...event) {
