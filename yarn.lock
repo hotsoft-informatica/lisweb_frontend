@@ -4330,15 +4330,15 @@ body@^5.1.0:
     raw-body "~1.1.0"
     safe-json-parse "~1.0.1"
 
-boilerplate-update@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/boilerplate-update/-/boilerplate-update-1.0.5.tgz#9eff864b4bd8bf788d3887bebefa5cd700305177"
-  integrity sha512-mNImKCqugojABZAYMYabHj93Z2avpqOpR4YLwX8SFx27zTtWG/O2yjBd5ZEEXOmbDzMfuG44F2p5FtjVnGqpwA==
+boilerplate-update@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/boilerplate-update/-/boilerplate-update-1.0.6.tgz#cbc86a62fbc397ed4958f2b4db258d77f03c180b"
+  integrity sha512-Rxxt0YxM1uoZbNDaIQAaMaXjJwk3Kpo7YuXMJ3h16sbjRoZaAgB/5oyqOYhcIArrlR429+w9kKCsnFzXQRu4DA==
   dependencies:
     cpr "^3.0.1"
     debug "^4.1.1"
     execa "^5.0.0"
-    git-diff-apply "^2.0.2"
+    git-diff-apply "^2.0.4"
     https-proxy-agent "^5.0.0"
     inquirer "^7.0.0"
     merge-package.json "^3.1.8"
@@ -7912,12 +7912,12 @@ ember-cli-uglify@3.0.0:
     broccoli-uglify-sourcemap "^3.1.0"
     lodash.defaultsdeep "^4.6.0"
 
-ember-cli-update@0.55.1:
-  version "0.55.1"
-  resolved "https://registry.yarnpkg.com/ember-cli-update/-/ember-cli-update-0.55.1.tgz#52e8f329da2c31a8ae7aeeeb9949dbb48ec32408"
-  integrity sha512-mWtVtdQh5iJxUQ8y3sOydnshj2pnYksiGvS5pgTdWk47LfWtCPg9VDrwb+PyOcxlYDg8TzsmUOc8D1Hys5R98Q==
+ember-cli-update@0.55.2:
+  version "0.55.2"
+  resolved "https://registry.yarnpkg.com/ember-cli-update/-/ember-cli-update-0.55.2.tgz#20b8cfd65e10a139dbc7d02d5e8a329a4c573c99"
+  integrity sha512-GiPM+R2mdKDmeLKdRBSVfzdniITrSwq+589HgUKGLq3akdEct16zuE+afH0idaSj5tMWiTbYArettN/sNLxkeA==
   dependencies:
-    boilerplate-update "^1.0.5"
+    boilerplate-update "^1.0.6"
     debug "^4.1.1"
     execa "^5.0.0"
     fs-extra "^9.0.0"
@@ -10619,10 +10619,10 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-git-diff-apply@^2.0.2:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/git-diff-apply/-/git-diff-apply-2.0.3.tgz#82285fc7b7ccdc03d7b51bbf6e85b5aa756fc8ad"
-  integrity sha512-vZlP1eUQYm9C9I2Uyzq3ubiE6e3CRos4xpZL7VdirSluXERhXdO2hHUElu+y3f6FyzG99anGAdTHHzv7Sve2GQ==
+git-diff-apply@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/git-diff-apply/-/git-diff-apply-2.0.4.tgz#de9808115c39cf163a57c83c27763cf3578a7da8"
+  integrity sha512-S4KYuqQh/SG5jnz3E4Gx8Wrl3OUO0rIhUDJ+6Hk7sg1xS3b2ej9rtBZ7W/faDCQwF8kHqwdQyarJ6WYvYKin/A==
   dependencies:
     debug "^4.0.0"
     fixturify "^2.0.0"
