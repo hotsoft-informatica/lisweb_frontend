@@ -178,7 +178,7 @@
     "ember-compatibility-helpers": "1.2.2",
     "ember-computed-promise-monitor": "0.4.0",
     "ember-content-placeholders": "1.0.0",
-    "ember-data": "3.23.0",
+    "ember-data": "3.24.0",
     "ember-decorators": "6.1.1",
     "ember-do-forms": "2.0.0",
     "ember-exam": "^6.0.1",
