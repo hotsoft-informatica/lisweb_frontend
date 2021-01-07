@@ -1557,12 +1557,12 @@
     ember-cli-htmlbars "^5.2.0"
     ember-cli-typescript "^4.0.0"
 
-"@frontile/changeset-form@0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@frontile/changeset-form/-/changeset-form-0.9.0.tgz#52963b7bb5f1ca1777fe13b70753caabafe93fc1"
-  integrity sha512-twTFMZ5Binp0F57ktX6bJSepF2WbItzCnvPdeAw/UdK3/ww9FIzAYA2YnjkFQads8F6P5GZSZIEvjXXrKFS+lA==
+"@frontile/changeset-form@0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@frontile/changeset-form/-/changeset-form-0.9.1.tgz#cd909a05992ff1e1191ec6688b8ff60f106a2941"
+  integrity sha512-fConvERewoQ7aHZKXFfosswqD5hPe6SL0xO2WG/1ZTkPbDti7923QzX/anp+GJaUEdND9HFA3o4JbrnryGz2ow==
   dependencies:
-    "@frontile/forms" "^0.9.0"
+    "@frontile/forms" "^0.9.1"
     ember-changeset "^3.10.5"
     ember-changeset-validations "^3.10.3"
     ember-cli-babel "^7.23.0"
@@ -1582,12 +1582,38 @@
     ember-cli-typescript "^4.0.0"
     focus-visible "^5.2.0"
 
-"@frontile/forms@0.9.0", "@frontile/forms@^0.9.0":
+"@frontile/core@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@frontile/core/-/core-0.9.1.tgz#897d80499c492776f836aff949766521daecba9a"
+  integrity sha512-i3Bceajadf2xyvBu5EFzHuJz5B8Bh1HuuoQpcaV5r8kVvHVzcFuDK2NdOnj+3zmZohOfcIzrVeA+o79l5/IvPg==
+  dependencies:
+    "@ember/render-modifiers" "^1.0.2"
+    "@ember/test-waiters" "^2.3.2"
+    "@frontile/tailwindcss-plugin-helpers" "^0.9.0"
+    ember-cli-babel "^7.23.0"
+    ember-cli-htmlbars "^5.2.0"
+    ember-cli-typescript "^4.0.0"
+    focus-visible "^5.2.0"
+
+"@frontile/forms@0.9.0":
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/@frontile/forms/-/forms-0.9.0.tgz#051c71d6585c320923a452eef39d03dae34f22a4"
   integrity sha512-2+ha8yipYw6QA9Etq2kSiEDWso/FPJVDPh0b+LVjJC5tjHKqInP3b0TTaaFKbvVgsGmfvCBy1UUCKXJ0l++Hag==
   dependencies:
     "@frontile/core" "^0.9.0"
+    "@frontile/tailwindcss-plugin-helpers" "^0.9.0"
+    ember-cli-babel "^7.23.0"
+    ember-cli-htmlbars "^5.2.0"
+    ember-cli-typescript "^4.0.0"
+    ember-power-select "4.1.0"
+    tailwindcss-ember-power-select "^0.4.0"
+
+"@frontile/forms@^0.9.0", "@frontile/forms@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@frontile/forms/-/forms-0.9.1.tgz#c5330a888683d9e69cfbeda55b9ef6fa0d7b71ef"
+  integrity sha512-bf53/UX0O0iF4149DDcx3BPPsOkN2wRqRFaoxcasWXDumD2Mx90soOtvQ0EZPDOxCYCsE8z30sUTUL4iTvpfvw==
+  dependencies:
+    "@frontile/core" "^0.9.1"
     "@frontile/tailwindcss-plugin-helpers" "^0.9.0"
     ember-cli-babel "^7.23.0"
     ember-cli-htmlbars "^5.2.0"
