@@ -1569,10 +1569,10 @@
     ember-cli-htmlbars "^5.2.0"
     ember-cli-typescript "^4.0.0"
 
-"@frontile/core@0.9.0", "@frontile/core@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@frontile/core/-/core-0.9.0.tgz#967cb4b0e43e041e7e571f8047080fbe51e57c12"
-  integrity sha512-LOJeL+6uQj7yqvHTLDqEWoQ7HN/KjdEwVHz+6katXmvWUUs3cWM3Z1BT82hjoM3+I3N6XiUVHLpD8xfX6xeqkA==
+"@frontile/core@0.9.1", "@frontile/core@^0.9.0":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@frontile/core/-/core-0.9.1.tgz#897d80499c492776f836aff949766521daecba9a"
+  integrity sha512-i3Bceajadf2xyvBu5EFzHuJz5B8Bh1HuuoQpcaV5r8kVvHVzcFuDK2NdOnj+3zmZohOfcIzrVeA+o79l5/IvPg==
   dependencies:
     "@ember/render-modifiers" "^1.0.2"
     "@ember/test-waiters" "^2.3.2"
