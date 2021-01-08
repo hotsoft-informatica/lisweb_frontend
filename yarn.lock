@@ -1547,10 +1547,10 @@
   dependencies:
     tslib "^2.0.1"
 
-"@frontile/buttons@0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@frontile/buttons/-/buttons-0.9.0.tgz#7a7631c1bd4e46078d267813290eb04b4fe477a1"
-  integrity sha512-pIiQ+S6J4/53LYK/8iOQjwJProWPh5e42yCIgPNQCsIyRQzKbX4TPE2uSWtZu42JX9dMP2b+INPyljxbwh1erQ==
+"@frontile/buttons@0.9.2":
+  version "0.9.2"
+  resolved "https://registry.yarnpkg.com/@frontile/buttons/-/buttons-0.9.2.tgz#334bd7c381cfcc9c1ebbd58a7b021dd123f2c07a"
+  integrity sha512-i90pL5hQxeQ8fY5qOrUlopFDtwaFUdHiGq4t0K55Ttx1Q5M9WkvKfc1d62v9mzJ5QZzP5fANLIPXo0FAWAvQkA==
   dependencies:
     "@frontile/tailwindcss-plugin-helpers" "^0.9.0"
     ember-cli-babel "^7.23.0"
