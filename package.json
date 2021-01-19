@@ -218,7 +218,7 @@
     "emberx-select": "3.1.1",
     "eslint": "7.16.0",
     "eslint-config-airbnb-base": "14.2.1",
-    "eslint-config-prettier": "7.1.0",
+    "eslint-config-prettier": "7.2.0",
     "eslint-import-resolver-ember": "0.0.1",
     "eslint-import-resolver-node": "0.3.4",
     "eslint-plugin-disable-features": "0.1.3",
