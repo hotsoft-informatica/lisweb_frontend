@@ -94,7 +94,7 @@
     "@types/enhanced-resolve": "3.0.6",
     "@types/node": "14.14.17",
     "@types/node-fetch": "2.5.7",
-    "@typescript-eslint/eslint-plugin": "4.11.1",
+    "@typescript-eslint/eslint-plugin": "4.14.0",
     "@typescript-eslint/experimental-utils": "^4.11.1",
     "@typescript-eslint/parser": "4.11.1",
     "@zestia/ember-auto-focus": "4.1.6",
