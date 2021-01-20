@@ -204,7 +204,7 @@
     "ember-require-module": "0.3.0",
     "ember-resolver": "8.0.2",
     "ember-router-scroll": "3.3.7",
-    "ember-sortable": "2.2.1",
+    "ember-sortable": "2.2.2",
     "ember-source": "3.24.0",
     "ember-svg-jar": "2.2.3",
     "ember-template-lint": "2.15.0",

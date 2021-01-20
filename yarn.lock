@@ -8581,15 +8581,16 @@ ember-runtime-enumerable-includes-polyfill@^2.0.0:
     ember-cli-babel "^6.9.0"
     ember-cli-version-checker "^2.1.0"
 
-ember-sortable@2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/ember-sortable/-/ember-sortable-2.2.1.tgz#3c2d705b92f276c15d5023a61bb4d3e5ac30a799"
-  integrity sha512-F6wBFmCKU5F2lu+61kTym8lGMcwPXGTWvZTSSswS2ClD5a21aLPAL8yEv7zXesBelWnp/SP9V6oYyvAzNEHMsQ==
+ember-sortable@2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/ember-sortable/-/ember-sortable-2.2.2.tgz#c2c1e5226120d0bd5c4988825611972614cf1cf4"
+  integrity sha512-QnnEIdjnPal6z7CzShgDIUdy06hSIyTR+JzpgeHZksgnMcNQFGXDUDz2RPZHM6OZVLujQbVCzddUyCz715bOMQ==
   dependencies:
     "@ember/render-modifiers" "^1.0.2"
     ember-cli-babel "^7.11.1"
     ember-cli-htmlbars "^5.0.0"
     ember-decorators-polyfill "^1.1.1"
+    ember-get-config "^0.2.4"
     ember-modifier "^2.1.0"
     ember-test-selectors "^5.0.0"
     ember-test-waiters "^1.1.1"
