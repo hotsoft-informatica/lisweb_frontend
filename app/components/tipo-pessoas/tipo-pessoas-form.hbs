@@ -1,7 +1,9 @@
-<PowerSelect
-  @selected={{this.tipo}}
-  @options={{this.tipospessoa}}
-  @onChange={{fn (mut this.selecTipo)}} as |nome|
->
-  {{nome}}
-</PowerSelect>
+{{#with (changeset model this.tipospessoa) as |changesetObj|}}
+  <PowerSelect
+    @changeset={{changesetObj}}
+    @submit={{this.submit}}
+    @rollback={{this.rollback}}
+  >
+    {{changesetObj}}
+  </PowerSelect>
+{{/with}}
