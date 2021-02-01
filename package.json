@@ -216,7 +216,7 @@
     "ember-validators": "3.0.1",
     "ember-welcome-page": "4.0.0",
     "emberx-select": "3.1.1",
-    "eslint": "7.16.0",
+    "eslint": "7.19.0",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-config-prettier": "7.1.0",
     "eslint-import-resolver-ember": "0.0.1",
