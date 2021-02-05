@@ -1582,6 +1582,19 @@
     ember-cli-typescript "^4.0.0"
     focus-visible "^5.2.0"
 
+"@frontile/core@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@frontile/core/-/core-0.10.0.tgz#1bbb2781910d15c15f0422dbd29649006c1ade3b"
+  integrity sha512-91RkiQ/ZV0OIAgzQ9+A5Y2rjJ9Pw8A3tJGe+LQyDin4o2ZDGa+y2DOhR1LJRVv/Xlf2Bhje60Yngm0kD1Rst5A==
+  dependencies:
+    "@ember/render-modifiers" "^1.0.2"
+    "@ember/test-waiters" "^2.3.2"
+    "@frontile/tailwindcss-plugin-helpers" "^0.10.0"
+    ember-cli-babel "^7.23.0"
+    ember-cli-htmlbars "^5.2.0"
+    ember-cli-typescript "^4.0.0"
+    focus-visible "^5.2.0"
+
 "@frontile/forms@0.9.0", "@frontile/forms@^0.9.0":
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/@frontile/forms/-/forms-0.9.0.tgz#051c71d6585c320923a452eef39d03dae34f22a4"
@@ -1589,6 +1602,19 @@
   dependencies:
     "@frontile/core" "^0.9.0"
     "@frontile/tailwindcss-plugin-helpers" "^0.9.0"
+    ember-cli-babel "^7.23.0"
+    ember-cli-htmlbars "^5.2.0"
+    ember-cli-typescript "^4.0.0"
+    ember-power-select "4.1.0"
+    tailwindcss-ember-power-select "^0.4.0"
+
+"@frontile/forms@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@frontile/forms/-/forms-0.10.0.tgz#0ddd4e8b2b614d3967933c12aff1618d77f98bc9"
+  integrity sha512-lPCvaSuefHkdSPmYIvrRhsrEmXvD2nxhOwzkIxyBJ9HGqxoNBUZlH3C01+CeP8ZYeVxKzHjnVGvf66/r9FlVGQ==
+  dependencies:
+    "@frontile/core" "^0.10.0"
+    "@frontile/tailwindcss-plugin-helpers" "^0.10.0"
     ember-cli-babel "^7.23.0"
     ember-cli-htmlbars "^5.2.0"
     ember-cli-typescript "^4.0.0"
@@ -1609,21 +1635,30 @@
     ember-css-transitions "^2.1.0"
     ember-get-config "^0.3.0"
 
-"@frontile/overlays@0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@frontile/overlays/-/overlays-0.9.0.tgz#472acd7b88e8aff2c8911b6a2824e442de5a3460"
-  integrity sha512-Btm5FGQSgrSVuWC2N1KF3CyJ2D0GQ/NsshatZs66xg8h+hiAMmiWKNe/b6D/qpTd+CViGL/aG1NR0/C9hpICFg==
+"@frontile/overlays@0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@frontile/overlays/-/overlays-0.10.0.tgz#3690eabd9bbd0580c27cb4ebbf1f8cd2ef02e35b"
+  integrity sha512-rBzu66N0d6cK/lldg0/u46DMmgqkPFd/hsw90vmSDisaSuFuCSXZBbIJ428luL7wItPWqZ7OxMc0KS4clt8CKQ==
   dependencies:
     "@ember/render-modifiers" "^1.0.2"
-    "@frontile/core" "^0.9.0"
-    "@frontile/forms" "^0.9.0"
-    "@frontile/tailwindcss-plugin-helpers" "^0.9.0"
+    "@frontile/core" "^0.10.0"
+    "@frontile/forms" "^0.10.0"
+    "@frontile/tailwindcss-plugin-helpers" "^0.10.0"
     ember-cli-babel "^7.23.0"
     ember-cli-htmlbars "^5.2.0"
     ember-cli-typescript "^4.0.0"
     ember-css-transitions "^2.1.0"
     ember-focus-trap "^0.5.0"
     ember-maybe-in-element "^2.0.1"
+
+"@frontile/tailwindcss-plugin-helpers@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@frontile/tailwindcss-plugin-helpers/-/tailwindcss-plugin-helpers-0.10.0.tgz#70ba631707be3da020a326b1555eaffe8fa19bbd"
+  integrity sha512-oqG26+Qk6Y2xZsHn4I2Xdv0GPQBLg9akpcWHxEOu5SC/lLCyB8Xf72gFlcZhiPAM6SFpIB10LArtYrbSZdfnwQ==
+  dependencies:
+    lodash "^4.17.20"
+    mini-svg-data-uri "^1.2.3"
+    traverse "^0.6.6"
 
 "@frontile/tailwindcss-plugin-helpers@^0.9.0":
   version "0.9.0"
