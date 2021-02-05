@@ -1547,12 +1547,12 @@
   dependencies:
     tslib "^2.0.1"
 
-"@frontile/buttons@0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@frontile/buttons/-/buttons-0.9.0.tgz#7a7631c1bd4e46078d267813290eb04b4fe477a1"
-  integrity sha512-pIiQ+S6J4/53LYK/8iOQjwJProWPh5e42yCIgPNQCsIyRQzKbX4TPE2uSWtZu42JX9dMP2b+INPyljxbwh1erQ==
+"@frontile/buttons@0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@frontile/buttons/-/buttons-0.10.0.tgz#2f6db700873b0e6e445d108d688bfa3c981a7f17"
+  integrity sha512-i+pxTe+0/ncS7SCzq6Xndnh2mqwln9oAYoWC3SPnChAnb6nBYYolKlPWRzFoKasT50N+i8eIexmT7boLolpYdQ==
   dependencies:
-    "@frontile/tailwindcss-plugin-helpers" "^0.9.0"
+    "@frontile/tailwindcss-plugin-helpers" "^0.10.0"
     ember-cli-babel "^7.23.0"
     ember-cli-htmlbars "^5.2.0"
     ember-cli-typescript "^4.0.0"
@@ -1624,6 +1624,15 @@
     ember-css-transitions "^2.1.0"
     ember-focus-trap "^0.5.0"
     ember-maybe-in-element "^2.0.1"
+
+"@frontile/tailwindcss-plugin-helpers@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@frontile/tailwindcss-plugin-helpers/-/tailwindcss-plugin-helpers-0.10.0.tgz#70ba631707be3da020a326b1555eaffe8fa19bbd"
+  integrity sha512-oqG26+Qk6Y2xZsHn4I2Xdv0GPQBLg9akpcWHxEOu5SC/lLCyB8Xf72gFlcZhiPAM6SFpIB10LArtYrbSZdfnwQ==
+  dependencies:
+    lodash "^4.17.20"
+    mini-svg-data-uri "^1.2.3"
+    traverse "^0.6.6"
 
 "@frontile/tailwindcss-plugin-helpers@^0.9.0":
   version "0.9.0"
