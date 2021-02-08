@@ -5962,12 +5962,11 @@ clone@^2.0.0, clone@^2.1.2:
   resolved "https://registry.yarnpkg.com/clone/-/clone-2.1.2.tgz#1b7f4b9f591f1e8f83670401600345a02887435f"
   integrity sha1-G39Ln1kfHo+DZwQBYANFoCiHQ18=
 
-cmd-shim@4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/cmd-shim/-/cmd-shim-4.0.2.tgz#600c8b5962eea0cfd8cb809826b9584a59380c01"
-  integrity sha512-yuOHOon6oFX6kcxVl2jIkvPJsQ/yiKp9fd2dnuoBRZB9GEJ3USWAFCIqfB4xmFou93C3MjjhAprcDwrw+O29VA==
+cmd-shim@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/cmd-shim/-/cmd-shim-4.1.0.tgz#b3a904a6743e9fede4148c6f3800bf2a08135bdd"
+  integrity sha512-lb9L7EM4I/ZRVuljLPEtUJOP+xiQVknZ4ZMpMgEp4JzNldPb27HU03hi6K1/6CoIuit/Zm/LQXySErFeXxDprw==
   dependencies:
-    graceful-fs "^4.1.2"
     mkdirp-infer-owner "^2.0.0"
 
 cmd-shim@~2.0.2:
