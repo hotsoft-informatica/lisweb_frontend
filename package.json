@@ -238,7 +238,7 @@
     "fs-vacuum": "1.2.10",
     "git-rev-sync": "3.0.1",
     "globals": "13.5.0",
-    "graceful-fs": "4.2.4",
+    "graceful-fs": "4.2.5",
     "heimdalljs": "0.2.6",
     "husky": "4.3.6",
     "iferr": "1.0.2",
