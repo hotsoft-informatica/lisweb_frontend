@@ -1582,7 +1582,34 @@
     ember-cli-typescript "^4.0.0"
     focus-visible "^5.2.0"
 
-"@frontile/forms@0.9.0", "@frontile/forms@^0.9.0":
+"@frontile/core@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@frontile/core/-/core-0.10.0.tgz#1bbb2781910d15c15f0422dbd29649006c1ade3b"
+  integrity sha512-91RkiQ/ZV0OIAgzQ9+A5Y2rjJ9Pw8A3tJGe+LQyDin4o2ZDGa+y2DOhR1LJRVv/Xlf2Bhje60Yngm0kD1Rst5A==
+  dependencies:
+    "@ember/render-modifiers" "^1.0.2"
+    "@ember/test-waiters" "^2.3.2"
+    "@frontile/tailwindcss-plugin-helpers" "^0.10.0"
+    ember-cli-babel "^7.23.0"
+    ember-cli-htmlbars "^5.2.0"
+    ember-cli-typescript "^4.0.0"
+    focus-visible "^5.2.0"
+
+"@frontile/forms@0.10.1":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@frontile/forms/-/forms-0.10.1.tgz#d212e2f78c42c185e4c2b927b7ea710c65b71ab0"
+  integrity sha512-XfXKi81Q8p8JCUxYqtf/BJ7s2SrM22uXC04AQ0arUd3X9sxri4tA9uV2dWgB/BPQ1xQvmC9FL9E64aYf6v0+Lg==
+  dependencies:
+    "@frontile/core" "^0.10.0"
+    "@frontile/tailwindcss-plugin-helpers" "^0.10.0"
+    ember-cli-babel "^7.23.0"
+    ember-cli-htmlbars "^5.2.0"
+    ember-cli-typescript "^4.0.0"
+    ember-power-select "4.1.0"
+    ember-test-selectors "^5.0.0"
+    tailwindcss-ember-power-select "^0.4.0"
+
+"@frontile/forms@^0.9.0":
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/@frontile/forms/-/forms-0.9.0.tgz#051c71d6585c320923a452eef39d03dae34f22a4"
   integrity sha512-2+ha8yipYw6QA9Etq2kSiEDWso/FPJVDPh0b+LVjJC5tjHKqInP3b0TTaaFKbvVgsGmfvCBy1UUCKXJ0l++Hag==
@@ -1624,6 +1651,15 @@
     ember-css-transitions "^2.1.0"
     ember-focus-trap "^0.5.0"
     ember-maybe-in-element "^2.0.1"
+
+"@frontile/tailwindcss-plugin-helpers@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@frontile/tailwindcss-plugin-helpers/-/tailwindcss-plugin-helpers-0.10.0.tgz#70ba631707be3da020a326b1555eaffe8fa19bbd"
+  integrity sha512-oqG26+Qk6Y2xZsHn4I2Xdv0GPQBLg9akpcWHxEOu5SC/lLCyB8Xf72gFlcZhiPAM6SFpIB10LArtYrbSZdfnwQ==
+  dependencies:
+    lodash "^4.17.20"
+    mini-svg-data-uri "^1.2.3"
+    traverse "^0.6.6"
 
 "@frontile/tailwindcss-plugin-helpers@^0.9.0":
   version "0.9.0"
