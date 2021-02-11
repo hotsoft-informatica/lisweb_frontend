@@ -165,7 +165,7 @@
     "ember-cli-htmlbars": "5.3.1",
     "ember-cli-ifa": "0.10.0",
     "ember-cli-inject-live-reload": "2.0.2",
-    "ember-cli-page-object": "1.17.4",
+    "ember-cli-page-object": "1.17.7",
     "ember-cli-shims": "1.2.0",
     "ember-cli-sri": "2.1.1",
     "ember-cli-template-lint": "2.0.2",
