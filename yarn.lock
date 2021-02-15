@@ -1569,7 +1569,20 @@
     ember-cli-htmlbars "^5.2.0"
     ember-cli-typescript "^4.0.0"
 
-"@frontile/core@0.9.0", "@frontile/core@^0.9.0":
+"@frontile/core@0.10.2":
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/@frontile/core/-/core-0.10.2.tgz#b82ed41a7d6c062f7783d5bb24066a4dd7554c93"
+  integrity sha512-vffgGBFhxHVzrqwNZcfsJWjKWG1E8TSAo7MMxXZDvUXLh26gC+/Fr2vnXxJgHP82aur0sbT/7Fg5tvNnGegt2g==
+  dependencies:
+    "@ember/render-modifiers" "^1.0.2"
+    "@ember/test-waiters" "^2.3.2"
+    "@frontile/tailwindcss-plugin-helpers" "^0.10.0"
+    ember-cli-babel "^7.23.0"
+    ember-cli-htmlbars "^5.2.0"
+    ember-cli-typescript "^4.0.0"
+    focus-visible "^5.2.0"
+
+"@frontile/core@^0.9.0":
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/@frontile/core/-/core-0.9.0.tgz#967cb4b0e43e041e7e571f8047080fbe51e57c12"
   integrity sha512-LOJeL+6uQj7yqvHTLDqEWoQ7HN/KjdEwVHz+6katXmvWUUs3cWM3Z1BT82hjoM3+I3N6XiUVHLpD8xfX6xeqkA==
@@ -1624,6 +1637,15 @@
     ember-css-transitions "^2.1.0"
     ember-focus-trap "^0.5.0"
     ember-maybe-in-element "^2.0.1"
+
+"@frontile/tailwindcss-plugin-helpers@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@frontile/tailwindcss-plugin-helpers/-/tailwindcss-plugin-helpers-0.10.0.tgz#70ba631707be3da020a326b1555eaffe8fa19bbd"
+  integrity sha512-oqG26+Qk6Y2xZsHn4I2Xdv0GPQBLg9akpcWHxEOu5SC/lLCyB8Xf72gFlcZhiPAM6SFpIB10LArtYrbSZdfnwQ==
+  dependencies:
+    lodash "^4.17.20"
+    mini-svg-data-uri "^1.2.3"
+    traverse "^0.6.6"
 
 "@frontile/tailwindcss-plugin-helpers@^0.9.0":
   version "0.9.0"
