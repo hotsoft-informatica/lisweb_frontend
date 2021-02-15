@@ -81,7 +81,7 @@
     "@embroider/core": "0.35.0",
     "@embroider/macros": "0.35.0",
     "@fimbul/bifrost": "^0.22.0",
-    "@frontile/buttons": "0.9.0",
+    "@frontile/buttons": "0.10.2",
     "@frontile/changeset-form": "0.9.0",
     "@frontile/core": "0.9.0",
     "@frontile/forms": "0.9.0",
