@@ -1582,6 +1582,19 @@
     ember-cli-typescript "^4.0.0"
     focus-visible "^5.2.0"
 
+"@frontile/core@^0.10.2":
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/@frontile/core/-/core-0.10.2.tgz#b82ed41a7d6c062f7783d5bb24066a4dd7554c93"
+  integrity sha512-vffgGBFhxHVzrqwNZcfsJWjKWG1E8TSAo7MMxXZDvUXLh26gC+/Fr2vnXxJgHP82aur0sbT/7Fg5tvNnGegt2g==
+  dependencies:
+    "@ember/render-modifiers" "^1.0.2"
+    "@ember/test-waiters" "^2.3.2"
+    "@frontile/tailwindcss-plugin-helpers" "^0.10.0"
+    ember-cli-babel "^7.23.0"
+    ember-cli-htmlbars "^5.2.0"
+    ember-cli-typescript "^4.0.0"
+    focus-visible "^5.2.0"
+
 "@frontile/forms@0.9.0", "@frontile/forms@^0.9.0":
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/@frontile/forms/-/forms-0.9.0.tgz#051c71d6585c320923a452eef39d03dae34f22a4"
@@ -1594,6 +1607,20 @@
     ember-cli-typescript "^4.0.0"
     ember-power-select "4.1.0"
     tailwindcss-ember-power-select "^0.4.0"
+
+"@frontile/forms@^0.10.2":
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/@frontile/forms/-/forms-0.10.2.tgz#58c83eabcea20979a4037263a752f4c0bc807061"
+  integrity sha512-w0qdty21/iS8KTDyaup8dj9hO+N32vHOM7Ri6t6LgEQ8kvbRDS0VqAtRVvNFZP8NO8vDNfPFjlv/kwUd12yo4w==
+  dependencies:
+    "@frontile/core" "^0.10.2"
+    "@frontile/tailwindcss-plugin-helpers" "^0.10.0"
+    ember-cli-babel "^7.23.0"
+    ember-cli-htmlbars "^5.2.0"
+    ember-cli-typescript "^4.0.0"
+    ember-power-select "4.1.0"
+    ember-test-selectors "^5.0.0"
+    tailwindcss-ember-power-select "^0.4.1"
 
 "@frontile/notifications@0.9.0":
   version "0.9.0"
@@ -1609,21 +1636,30 @@
     ember-css-transitions "^2.1.0"
     ember-get-config "^0.3.0"
 
-"@frontile/overlays@0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@frontile/overlays/-/overlays-0.9.0.tgz#472acd7b88e8aff2c8911b6a2824e442de5a3460"
-  integrity sha512-Btm5FGQSgrSVuWC2N1KF3CyJ2D0GQ/NsshatZs66xg8h+hiAMmiWKNe/b6D/qpTd+CViGL/aG1NR0/C9hpICFg==
+"@frontile/overlays@0.10.2":
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/@frontile/overlays/-/overlays-0.10.2.tgz#0910b4c46691e387bc1ac9470ee66b208dde5590"
+  integrity sha512-7XEgfhgA+3xvx4HUAxHBJGmFgjLNW2tAbxYuMcC8y568AursXqkVp8L6NA1g80cA5TRIjcB33ue8PAAOhl7UZg==
   dependencies:
     "@ember/render-modifiers" "^1.0.2"
-    "@frontile/core" "^0.9.0"
-    "@frontile/forms" "^0.9.0"
-    "@frontile/tailwindcss-plugin-helpers" "^0.9.0"
+    "@frontile/core" "^0.10.2"
+    "@frontile/forms" "^0.10.2"
+    "@frontile/tailwindcss-plugin-helpers" "^0.10.0"
     ember-cli-babel "^7.23.0"
     ember-cli-htmlbars "^5.2.0"
     ember-cli-typescript "^4.0.0"
     ember-css-transitions "^2.1.0"
     ember-focus-trap "^0.5.0"
     ember-maybe-in-element "^2.0.1"
+
+"@frontile/tailwindcss-plugin-helpers@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@frontile/tailwindcss-plugin-helpers/-/tailwindcss-plugin-helpers-0.10.0.tgz#70ba631707be3da020a326b1555eaffe8fa19bbd"
+  integrity sha512-oqG26+Qk6Y2xZsHn4I2Xdv0GPQBLg9akpcWHxEOu5SC/lLCyB8Xf72gFlcZhiPAM6SFpIB10LArtYrbSZdfnwQ==
+  dependencies:
+    lodash "^4.17.20"
+    mini-svg-data-uri "^1.2.3"
+    traverse "^0.6.6"
 
 "@frontile/tailwindcss-plugin-helpers@^0.9.0":
   version "0.9.0"
@@ -18035,6 +18071,15 @@ tailwindcss-ember-power-select@0.4.0, tailwindcss-ember-power-select@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/tailwindcss-ember-power-select/-/tailwindcss-ember-power-select-0.4.0.tgz#9f6ae07eb55d5566d01269c70db9c1fb729dd113"
   integrity sha512-2CvXXWU3OefCvX+Bs41Rux8TQUubdL+2NJ8DKjmV+LPqhFyH/uSpAs/npvv2K+CVh3B9n3CulXEteaedNfu1XA==
+  dependencies:
+    lodash "^4.17.20"
+    mini-svg-data-uri "^1.2.3"
+    traverse "^0.6.6"
+
+tailwindcss-ember-power-select@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/tailwindcss-ember-power-select/-/tailwindcss-ember-power-select-0.4.1.tgz#e7634059e552f9b2045f69c60eaa4ced1614bc76"
+  integrity sha512-pq2i4vMtRkXSW7eFGFnCnvWFeA+Z0KCPYsBUFoRrawVEIvKBTtBD7gLHaMhPZYUoq65TyYSjsRbGBdKnxFkUFw==
   dependencies:
     lodash "^4.17.20"
     mini-svg-data-uri "^1.2.3"
