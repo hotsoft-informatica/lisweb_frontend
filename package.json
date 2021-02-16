@@ -134,7 +134,7 @@
     "call-limit": "1.1.1",
     "chokidar": "3.4.3",
     "clean-css": "4.2.3",
-    "cmd-shim": "4.0.2",
+    "cmd-shim": "4.1.0",
     "config-chain": "1.1.12",
     "core-js": "3.8.1",
     "cross-env": "7.0.3",
