@@ -171,7 +171,7 @@
     "ember-cli-template-lint": "2.0.2",
     "ember-cli-terser": "4.0.1",
     "ember-cli-test-loader": "3.0.0",
-    "ember-cli-typescript": "4.0.0",
+    "ember-cli-typescript": "4.1.0",
     "ember-cli-uglify": "3.0.0",
     "ember-cli-update": "0.55.1",
     "ember-cli-version-checker": "5.1.1",
