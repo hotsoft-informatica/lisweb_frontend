@@ -1266,6 +1266,17 @@
     ember-cli-version-checker "^5.1.1"
     semver "^7.3.2"
 
+"@ember/test-waiters@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@ember/test-waiters/-/test-waiters-2.4.0.tgz#af92324d03a8840eff7a9ea3e9015138e0c477ed"
+  integrity sha512-P1c0dmbNx7I+wM37nCs3lRiDoGYvcg0s2L3Y/75izj48iYT1/7Vxr3eFkZ7AShuCa7SBMRoH2mHOVsqLDBJ3hA==
+  dependencies:
+    calculate-cache-key-for-tree "^2.0.0"
+    ember-cli-babel "^7.21.0"
+    ember-cli-typescript "^3.1.4"
+    ember-cli-version-checker "^5.1.2"
+    semver "^7.3.2"
+
 "@embroider/core@0.24.1":
   version "0.24.1"
   resolved "https://registry.yarnpkg.com/@embroider/core/-/core-0.24.1.tgz#bd214bed35fec5926844b3ba05528fe542942749"
@@ -1545,17 +1556,17 @@
     ember-cli-htmlbars "^5.2.0"
     ember-cli-typescript "^4.0.0"
 
-"@frontile/changeset-form@0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@frontile/changeset-form/-/changeset-form-0.9.0.tgz#52963b7bb5f1ca1777fe13b70753caabafe93fc1"
-  integrity sha512-twTFMZ5Binp0F57ktX6bJSepF2WbItzCnvPdeAw/UdK3/ww9FIzAYA2YnjkFQads8F6P5GZSZIEvjXXrKFS+lA==
+"@frontile/changeset-form@0.10.3":
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/@frontile/changeset-form/-/changeset-form-0.10.3.tgz#f1ddfee6b596c249cf9899f616caacee5b86f0d3"
+  integrity sha512-BBkwstiEmzBh2E2NBW15pAv5WskR+GuoiqqQioFRNK9FL84z0Hv6IfwKuCJJ8q+3OdxVxaJODbDvu7wpLnvNHw==
   dependencies:
-    "@frontile/forms" "^0.9.0"
-    ember-changeset "^3.10.5"
-    ember-changeset-validations "^3.10.3"
-    ember-cli-babel "^7.23.0"
-    ember-cli-htmlbars "^5.2.0"
-    ember-cli-typescript "^4.0.0"
+    "@frontile/forms" "^0.10.3"
+    ember-changeset "^3.12.0"
+    ember-changeset-validations "^3.13.0"
+    ember-cli-babel "^7.23.1"
+    ember-cli-htmlbars "^5.3.2"
+    ember-cli-typescript "^4.1.0"
 
 "@frontile/core@0.9.0", "@frontile/core@^0.9.0":
   version "0.9.0"
@@ -1570,6 +1581,19 @@
     ember-cli-typescript "^4.0.0"
     focus-visible "^5.2.0"
 
+"@frontile/core@^0.10.3":
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/@frontile/core/-/core-0.10.3.tgz#fb82ce51260dbf927f55f033eebc1e0211298e03"
+  integrity sha512-l8GENIHqMBBlGCAerF4bZtp2wjexIUDu363Zoen4rgGc/ofhj5L0Ij5vWlnnAumrUCNUwebs37SfU6OIfA2+HQ==
+  dependencies:
+    "@ember/render-modifiers" "^1.0.2"
+    "@ember/test-waiters" "^2.4.0"
+    "@frontile/tailwindcss-plugin-helpers" "^0.10.0"
+    ember-cli-babel "^7.23.1"
+    ember-cli-htmlbars "^5.3.2"
+    ember-cli-typescript "^4.1.0"
+    focus-visible "^5.2.0"
+
 "@frontile/forms@0.9.0", "@frontile/forms@^0.9.0":
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/@frontile/forms/-/forms-0.9.0.tgz#051c71d6585c320923a452eef39d03dae34f22a4"
@@ -1582,6 +1606,20 @@
     ember-cli-typescript "^4.0.0"
     ember-power-select "4.1.0"
     tailwindcss-ember-power-select "^0.4.0"
+
+"@frontile/forms@^0.10.3":
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/@frontile/forms/-/forms-0.10.3.tgz#d693890e49e686be49bd1b59a9f1049a5f4a6317"
+  integrity sha512-Qf7uNLzRu6wpvbYuF0SfSLUT+6nPbNguSj+u6r+t5Nrw3JdDlmy3588wxvSMxgFGi3hAjVqNK46Pw6ISTLDJfg==
+  dependencies:
+    "@frontile/core" "^0.10.3"
+    "@frontile/tailwindcss-plugin-helpers" "^0.10.0"
+    ember-cli-babel "^7.23.1"
+    ember-cli-htmlbars "^5.3.2"
+    ember-cli-typescript "^4.1.0"
+    ember-power-select "4.1.2"
+    ember-test-selectors "^5.0.0"
+    tailwindcss-ember-power-select "^0.4.1"
 
 "@frontile/notifications@0.9.0":
   version "0.9.0"
@@ -1612,6 +1650,15 @@
     ember-css-transitions "^2.1.0"
     ember-focus-trap "^0.5.0"
     ember-maybe-in-element "^2.0.1"
+
+"@frontile/tailwindcss-plugin-helpers@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@frontile/tailwindcss-plugin-helpers/-/tailwindcss-plugin-helpers-0.10.0.tgz#70ba631707be3da020a326b1555eaffe8fa19bbd"
+  integrity sha512-oqG26+Qk6Y2xZsHn4I2Xdv0GPQBLg9akpcWHxEOu5SC/lLCyB8Xf72gFlcZhiPAM6SFpIB10LArtYrbSZdfnwQ==
+  dependencies:
+    lodash "^4.17.20"
+    mini-svg-data-uri "^1.2.3"
+    traverse "^0.6.6"
 
 "@frontile/tailwindcss-plugin-helpers@^0.9.0":
   version "0.9.0"
@@ -3703,6 +3750,13 @@ babel-plugin-ember-modules-api-polyfill@^2.3.0, babel-plugin-ember-modules-api-p
   dependencies:
     ember-rfc176-data "^0.3.13"
 
+babel-plugin-ember-modules-api-polyfill@^3.2.1:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-ember-modules-api-polyfill/-/babel-plugin-ember-modules-api-polyfill-3.3.0.tgz#dc2599b0615ecb5d952aeadb5e309e5a5d970db6"
+  integrity sha512-ZHeadIPB6prIs6TzAItQl7VO0/Lcy74n47fl4oev4DOgB4iuRfL/CEpGZqm0B/9zODYn4GsE0taCC0HSDWqMYQ==
+  dependencies:
+    ember-rfc176-data "^0.3.16"
+
 babel-plugin-filter-imports@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-filter-imports/-/babel-plugin-filter-imports-3.0.0.tgz#a849683837ad29960da17492fb32789ab6b09a11"
@@ -3719,7 +3773,7 @@ babel-plugin-filter-imports@^4.0.0:
     "@babel/types" "^7.7.2"
     lodash "^4.17.15"
 
-babel-plugin-htmlbars-inline-precompile@4.2.1, babel-plugin-htmlbars-inline-precompile@^4.2.0:
+babel-plugin-htmlbars-inline-precompile@4.2.1, babel-plugin-htmlbars-inline-precompile@^4.2.0, babel-plugin-htmlbars-inline-precompile@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-htmlbars-inline-precompile/-/babel-plugin-htmlbars-inline-precompile-4.2.1.tgz#9a367f8d7ecb9fb2c2e886edfe285caf7cb9766d"
   integrity sha512-MCJXk+1R0YjlF/F52eDbhJTpsnqRVYsPYVP9d0jEu7E46AcRPEWDL5tfSweiQWHLKG017BIedATb91KcIoT3zA==
@@ -7331,7 +7385,23 @@ ember-basic-dropdown@3.0.11, ember-basic-dropdown@^3.0.11:
     ember-maybe-in-element "^2.0.1"
     ember-truth-helpers "^2.1.0 || ^3.0.0"
 
-ember-changeset-validations@3.10.3, ember-changeset-validations@^3.10.3:
+ember-basic-dropdown@^3.0.12:
+  version "3.0.12"
+  resolved "https://registry.yarnpkg.com/ember-basic-dropdown/-/ember-basic-dropdown-3.0.12.tgz#dc9eb1098cec6e1af27402c62cc3c3402e6d5824"
+  integrity sha512-W67UtAWaANCEwwHYTiagfLRlAcn6dC6f0NO0DpJRIZK9iflBzV6nSIkbCuN1lwf6JFRbEGoFj2bV+io0maMCsg==
+  dependencies:
+    "@ember/render-modifiers" "^1.0.2"
+    "@glimmer/component" "^1.0.1"
+    "@glimmer/tracking" "^1.0.1"
+    ember-cli-babel "^7.21.0"
+    ember-cli-htmlbars "^5.2.0"
+    ember-cli-typescript "^3.1.2"
+    ember-element-helper "^0.2.0"
+    ember-maybe-in-element "^2.0.1"
+    ember-style-modifier "^0.6.0"
+    ember-truth-helpers "^2.1.0 || ^3.0.0"
+
+ember-changeset-validations@3.10.3:
   version "3.10.3"
   resolved "https://registry.yarnpkg.com/ember-changeset-validations/-/ember-changeset-validations-3.10.3.tgz#b767e23307c0e97c92b78b9da90248d90c28aa97"
   integrity sha512-UPGNosQ2mXLFuGG4GDBOMi2VTtOsNB9gEXnJ4qqqlXrteHF9hZJR8ZtbekF9mmSGojTJJXSXx++hnX1fzB+j7A==
@@ -7342,15 +7412,26 @@ ember-changeset-validations@3.10.3, ember-changeset-validations@^3.10.3:
     ember-get-config "^0.2.4"
     ember-validators "^3.0.1"
 
-ember-changeset@^3.10.5:
-  version "3.10.5"
-  resolved "https://registry.yarnpkg.com/ember-changeset/-/ember-changeset-3.10.5.tgz#a639cfa7f2208416cfcf41300e48ecee2e097397"
-  integrity sha512-RU1Tah2OryM2ivnkhCq1KIC46/BY5sham06GsAc+81dTaTWMgH05rQ503+5PhY7x3uNa4vLlY4A3zxFNJVFfmg==
+ember-changeset-validations@^3.13.0:
+  version "3.13.0"
+  resolved "https://registry.yarnpkg.com/ember-changeset-validations/-/ember-changeset-validations-3.13.0.tgz#e709fcf6a4b1fb2b79a100a69e7d2fd423a52620"
+  integrity sha512-ObxWKgyTXTZbTl4fnNlMllM61s+KPJH0Bjzanfl7NkBGBk60oufy9sdgJOD43m52/sIJjt41gORVLAqvv+JsbA==
+  dependencies:
+    ember-changeset "^3.12.0"
+    ember-cli-babel "^7.8.0"
+    ember-cli-htmlbars "^4.0.5"
+    ember-get-config "^0.2.4"
+    ember-validators "^3.0.1"
+
+ember-changeset@^3.10.5, ember-changeset@^3.12.0:
+  version "3.12.0"
+  resolved "https://registry.yarnpkg.com/ember-changeset/-/ember-changeset-3.12.0.tgz#f220c27824bf3abbaa8f1b26700794d6df9d0451"
+  integrity sha512-Ae1XkIZW2wFLYV31wuixp4vd7tnU+CkVsX5Q/YKfH+oXy0hm5Zfzse0Kizz4DdOSaSOjtNXUymiXOtwbismS7g==
   dependencies:
     "@glimmer/tracking" "^1.0.1"
     ember-auto-import "^1.5.2"
     ember-cli-babel "^7.19.0"
-    validated-changeset "~0.10.5"
+    validated-changeset "~0.13.1"
 
 ember-classic-decorator@2.0.0:
   version "2.0.0"
@@ -7428,7 +7509,7 @@ ember-cli-babel@6.12.0:
     ember-cli-version-checker "^2.1.0"
     semver "^5.4.1"
 
-ember-cli-babel@7.23.0, ember-cli-babel@^7.0.0, ember-cli-babel@^7.1.2, ember-cli-babel@^7.1.3, ember-cli-babel@^7.10.0, ember-cli-babel@^7.11.0, ember-cli-babel@^7.11.1, ember-cli-babel@^7.12.0, ember-cli-babel@^7.13.0, ember-cli-babel@^7.13.2, ember-cli-babel@^7.18.0, ember-cli-babel@^7.19.0, ember-cli-babel@^7.20.0, ember-cli-babel@^7.20.5, ember-cli-babel@^7.21.0, ember-cli-babel@^7.22.1, ember-cli-babel@^7.23.0, ember-cli-babel@^7.7.3, ember-cli-babel@^7.8.0:
+ember-cli-babel@7.23.0:
   version "7.23.0"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-7.23.0.tgz#ec580aa2c115d0810e454dd5c2fffce238284b92"
   integrity sha512-ix58DlRDAbGITtdJoRUPcAoQwKLYr/x/kIXjU9u1ATyhmuUjqb+0FDXghOWbkNihGiNOqBBR49+LBgK9AeBcNw==
@@ -7477,6 +7558,38 @@ ember-cli-babel@^6.0.0, ember-cli-babel@^6.0.0-beta.4, ember-cli-babel@^6.11.0, 
     broccoli-source "^1.1.0"
     clone "^2.0.0"
     ember-cli-version-checker "^2.1.2"
+    semver "^5.5.0"
+
+ember-cli-babel@^7.0.0, ember-cli-babel@^7.1.2, ember-cli-babel@^7.1.3, ember-cli-babel@^7.10.0, ember-cli-babel@^7.11.0, ember-cli-babel@^7.11.1, ember-cli-babel@^7.12.0, ember-cli-babel@^7.13.0, ember-cli-babel@^7.13.2, ember-cli-babel@^7.18.0, ember-cli-babel@^7.19.0, ember-cli-babel@^7.20.0, ember-cli-babel@^7.20.5, ember-cli-babel@^7.21.0, ember-cli-babel@^7.22.1, ember-cli-babel@^7.23.0, ember-cli-babel@^7.23.1, ember-cli-babel@^7.7.3, ember-cli-babel@^7.8.0:
+  version "7.23.1"
+  resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-7.23.1.tgz#d1517228ede08a5d4b045c78a7429728e956b30b"
+  integrity sha512-qYggmt3hRs6QJ6cRkww3ahMpyP8IEV2KFrIRO/Z6hu9MkE/8Y28Xd5NjQl6fPV3oLoG0vwuHzhNe3Jr7Wec8zw==
+  dependencies:
+    "@babel/core" "^7.12.0"
+    "@babel/helper-compilation-targets" "^7.12.0"
+    "@babel/plugin-proposal-class-properties" "^7.10.4"
+    "@babel/plugin-proposal-decorators" "^7.10.5"
+    "@babel/plugin-transform-modules-amd" "^7.10.5"
+    "@babel/plugin-transform-runtime" "^7.12.0"
+    "@babel/plugin-transform-typescript" "^7.12.0"
+    "@babel/polyfill" "^7.11.5"
+    "@babel/preset-env" "^7.12.0"
+    "@babel/runtime" "^7.12.0"
+    amd-name-resolver "^1.2.1"
+    babel-plugin-debug-macros "^0.3.3"
+    babel-plugin-ember-data-packages-polyfill "^0.1.2"
+    babel-plugin-ember-modules-api-polyfill "^3.2.1"
+    babel-plugin-module-resolver "^3.1.1"
+    broccoli-babel-transpiler "^7.8.0"
+    broccoli-debug "^0.6.4"
+    broccoli-funnel "^2.0.1"
+    broccoli-source "^1.1.0"
+    clone "^2.1.2"
+    ember-cli-babel-plugin-helpers "^1.1.1"
+    ember-cli-version-checker "^4.1.0"
+    ensure-posix-path "^1.0.2"
+    fixturify-project "^1.10.0"
+    rimraf "^3.0.1"
     semver "^5.5.0"
 
 ember-cli-bundle-analyzer@0.2.2:
@@ -7608,7 +7721,7 @@ ember-cli-htmlbars-inline-precompile@^1.0.0:
     heimdalljs-logger "^0.1.9"
     silent-error "^1.1.0"
 
-ember-cli-htmlbars@5.3.1, ember-cli-htmlbars@^5.0.0, ember-cli-htmlbars@^5.2.0, ember-cli-htmlbars@^5.3.1:
+ember-cli-htmlbars@5.3.1:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/ember-cli-htmlbars/-/ember-cli-htmlbars-5.3.1.tgz#61793964fc2599ce750db9e972ab55c6dd177c48"
   integrity sha512-ZjQTt44euDoqLvUkWbt1svgNCXgLzOztEbc2qqYMQvhQig416LMrWK7l3SSbNU+BtLD5UIxmwvLfF1tsO2CVyA==
@@ -7668,6 +7781,27 @@ ember-cli-htmlbars@^4.0.5, ember-cli-htmlbars@^4.2.0, ember-cli-htmlbars@^4.3.1:
     semver "^6.3.0"
     strip-bom "^4.0.0"
     walk-sync "^2.0.2"
+
+ember-cli-htmlbars@^5.0.0, ember-cli-htmlbars@^5.2.0, ember-cli-htmlbars@^5.3.1, ember-cli-htmlbars@^5.3.2:
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/ember-cli-htmlbars/-/ember-cli-htmlbars-5.3.2.tgz#d0e1a4ccd2e7c6f91be51ea0cc1ef7650a9b67e7"
+  integrity sha512-S/spDVzBxkdMhnjiT6gG9xqpM9sT0Z7HskWSvSIAAW1sQsKPOCfRYp/1CqJ3+V5aX8ct0j5aHsdRanQYyHya2w==
+  dependencies:
+    "@ember/edition-utils" "^1.2.0"
+    babel-plugin-htmlbars-inline-precompile "^4.2.1"
+    broccoli-debug "^0.6.5"
+    broccoli-persistent-filter "^3.1.2"
+    broccoli-plugin "^4.0.3"
+    common-tags "^1.8.0"
+    ember-cli-babel-plugin-helpers "^1.1.1"
+    fs-tree-diff "^2.0.1"
+    hash-for-dep "^1.5.1"
+    heimdalljs-logger "^0.1.10"
+    json-stable-stringify "^1.0.1"
+    semver "^7.3.4"
+    silent-error "^1.1.1"
+    strip-bom "^4.0.0"
+    walk-sync "^2.2.0"
 
 ember-cli-ifa@0.10.0:
   version "0.10.0"
@@ -7838,7 +7972,7 @@ ember-cli-typescript@3.0.0:
     stagehand "^1.0.0"
     walk-sync "^2.0.0"
 
-ember-cli-typescript@4.0.0, ember-cli-typescript@^4.0.0:
+ember-cli-typescript@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/ember-cli-typescript/-/ember-cli-typescript-4.0.0.tgz#690f0cd3d15f4a69ae6d89f25b70b5997ae59161"
   integrity sha512-ZwnBbBJ0yAIKq4FVgNFkxfMwqJhw6PyT45Enp2RvWIgzgaYCId8brrSgg3tvVWWjA7N5hiT4Ilyz5jrQwrnU1Q==
@@ -7891,6 +8025,22 @@ ember-cli-typescript@^3.1.2, ember-cli-typescript@^3.1.3, ember-cli-typescript@^
     semver "^6.3.0"
     stagehand "^1.0.0"
     walk-sync "^2.0.0"
+
+ember-cli-typescript@^4.0.0, ember-cli-typescript@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-typescript/-/ember-cli-typescript-4.1.0.tgz#2ff17be2e6d26b58c88b1764cb73887e7176618b"
+  integrity sha512-zSuKG8IQuYE3vS+c7V0mHJqwrN/4Wo9Wr50+0NUjnZH3P99ChynczQHu/P7WSifkO6pF6jaxwzf09XzWvG8sVw==
+  dependencies:
+    ansi-to-html "^0.6.6"
+    broccoli-stew "^3.0.0"
+    debug "^4.0.0"
+    execa "^4.0.0"
+    fs-extra "^9.0.1"
+    resolve "^1.5.0"
+    rsvp "^4.8.1"
+    semver "^7.3.2"
+    stagehand "^1.0.0"
+    walk-sync "^2.2.0"
 
 ember-cli-uglify@3.0.0:
   version "3.0.0"
@@ -7949,6 +8099,15 @@ ember-cli-version-checker@^4.1.0:
   dependencies:
     resolve-package-path "^2.0.0"
     semver "^6.3.0"
+    silent-error "^1.1.1"
+
+ember-cli-version-checker@^5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/ember-cli-version-checker/-/ember-cli-version-checker-5.1.2.tgz#649c7b6404902e3b3d69c396e054cea964911ab0"
+  integrity sha512-rk7GY+FmLn/2e22HsZs0Ycrz8HQ1W3Fv+2TFOuEFW9optnDXDgkntPBIl6gact/LHsfBM5RKbM3dHsIIeLgl0Q==
+  dependencies:
+    resolve-package-path "^3.1.0"
+    semver "^7.3.4"
     silent-error "^1.1.1"
 
 ember-cli@3.23.0:
@@ -8480,6 +8639,23 @@ ember-power-select@4.1.0, ember-power-select@^4.0.0:
     ember-text-measurer "^0.6.0"
     ember-truth-helpers "^2.1.0 || ^3.0.0"
 
+ember-power-select@4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/ember-power-select/-/ember-power-select-4.1.2.tgz#f19306db7612b440861f23b12a35e4484d3a4203"
+  integrity sha512-Bhr3Gfq1emXbs82+trjiqt2K8tUIZMJ82ZJ5yaKgEsptLGrI/3pZ43PP8ziZEjN/Kfor/H0bfL+JP+5oWh612g==
+  dependencies:
+    "@glimmer/component" "^1.0.2"
+    "@glimmer/tracking" "^1.0.2"
+    ember-assign-helper "^0.3.0"
+    ember-basic-dropdown "^3.0.12"
+    ember-cli-babel "^7.22.1"
+    ember-cli-htmlbars "^5.3.1"
+    ember-cli-typescript "^3.1.4"
+    ember-concurrency ">=1.0.0 <3"
+    ember-concurrency-decorators "^2.0.0"
+    ember-text-measurer "^0.6.0"
+    ember-truth-helpers "^2.1.0 || ^3.0.0"
+
 ember-qunit@5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/ember-qunit/-/ember-qunit-5.1.1.tgz#cd192e016889cf768ba661b7b91a2896f5274642"
@@ -8625,6 +8801,14 @@ ember-source@3.24.0:
     resolve "^1.17.0"
     semver "^6.1.1"
     silent-error "^1.1.1"
+
+ember-style-modifier@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/ember-style-modifier/-/ember-style-modifier-0.6.0.tgz#cc5e58db7f6d6662028a7b4e3cf63cf25ba59a8f"
+  integrity sha512-KqW4vyR80l/GMJsuFV+WLqTmGjXKLpoQ/HAmno+oMDrMt13p/5ImrvarQ6lFgXttFnLCxl6YpMY4YX27p1G54g==
+  dependencies:
+    ember-cli-babel "^7.21.0"
+    ember-modifier "^2.1.0"
 
 ember-svg-jar@2.2.3:
   version "2.2.3"
@@ -18018,6 +18202,15 @@ tailwindcss-ember-power-select@0.4.0, tailwindcss-ember-power-select@^0.4.0:
     mini-svg-data-uri "^1.2.3"
     traverse "^0.6.6"
 
+tailwindcss-ember-power-select@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/tailwindcss-ember-power-select/-/tailwindcss-ember-power-select-0.4.1.tgz#e7634059e552f9b2045f69c60eaa4ced1614bc76"
+  integrity sha512-pq2i4vMtRkXSW7eFGFnCnvWFeA+Z0KCPYsBUFoRrawVEIvKBTtBD7gLHaMhPZYUoq65TyYSjsRbGBdKnxFkUFw==
+  dependencies:
+    lodash "^4.17.20"
+    mini-svg-data-uri "^1.2.3"
+    traverse "^0.6.6"
+
 tailwindcss@2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-2.0.2.tgz#28e1573d29dd4547b26782facb05bcfaa92be366"
@@ -19143,10 +19336,15 @@ validate-peer-dependencies@^1.1.0:
     resolve-package-path "^3.1.0"
     semver "^7.3.2"
 
-validated-changeset@0.10.5, validated-changeset@~0.10.5:
+validated-changeset@0.10.5:
   version "0.10.5"
   resolved "https://registry.yarnpkg.com/validated-changeset/-/validated-changeset-0.10.5.tgz#6305e88a7cc248e2d9211cecfdc40da9604c1437"
   integrity sha512-mj2SBZXzF92JEfTVjFWaCkiPJkj+sccDap8JYTu/qIQXQt1zm7bZCxpfXU5VAJ/bIpbIxBVBSi4HTqouse0ATg==
+
+validated-changeset@~0.13.1:
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/validated-changeset/-/validated-changeset-0.13.1.tgz#cf36dbcfcd18cc0cf92bdfc352e0fed26892a973"
+  integrity sha512-rKc3wPaS6+XPefiGjCqlOrRCtUDw+6CQnUv8AIyzbYSprzWwFAPTeYtWmYzTDBP9G6AENZ34QXszZlMz9INPGw==
 
 validator@^10.0.0:
   version "10.11.0"
