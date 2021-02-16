@@ -287,7 +287,7 @@
     "stylelint-config-prettier": "8.0.2",
     "stylelint-config-standard": "20.0.0",
     "tailwindcss": "2.0.2",
-    "tailwindcss-ember-power-select": "0.4.0",
+    "tailwindcss-ember-power-select": "0.4.1",
     "terser-webpack-plugin": "5.0.3",
     "text-table": "0.2.0",
     "to-fast-properties": "3.0.1",
