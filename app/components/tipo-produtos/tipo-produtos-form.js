@@ -8,12 +8,28 @@ export default class TipoProdutosFormComponent extends DefaultComponent {
   @service store;
   @tracked redirectTo = '/tipo_produtos';
   @tracked modelString = 'tipo_produto';
-  @tracked categoria_produtos = this.store.findAll('categoria_produto');
-  @tracked unidade_medidas = this.store.findAll('unidade_medida');
-  @tracked modelStrings = A(['categoria_produto', 'unidade_medida']);
 
-  @action
-  save(model, ...event) {
-    super.save(model, ...event);
+  @tracked country;
+
+  countries = [
+    { name: 'United States', code: 'US' },
+    { name: 'Spain', code: 'ES' },
+    { name: 'Portugal', code: 'PT', disabled: true },
+    { name: 'Russia', code: 'RU', disabled: true },
+    { name: 'Latvia', code: 'LV' },
+    { name: 'Brazil', code: 'BR' },
+    { name: 'United Kingdom', code: 'GB' }
+  ];
+
+  get countryErrors() {
+    if (this.country) {
+      return [];
+    } else {
+      return ["Country can't be blank"];
+    }
+  }
+
+  @action setCountry(value) {
+    this.country = value;
   }
 }
