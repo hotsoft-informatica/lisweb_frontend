@@ -1490,12 +1490,12 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fimbul/bifrost@0.22.0":
-  version "0.22.0"
-  resolved "https://registry.yarnpkg.com/@fimbul/bifrost/-/bifrost-0.22.0.tgz#b7179c2e1fc2162295d220b930a7e2b3122bfbaa"
-  integrity sha512-nPYFRzfUuou5avUFmTRoOwoQ+O/pUIv9a7PPwk/fLW7vup+Kim4pk/0MvGgKEulzVZb4PTHjg+qAaeVhWMrriA==
+"@fimbul/bifrost@0.24.0":
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/@fimbul/bifrost/-/bifrost-0.24.0.tgz#405611c0e1ae863aca95c4aae0a0eea91f1a2a5e"
+  integrity sha512-JiebUaNbouQbtJHgIqKZnd7a4HsEwg0NK+dQOkO0NF6TTNehbWB+0iMynnZomKxlm6KuI50ygCp7lE1jXlg7ag==
   dependencies:
-    "@fimbul/ymir" "^0.22.0"
+    "@fimbul/ymir" "^0.24.0"
     get-caller-file "^2.0.0"
     tslib "^2.0.0"
     tsutils "^3.5.0"
@@ -1519,10 +1519,10 @@
     reflect-metadata "^0.1.12"
     tslib "^1.8.1"
 
-"@fimbul/ymir@^0.22.0":
-  version "0.22.0"
-  resolved "https://registry.yarnpkg.com/@fimbul/ymir/-/ymir-0.22.0.tgz#503083c739d9ab490a81ef0ff3f51ac94c88fd87"
-  integrity sha512-6QsE5x7N+Lju15fE+p7PR2CjaF7K9VwUNkop5eiVqvR9yH3eRdit2FMuswqDs3HBeptFx1F3z/GO27ZKViDqdw==
+"@fimbul/ymir@^0.24.0":
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/@fimbul/ymir/-/ymir-0.24.0.tgz#aa6d4b4ef2232f62049ffdfa88bc4e039fe13072"
+  integrity sha512-d1w5ncRd5sgl9uOVdwB8v8KwSTs7Ov2g4mUbrNixoP4wSG5YNS5W0l8S6X+sG1leUfhW/CQSXFNtpc3bZHRnpg==
   dependencies:
     inversify "^5.0.0"
     reflect-metadata "^0.1.12"
