@@ -87,7 +87,7 @@
     "@frontile/forms": "0.9.0",
     "@frontile/notifications": "0.9.0",
     "@frontile/overlays": "0.9.0",
-    "@glimmer/component": "1.0.3",
+    "@glimmer/component": "1.0.4",
     "@glimmer/tracking": "1.0.3",
     "@html-next/vertical-collection": "1.0.0",
     "@stylelint/postcss-markdown": "0.36.2",
