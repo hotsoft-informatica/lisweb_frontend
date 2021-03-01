@@ -215,7 +215,7 @@
     "ember-validated-form": "3.0.2",
     "ember-validators": "3.0.1",
     "emberx-select": "3.1.1",
-    "eslint": "7.16.0",
+    "eslint": "7.21.0",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-config-prettier": "7.1.0",
     "eslint-import-resolver-ember": "0.0.1",
