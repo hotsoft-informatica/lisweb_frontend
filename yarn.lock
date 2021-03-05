@@ -19143,7 +19143,12 @@ validate-peer-dependencies@^1.1.0:
     resolve-package-path "^3.1.0"
     semver "^7.3.2"
 
-validated-changeset@0.10.5, validated-changeset@~0.10.5:
+validated-changeset@0.14.1:
+  version "0.14.1"
+  resolved "https://registry.yarnpkg.com/validated-changeset/-/validated-changeset-0.14.1.tgz#94e51706acbbea4e59a2b3253ed3271349a4e25a"
+  integrity sha512-3sZF0liKvKiqL4kEHlDV4QAbT53yI4bQarTwBy3RzAi9Q0C7QAucM/xkUpDhVrFIWFQomYploaBPcjUZFnWRUQ==
+
+validated-changeset@~0.10.5:
   version "0.10.5"
   resolved "https://registry.yarnpkg.com/validated-changeset/-/validated-changeset-0.10.5.tgz#6305e88a7cc248e2d9211cecfdc40da9604c1437"
   integrity sha512-mj2SBZXzF92JEfTVjFWaCkiPJkj+sccDap8JYTu/qIQXQt1zm7bZCxpfXU5VAJ/bIpbIxBVBSi4HTqouse0ATg==
