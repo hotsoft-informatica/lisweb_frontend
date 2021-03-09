@@ -307,7 +307,7 @@
     "validated-changeset": "0.10.5",
     "webpack": "5.11.1",
     "window-size": "1.1.1",
-    "workerpool": "6.0.3",
+    "workerpool": "6.1.2",
     "wrappy": "1.0.2"
   },
   "engines": {
