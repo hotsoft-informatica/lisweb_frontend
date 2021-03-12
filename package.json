@@ -129,7 +129,7 @@
     "broccoli-filter": "1.3.0",
     "broccoli-funnel": "3.0.3",
     "broccoli-merge-trees": "4.2.0",
-    "broccoli-source": "3.0.0",
+    "broccoli-source": "3.0.1",
     "broccoli-templater": "2.0.2",
     "call-limit": "1.1.1",
     "chokidar": "3.4.3",
