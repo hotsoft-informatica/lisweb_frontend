@@ -3689,7 +3689,7 @@ babel-plugin-ember-data-packages-polyfill@^0.1.2:
   dependencies:
     "@ember-data/rfc395-data" "^0.0.4"
 
-babel-plugin-ember-modules-api-polyfill@3.2.0, babel-plugin-ember-modules-api-polyfill@^3.2.0:
+babel-plugin-ember-modules-api-polyfill@3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-ember-modules-api-polyfill/-/babel-plugin-ember-modules-api-polyfill-3.2.0.tgz#302cb58a3c0fa33d93ab5115f1e91d76c6ec766b"
   integrity sha512-k5gyC1kUDyZDcdD8LMGTI7KA+cHdKainuWpmc7d5yv42WgZFO75njPi3hZchEGsFFXtSqm9jiahgvLBUV8E8mA==
@@ -3702,6 +3702,13 @@ babel-plugin-ember-modules-api-polyfill@^2.3.0, babel-plugin-ember-modules-api-p
   integrity sha512-uxQPkEQAzCYdwhZk16O9m1R4xtCRNy4oEUTBrccOPfzlIahRZJic/JeP/ZEL0BC6Mfq6r55eOg6gMF/zdFoCvA==
   dependencies:
     ember-rfc176-data "^0.3.13"
+
+babel-plugin-ember-modules-api-polyfill@^3.2.0, babel-plugin-ember-modules-api-polyfill@^3.4.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-ember-modules-api-polyfill/-/babel-plugin-ember-modules-api-polyfill-3.5.0.tgz#27b6087fac75661f779f32e60f94b14d0e9f6965"
+  integrity sha512-pJajN/DkQUnStw0Az8c6khVcMQHgzqWr61lLNtVeu0g61LRW0k9jyK7vaedrHDWGe/Qe8sxG5wpiyW9NsMqFzA==
+  dependencies:
+    ember-rfc176-data "^0.3.17"
 
 babel-plugin-filter-imports@^3.0.0:
   version "3.0.0"
@@ -3719,10 +3726,12 @@ babel-plugin-filter-imports@^4.0.0:
     "@babel/types" "^7.7.2"
     lodash "^4.17.15"
 
-babel-plugin-htmlbars-inline-precompile@4.2.1, babel-plugin-htmlbars-inline-precompile@^4.2.0:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-htmlbars-inline-precompile/-/babel-plugin-htmlbars-inline-precompile-4.2.1.tgz#9a367f8d7ecb9fb2c2e886edfe285caf7cb9766d"
-  integrity sha512-MCJXk+1R0YjlF/F52eDbhJTpsnqRVYsPYVP9d0jEu7E46AcRPEWDL5tfSweiQWHLKG017BIedATb91KcIoT3zA==
+babel-plugin-htmlbars-inline-precompile@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-htmlbars-inline-precompile/-/babel-plugin-htmlbars-inline-precompile-5.0.0.tgz#b3a3008bdedbd3543e745fc953769cc10d4a7021"
+  integrity sha512-ZPIV7zVwVcwRyTWCp29HSwIPcvqX7PoslpKlNu53AzAx5X4QBwuMb9fFsUYY3JcriNZb5xWFOM4AE95XW0UYeA==
+  dependencies:
+    babel-plugin-ember-modules-api-polyfill "^3.4.0"
 
 babel-plugin-htmlbars-inline-precompile@^0.2.5:
   version "0.2.6"
@@ -3733,6 +3742,11 @@ babel-plugin-htmlbars-inline-precompile@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-htmlbars-inline-precompile/-/babel-plugin-htmlbars-inline-precompile-3.2.0.tgz#c4882ea875d0f5683f0d91c1f72e29a4f14b5606"
   integrity sha512-IUeZmgs9tMUGXYu1vfke5I18yYJFldFGdNFQOWslXTnDWXzpwPih7QFduUqvT+awDpDuNtXpdt5JAf43Q1Hhzg==
+
+babel-plugin-htmlbars-inline-precompile@^4.2.0:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-htmlbars-inline-precompile/-/babel-plugin-htmlbars-inline-precompile-4.2.1.tgz#9a367f8d7ecb9fb2c2e886edfe285caf7cb9766d"
+  integrity sha512-MCJXk+1R0YjlF/F52eDbhJTpsnqRVYsPYVP9d0jEu7E46AcRPEWDL5tfSweiQWHLKG017BIedATb91KcIoT3zA==
 
 babel-plugin-inline-environment-variables@1.0.1:
   version "1.0.1"
@@ -8542,6 +8556,11 @@ ember-rfc176-data@^0.3.1, ember-rfc176-data@^0.3.11, ember-rfc176-data@^0.3.13, 
   version "0.3.16"
   resolved "https://registry.yarnpkg.com/ember-rfc176-data/-/ember-rfc176-data-0.3.16.tgz#2ace0ac9cf9016d493a74a1d931643a308679803"
   integrity sha512-IYAzffS90r2ybAcx8c2qprYfkxa70G+/UPkxMN1hw55DU5S2aLOX6v3umKDZItoRhrvZMCnzwsdfKSrKdC9Wbg==
+
+ember-rfc176-data@^0.3.17:
+  version "0.3.17"
+  resolved "https://registry.yarnpkg.com/ember-rfc176-data/-/ember-rfc176-data-0.3.17.tgz#d4fc6c33abd6ef7b3440c107a28e04417b49860a"
+  integrity sha512-EVzTTKqxv9FZbEh6Ktw56YyWRAA0MijKvl7H8C06wVF+8f/cRRz3dXxa4nkwjzyVwx4rzKGuIGq77hxJAQhWWw==
 
 ember-router-generator@^2.0.0:
   version "2.0.0"
