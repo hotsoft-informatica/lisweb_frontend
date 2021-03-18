@@ -110,7 +110,7 @@
     "babel-loader": "8.2.2",
     "babel-messages": "6.23.0",
     "babel-plugin-dead-code-elimination": "1.0.2",
-    "babel-plugin-ember-modules-api-polyfill": "3.2.0",
+    "babel-plugin-ember-modules-api-polyfill": "3.5.0",
     "babel-plugin-htmlbars-inline-precompile": "4.2.1",
     "babel-plugin-inline-environment-variables": "1.0.1",
     "babel-plugin-transform-es2015-modules-amd": "6.24.1",
