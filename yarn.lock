@@ -7342,15 +7342,15 @@ ember-changeset-validations@3.10.3, ember-changeset-validations@^3.10.3:
     ember-get-config "^0.2.4"
     ember-validators "^3.0.1"
 
-ember-changeset@^3.10.5:
-  version "3.10.5"
-  resolved "https://registry.yarnpkg.com/ember-changeset/-/ember-changeset-3.10.5.tgz#a639cfa7f2208416cfcf41300e48ecee2e097397"
-  integrity sha512-RU1Tah2OryM2ivnkhCq1KIC46/BY5sham06GsAc+81dTaTWMgH05rQ503+5PhY7x3uNa4vLlY4A3zxFNJVFfmg==
+ember-changeset@^3.10.5, ember-changeset@^3.13.3:
+  version "3.13.3"
+  resolved "https://registry.yarnpkg.com/ember-changeset/-/ember-changeset-3.13.3.tgz#0e2749fa93d647eb8c616f7f9a9eb5f64ec00439"
+  integrity sha512-hQ0FjQl/M94h584hzCQu++8Vr/bzdogFw6y3+G4s++AsteahK0539REvDYDBr4YLxXxdKqFpsFkrbCn9JP2JPQ==
   dependencies:
     "@glimmer/tracking" "^1.0.1"
     ember-auto-import "^1.5.2"
     ember-cli-babel "^7.19.0"
-    validated-changeset "~0.10.5"
+    validated-changeset "~0.14.3"
 
 ember-classic-decorator@2.0.0:
   version "2.0.0"
@@ -19143,10 +19143,15 @@ validate-peer-dependencies@^1.1.0:
     resolve-package-path "^3.1.0"
     semver "^7.3.2"
 
-validated-changeset@0.10.5, validated-changeset@~0.10.5:
+validated-changeset@0.10.5:
   version "0.10.5"
   resolved "https://registry.yarnpkg.com/validated-changeset/-/validated-changeset-0.10.5.tgz#6305e88a7cc248e2d9211cecfdc40da9604c1437"
   integrity sha512-mj2SBZXzF92JEfTVjFWaCkiPJkj+sccDap8JYTu/qIQXQt1zm7bZCxpfXU5VAJ/bIpbIxBVBSi4HTqouse0ATg==
+
+validated-changeset@~0.14.3:
+  version "0.14.3"
+  resolved "https://registry.yarnpkg.com/validated-changeset/-/validated-changeset-0.14.3.tgz#c17b6f493e1d03a13f9a5660e586175758151f90"
+  integrity sha512-D2WV7j4m8/wHW+pwFdhvVw9sPiq5r6edkSUTVcp9RadERC7dyubeoioZCo26y7TbGN0sPBzmjj9MDV0gS4r3cA==
 
 validator@^10.0.0:
   version "10.11.0"
