@@ -196,7 +196,7 @@
     "ember-lodash": "4.19.5",
     "ember-maybe-import-regenerator": "0.1.6",
     "ember-model-validator": "3.10.0",
-    "ember-power-select": "4.1.0",
+    "ember-power-select": "4.1.5",
     "ember-power-select-with-create": "0.8.0",
     "ember-qunit": "5.1.1",
     "ember-rapid-forms": "1.2.5",
